@@ -1,0 +1,2172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Zaptar</title>
+    <meta name="description" content="description">
+    <link rel="icon" href="./static/img/favicon/favicon.png">
+    <link rel="stylesheet" href="./static/css/libs.min.css">
+    <link rel="stylesheet" href="./static/css/main.min.css">
+</head>
+<body class="body @@class">
+
+<header class="header" data-header>
+    <div class="header__top container">
+        <a class="logo" href="/zaptar-all/dist">
+            <img class="logo__img" src="static/img/logo/logo-2.svg" width="198" height="32" alt="zaptar">
+        </a>
+
+        <!-- десктоп -->
+        <!-- Пользователь авторизован -->
+        <div class="header__top-contacts">
+            <a class="contact-link" href="tel:89308255335">
+                <svg class="contact-link__ico" aria-hidden="true">
+                    <use xlink:href="static/img/symbol/sprite.svg#phone"></use>
+                </svg>
+
+                <span class="contact-link__label">8 (930) 825 53-35</span>
+            </a>
+
+            <a class="contact-link" href="tel:89206055335">
+                <svg class="contact-link__ico" aria-hidden="true">
+                    <use xlink:href="static/img/symbol/sprite.svg#phone"></use>
+                </svg>
+
+                <span class="contact-link__label">8 (920) 605 53-35</span>
+            </a>
+
+            <a class="contact-link contact-link--has-divider" href="mailto:info@zaptar.ru">
+                <svg class="contact-link__ico" aria-hidden="true">
+                    <use xlink:href="static/img/symbol/sprite.svg#mail"></use>
+                </svg>
+
+                <span class="contact-link__label">info@zaptar.ru</span>
+            </a>
+
+            <div class="header-user-dropdown d-md-none">
+                <button type="button" class="header-user-dropdown__toggle btn btn--filled btn--theme-secondary btn--size-m">
+                    Иван
+                    <svg aria-hidden="true" class="btn__ico btn__ico--sm">
+                        <use xlink:href="static/img/symbol/sprite.svg#chevron-down"></use>
+                    </svg>
+                </button>
+
+                <div class="header-user-dropdown__menu dropdown-menu">
+                    <a class="dropdown-menu__link" data-modal="drawer-profile" href="#">
+                        <svg aria-hidden="true" class="dropdown-menu__ico">
+                            <use xlink:href="static/img/symbol/sprite.svg#user"></use>
+                        </svg>
+                        Профиль
+                    </a>
+                    <a class="dropdown-menu__link" href="#">
+                        <svg aria-hidden="true" class="dropdown-menu__ico">
+                            <use xlink:href="static/img/symbol/sprite.svg#dollar"></use>
+                        </svg>
+                        Мои финансы
+                    </a>
+                    <a class="dropdown-menu__link" href="#">
+                        <svg aria-hidden="true" class="dropdown-menu__ico">
+                            <use xlink:href="static/img/symbol/sprite.svg#line-chart"></use>
+                        </svg>
+                        Ценообразование
+                    </a>
+                    <a class="dropdown-menu__link" href="#">
+                        <svg aria-hidden="true" class="dropdown-menu__ico">
+                            <use xlink:href="static/img/symbol/sprite.svg#credit-card"></use>
+                        </svg>
+                        Пополнить баланс
+                    </a>
+                    <a class="dropdown-menu__link dropdown-menu__link--logout" href="#">
+                        <svg aria-hidden="true" class="dropdown-menu__ico">
+                            <use xlink:href="static/img/symbol/sprite.svg#logout"></use>
+                        </svg>
+                        Выйти
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- мобайл -->
+        <!-- Пользователь авторизован -->
+        <nav class="header__top-actions">
+            <a class="btn btn--filled btn--theme-secondary btn--size-m btn--compact" href="#">
+                <svg aria-hidden="true" class="btn__ico">
+                    <use xlink:href="static/img/symbol/sprite.svg#chat"></use>
+                </svg>
+                <span class="btn__badge badge badge--theme-light"></span>
+            </a>
+
+            <a class="btn btn--filled btn--theme-secondary btn--size-m btn--compact" href="#">
+                <svg aria-hidden="true" class="btn__ico">
+                    <use xlink:href="static/img/symbol/sprite.svg#car"></use>
+                </svg>
+            </a>
+
+            <a class="btn btn--filled btn--theme-secondary btn--size-m btn--compact" href="#">
+                <svg aria-hidden="true" class="btn__ico">
+                    <use xlink:href="static/img/symbol/sprite.svg#inbox"></use>
+                </svg>
+            </a>
+
+            <a class="btn btn--filled btn--theme-secondary btn--size-m btn--compact" href="#">
+                <svg aria-hidden="true" class="btn__ico">
+                    <use xlink:href="static/img/symbol/sprite.svg#heart"></use>
+                </svg>
+            </a>
+
+            <a class="btn btn--filled btn--theme-secondary btn--size-m btn--compact" href="#">
+                <svg aria-hidden="true" class="btn__ico">
+                    <use xlink:href="static/img/symbol/sprite.svg#cart"></use>
+                </svg>
+                <span class="btn__badge badge badge--theme-light">3</span>
+            </a>
+        </nav>
+
+        <!-- Пользователь не авторизован -->
+        <!-- <nav class="header__bottom-actions header-bottom-actions"> -->
+        <!--     <a class="contact-link d-lg-none" href="tel:89308255335"> -->
+        <!--         <svg class="contact-link__ico" aria-hidden="true"> -->
+        <!--             <use xlink:href="static/img/symbol/sprite.svg#phone"></use> -->
+        <!--         </svg> -->
+
+        <!--         <span class="contact-link__label">8 (930) 825 53-35</span> -->
+        <!--     </a> -->
+
+        <!--     <a class="contact-link d-lg-none" href="tel:89206055335"> -->
+        <!--         <svg class="contact-link__ico" aria-hidden="true"> -->
+        <!--             <use xlink:href="static/img/symbol/sprite.svg#phone"></use> -->
+        <!--         </svg> -->
+
+        <!--         <span class="contact-link__label">8 (920) 605 53-35</span> -->
+        <!--     </a> -->
+
+        <!--     <a class="contact-link d-lg-none contact-link&#45;&#45;has-divider" href="mailto:info@zaptar.ru"> -->
+        <!--         <svg class="contact-link__ico" aria-hidden="true"> -->
+        <!--             <use xlink:href="static/img/symbol/sprite.svg#mail"></use> -->
+        <!--         </svg> -->
+
+        <!--         <span class="contact-link__label">info@zaptar.ru</span> -->
+        <!--     </a> -->
+
+        <!--     <a class="btn btn&#45;&#45;filled btn&#45;&#45;theme-light btn&#45;&#45;size-m" href="#"> -->
+        <!--         Регистрация -->
+        <!--     </a> -->
+
+        <!--     <button type="button" data-modal="auth" class="header__user-btn btn btn&#45;&#45;filled btn&#45;&#45;theme-primary btn&#45;&#45;size-m"> -->
+        <!--         <svg aria-hidden="true" class="btn__ico"> -->
+        <!--             <use xlink:href="static/img/symbol/sprite.svg#user"></use> -->
+        <!--         </svg> -->
+
+        <!--         <span class="btn__label d-md-none">Войти</span> -->
+        <!--     </button> -->
+        <!-- </nav> -->
+    </div>
+
+    <!--  Десктоп -->
+    <!-- Пользователь авторизован -->
+    <div class="header__bottom container">
+        <nav class="header__bottom-actions header-bottom-actions">
+            <a class="btn btn--filled btn--theme-secondary btn--size-m btn--compact d-md-none" href="#">
+                <svg aria-hidden="true" class="btn__ico">
+                    <use xlink:href="static/img/symbol/sprite.svg#chat"></use>
+                </svg>
+                <span class="btn__badge badge badge--theme-light"></span>
+            </a>
+
+            <a class="header-bottom-actions__btn-divider btn btn--filled btn--theme-secondary btn--size-m btn--compact d-md-none" href="#">
+                <svg aria-hidden="true" class="btn__ico">
+                    <use xlink:href="static/img/symbol/sprite.svg#car"></use>
+                </svg>
+            </a>
+
+            <a class="btn btn--filled btn--theme-secondary btn--size-m btn--compact d-md-none" href="#">
+                <svg aria-hidden="true" class="btn__ico">
+                    <use xlink:href="static/img/symbol/sprite.svg#inbox"></use>
+                </svg>
+            </a>
+
+            <a class="btn btn--filled btn--theme-secondary btn--size-m btn--compact d-md-none" href="#">
+                <svg aria-hidden="true" class="btn__ico">
+                    <use xlink:href="static/img/symbol/sprite.svg#heart"></use>
+                </svg>
+            </a>
+
+            <a class="header-bottom-actions__btn-divider btn btn--filled btn--theme-secondary btn--size-m btn--compact d-md-none" href="#">
+                <svg aria-hidden="true" class="btn__ico">
+                    <use xlink:href="static/img/symbol/sprite.svg#cart"></use>
+                </svg>
+                <span class="btn__badge badge badge--theme-light">3</span>
+            </a>
+
+            <a class="header-btn-wallet btn btn--filled btn--theme-secondary btn--size-m" href="#">
+                <svg aria-hidden="true" class="btn__ico header-btn-wallet__ico">
+                    <use xlink:href="static/img/symbol/sprite.svg#wallet"></use>
+                </svg>
+                <span class="header-btn-wallet__caption">Баланс</span>
+                <span class="header-btn-wallet__balance">+999 999 руб</span>
+            </a>
+
+            <button type="button" aria-label="Пользователь" class="header-user-dropdown__toggle btn btn--filled btn--theme-secondary btn--size-m btn--compact d-none d-md-flex" data-modal="drawer-user">
+                <svg aria-hidden="true" class="btn-lite__ico">
+                    <use xlink:href="static/img/symbol/sprite.svg#user"></use>
+                </svg>
+            </button>
+        </nav>
+    </div>
+</header>
+
+
+<main class="main main--mt">
+    <section class="intro container intro--has-pd-top">
+    <div class="intro-search">
+        <div class="intro-search__dropdown intro-search-dropdown">
+            <button class="intro-search-dropdown__toggle d-md-none">
+                <svg class="intro-search-dropdown__ico" aria-hidden="true">
+                    <use xlink:href="static/img/symbol/sprite.svg#menu"></use>
+                </svg>
+                <span class="intro-search-dropdown__label">Каталог</span>
+            </button>
+            <button class="intro-search-dropdown__toggle d-none d-md-flex" aria-label="Меню" data-modal="drawer-catalog">
+                <svg class="intro-search-dropdown__ico" aria-hidden="true">
+                    <use xlink:href="static/img/symbol/sprite.svg#menu"></use>
+                </svg>
+            </button>
+
+            <nav class="intro-search-dropdown__menu dropdown-menu">
+                <a class="dropdown-menu__link" href="catalog.html">
+                    Каталог запчастей
+                </a>
+                <a class="dropdown-menu__link" href="#">
+                    Каталог ТО
+                </a>
+                <a class="dropdown-menu__link" href="#">
+                    Масла
+                </a>
+                <a class="dropdown-menu__link" href="#">
+                    Аккумуляторы
+                </a>
+                <a class="dropdown-menu__link" href="#">
+                    Автолампы
+                </a>
+                <a class="dropdown-menu__link" href="#">
+                    Шины
+                </a>
+                <a class="dropdown-menu__link" href="#">
+                    Диски
+                </a>
+                <a class="dropdown-menu__link" href="#">
+                    Колпаки
+                </a>
+                <a class="dropdown-menu__link" href="#">
+                    Болты, Гайки
+                </a>
+            </nav>
+        </div>
+        <form class="intro-search__form" action="/search.html" method="GET">
+            <input type="search" name="query" class="intro-search__input" placeholder="Поиск по VIN или FRAME">
+            <button type="submit" class="intro-search__btn btn btn--filled btn--theme-primary btn--size-m btn--compact" data-label="Поиск по VIN или FRAME">
+                <svg aria-hidden="true" class="btn__ico intro-search__ico">
+                    <use xlink:href="static/img/symbol/sprite.svg#search"></use>
+                </svg>
+                <span class="btn__label d-md-none">Найти запчасть</span>
+            </button>
+            <div class="intro-search__content">
+                Пример: <button class="intro-search__link">WAUBH54B11N111054</button> или <button class="intro__search-link">FNN15-502358</button>
+            </div>
+        </form>
+    </div>
+</section>
+
+    <div class="container">
+    <ol class="breadcrumb">
+        <li class="breadcrumb__item">
+            <a class="breadcrumb__link" href="/">Главная</a>
+        </li>
+        <li class="breadcrumb__item breadcrumb__item--current">Регистрация</li>
+    </ol>
+</div>
+
+
+    <section class="page-text container">
+        <h1 class="title title--mb">Политика конфиденциальности</h1>
+        <div class="page-text__content">
+            <p>I. ТЕРМИНЫ И ОПРЕДЕЛЕНИЯ</p>
+
+            <p>Персональные данные Клиента – любая информация в соответствии с Федеральным законом «О персональных данных», полученная Оператором от Клиента при регистрации на Маркетплейсе, <br>по адресу: <a href="http://zaptar.ru/">http://zaptar.ru/</a>.</p>
+
+            <p>Политика обработки персональных данных – документ, на основании которого Оператор обработки персональных данных осуществляет обработку данных.</p>
+
+            <p>Оператор – Индивидуальный предприниматель, Буртолик Андрей Викторович ИНН 325001420520 ОГРНИП 325320000020536 осуществляющий обработку персональных данных, а также определяющий цели обработки персональных данных, состав персональных данных, подлежащих обработке, действия (операции), совершаемые с персональными данными.</p>
+
+            <p>Сайт – совокупность графических и информационных материалов по сетевому адресу: <a href="http://zaptar.ru/">http://zaptar.ru/</a>, являющийся сервисом, предоставляющим потенциальным Клиентам доступ для регистрации с целью дальнейшей продажи и покупки товаров, оригинальных или аналоговых автозапчастей.</p>
+
+            <p>Пользователь – лицо, зарегистрированное в личном кабинете на сайте <a href="http://zaptar.ru/">http://zaptar.ru/</a>.</p>
+
+            <p>Согласие на обработку персональных данных – документ, являющийся основанием обработки персональных данных Заказчика (Приложение № 1).</p>
+
+            <p>Согласие на рассылку электронных сообщений – документ, являющийся основанием для рассылки материалов рекламного и (или) информационного характера посредством SMS-сервисов и(или) с электронной почты: <a href="mailto:info@zaptar.ru">info@zaptar.ru</a> (Приложение № 2).</p>
+
+            <p>II. ОБЩИЕ ПОЛОЖЕНИЯ</p>
+
+            <p>2.1. Настоящая политика обработки персональных данных (далее – «Политика») разработана на основании Федерального закона «О персональных данных» от 27 июля 2006 года № 152-ФЗ и определяет порядок обработки персональных данных и меры по обеспечению безопасности персональных данных Индивидуальным предпринимателем Буртолик Андрей Викторович ИНН 325001420520 ОГРНИП 325320000020536 (далее – «Оператор»).</p>
+
+            <p>2.2. Политика регулирует вопросы обработки персональных данных лиц, зарегистрированных в Личном кабинете на сайте <a href="http://zaptar.ru/">http://zaptar.ru/</a> (далее – «Субъекты персональных данных»).</p>
+
+            <p>2.3 Лицо, организующее и (или) осуществляющее обработку персональных данных, а также определяющее цели такой обработки, состав персональных данных, подлежащих обработке, действия (операции), совершаемые с персональными данными –Индивидуальный предприниматель Буртолик Андрей Викторович ИНН 325001420520 ОГРНИП 325320000020536.</p>
+
+            <p>2.4. Оператор осуществляет обработку персональных данных Субъектов персональных данных, т.е. совершает все действия с персональными данными, включая сбор, запись, систематизацию, накопление, хранение, уточнение (обновление, изменение), извлечение, использование, обезличивание, блокирование, удаление, уничтожение персональных данных (далее – «Обработка персональных данных»).</p>
+
+            <p>2.5. К обрабатываемым персональным данным Субъектов персональных данных, в соответствии с настоящей Политикой, относятся:</p>
+
+            <span>ФИО, email, телефон, город, адрес, банковские реквизиты.</span>
+
+            <p>2.6. Политика может быть изменена в ходе её периодического пересмотра, а также в случае изменения действующего законодательства Российской Федерации в области персональных данных.</p>
+
+            <p>2.7. Обеспечение ознакомления с настоящей Политикой и Приложениями реализуется путём личного посещениясайта Оператора по адресу <a href="http://zaptar.ru/">http://zaptar.ru/</a>.</p>
+
+            <p>2.8. Оператор ставит своей важнейшей целью и условием осуществления своей деятельности соблюдение прав и свобод человека и гражданина при обработке его персональных данных, в том числе защиты прав на неприкосновенность частной жизни, личную и семейную тайну.</p>
+
+            <p>III. ЦЕЛИ СБОРА ПЕРСОНАЛЬНЫХ ДАННЫХ</p>
+
+            <p>3.1. Целями сбора персональных данных Субъектов персональных данных являются:</p>
+
+            <ul>
+                <li>регистрация на Сайте <a href="http://zaptar.ru/">http://zaptar.ru/</a> с целью дальнейшей покупки   товаров, оригинальных или аналоговых автозапчастей на электронной площадке;</li>
+                <li>заключение и исполнение договора на оказание услуг по предоставлению интернет - площадки для продажи и покупки товаров;</li>
+                <li>идентификация Субъекта персональных данных;</li>
+                <li>подтверждение достоверности и полноты персональных данных, предоставленных Субъектом персональных данных;</li>
+                <li>оказание Субъекту персональных данных эффективной клиентской и технической поддержки при возникновении проблем, связанных с использованием Сайта <a href="http://zaptar.ru/">http://zaptar.ru/</a>;</li>
+                <li>предоставление доступа Пользователю к сервисам, информации и (или) материалам, содержащимся на сайте <a href="http://zaptar.ru/">http://zaptar.ru/</a>.</li>
+                <li>направление Пользователю уведомления о новых продуктах и услугах, специальных предложениях и различных событиях.</li>
+            </ul>
+
+            <p>3.2. Обработке подлежат только те персональные данные, которые отвечают целям их обработки. Не допускается обработка персональных данных, несовместимая с целями сбора персональных данных.</p>
+
+            <p>3.3. Пользователь всегда может отказаться от получения информационных и (или) рекламных сообщений, направив Оператору письмо на адрес электронной почты: <a href="mailto:info@zaptar.ru">info@zaptar.ru</a> с пометкой «Отказ от уведомлений о новых продуктах и услугах и специальных предложениях».</p>
+
+            <p>3.4. Правовыми основаниями Обработки персональных данных, в соответствии с настоящей Политикой, является Согласие на обработку персональных данных.</p>
+
+            <p>IV. ОБЪЕМ И КАТЕГОРИИ ОБРАБАТЫВАЕМЫХ ПЕРСОНАЛЬНЫХ ДАННЫХ, СУБЪЕКТЫ ПЕРСОНАЛЬНЫХ ДАННЫХ</p>
+
+            <p>4.1. Персональные данные, указанные в пункте 2.5 настоящей Политики, обрабатываются в объемах, необходимых для достижения целей, предусмотренных в пункте 3.1 настоящей Политики. Оператор обрабатывает персональные данные, относящиеся к общей категории.</p>
+
+            <p>4.2. Оператор гарантирует, что содержание и объем обрабатываемых персональных данных соответствует заявленным целям обработки, а сами обрабатываемые персональные данные не являются избыточными по отношению к заявленным целям их обработки.</p>
+
+            <p>4.3. Субъектами персональных данных являются лица, прошедшие регистрацию на Сайте Оператора и давшие Согласие на обработку персональных данных.</p>
+
+            <p>V. ПОРЯДОК И УСЛОВИЯ ОБРАБОТКИ ПЕРСОНАЛЬНЫХ ДАННЫХ</p>
+
+            <p>5.1. Обработка персональных данных Пользователя осуществляется без ограничения срока, любым законным способом, в том числе в информационных системах персональных</p>
+
+            <p>5.2. Оператор обязан принимать меры в целях обеспечения защиты персональных данных Субъектов персональных данных от неправомерного или случайного доступа к ним третьими лицами, включая меры по уничтожению, изменению, блокированию, ограничению копирования и(или) распространения.</p>
+
+            <p>5.3. В случае выявления неточностей в персональных данных, Пользователь может актуализировать их самостоятельно, путем направления Оператору уведомление на адрес электронной почты:<a href="mailto:info@zaptar.ru">info@zaptar.ru</a> Оператора с пометкой «Актуализация персональных данных».</p>
+
+            <p>5.4. Срок обработки персональных данных является неограниченным. Пользователь может в любой момент отозвать свое согласие на обработку персональных данных, направив Оператору уведомление посредством электронной почты на электронный адрес Оператора: <a href="mailto:info@32parts.ru">info@zaptar.ru</a>с пометкой «Отзыв согласия на обработку персональных данных».</p>
+
+            <p>VI. АКТУАЛИЗАЦИЯ, ИСПРАВЛЕНИЕ, УДАЛЕНИЕ И УНИЧТОЖЕНИЕ ПЕРСОНАЛЬНЫХ ДАННЫХ, ОТВЕТЫ НА ЗАПРОСЫ СУБЪЕКТОВ НА ДОСТУП К ПЕРСОНАЛЬНЫМ ДАННЫМ</p>
+
+            <p>6.1. Пользователь вправе обратиться к Оператору с запросом о предоставлении информации, касающейся обработки его персональных данных, уточнении персональных данных, их блокировании или уничтожении в случае, если персональные данные являются неполными, устаревшими, неточными, незаконно полученными или не являются необходимыми для заявленной цели обработки (далее – «Запрос»).</p>
+
+            <p>6.2. Запрос направляется на электронный адрес Оператора: <a href="mailto:info@zaptar.ru">info@zaptar.ru</a>.</p>
+
+            <p>6.3. Оператор обязан дать ответ и исполнить требование на Запрос не позднее 7 рабочих дней с даты его получения. Сведения должны быть предоставлены Субъекту персональных данных Оператором в доступной форме, и должны содержать информацию только о Субъекте персональных данных, направившего Запрос.</p>
+
+            <p>VII. ЗАКЛЮЧИТЕЛЬНЫЕ ПОЛОЖЕНИЯ</p>
+
+            <p>7.1. Пользователь может получить любые разъяснения по интересующим вопросам, касающимся обработки его персональных данных, обратившись к Оператору с помощью электронной почты: <a href="mailto:info@zaptar.ru">info@zaptar.ru</a>.</p>
+
+            <p>7.2. В данном документе будут отражены любые изменения политики обработки персональных данных Оператором. Политика действует бессрочно до замены ее новой версией.</p>
+
+            <p>Приложение № 1 к Политике обработки персональных данных</p>
+
+            <p>СОГЛАСИЕ НА ОБРАБОТКУ ПЕРСОНАЛЬНЫХ ДАННЫХ</p>
+
+            <p>Я даю согласие на обработку персональных данных (далее – «Согласие») в отношении обработки персональных данных на основании Федерального закона «О персональных данных» от 27 июля 2006 года № 152-ФЗ, который определяет порядок обработки персональных данных, а также меры по обеспечению безопасности персональных данных индивидуальному предпринимателю Буртолик Андрей Викторович ИНН 325001420520 ОГРНИП 325320000020536 <a href="mailto:info@zaptar.ru">info@zaptar.ru</a> (далее – «Оператор»).</p>
+
+            <p>Я уведомлен, что лицо организующее и (или) осуществляющее обработку персональных данных, а также определяющее цели такой обработки, состав персональных данных, подлежащих обработке, действия (операции), совершаемые с персональными данными – ИП Буртолик Андрей Викторович ИНН 325001420520 ОГРНИП 325320000020536 <a href="mailto:info@zaptar.ru">info@zaptar.ru</a>.</p>
+
+            <p>Я ознакомлен с Политикой и Согласием путём посещения сайта Оператора по адресу <a href="http://zaptar.ru/">http://zaptar.ru/</a>;</p>
+
+            <p>Я ознакомлен с целями сбора персональных данных Субъектов персональных данных:</p>
+
+            <ul>
+                <li>регистрация на сайте <a href="http://zaptar.ru/">http://zaptar.ru/</a> с целью дальнейшей покупки товаров, оригинальных или аналоговых автозапчастей на электронной площадке;</li>
+                <li>заключение и исполнение договора на оказание услуг по предоставлению интернет - площадки для продажи и покупки товаров;</li>
+                <li>идентификация Субъекта персональных данных;</li>
+                <li>подтверждение достоверности и полноты персональных данных, предоставленных Субъектом персональных данных;</li>
+                <li>оказание Субъекту персональных данных эффективной клиентской и технической поддержки при возникновении проблем, связанных с использованием Сайта <a href="http://zaptar.ru/">http://zaptar.ru/</a>;</li>
+                <li>предоставление доступа Пользователю к сервисам, информации и (или) материалам, содержащимся на сайте <a href="http://zaptar.ru/">http://zaptar.ru/</a></li>
+                <li>направление Пользователю уведомления о новых продуктах и услугах, специальных предложениях и различных событиях.</li>
+            </ul>
+
+            <p>Персональные данные могут быть использованы для иных целей, в случае, если они являются обязательными согласно законодательству Российской Федерации.</p>
+
+            <p>Любая информация, которая передана Оператору в устной или письменной форме посредством информационно-телекоммуникационной сети «Интернет» либо иным способом, считается конфиденциальной.</p>
+
+            <p>Я уведомлен, что в случае выявления неточностей в персональных данных, я могу актуализировать их самостоятельно, путем направления Оператору уведомление на адрес электронной почты <a href="mailto:info@zaptar.ru">info@zaptar.ru</a> оператора с пометкой «Актуализация персональных данных».</p>
+
+            <p>Срок обработки персональных данных является неограниченным. Я могу в любой момент отозвать свое согласие на обработку персональных данных, направив Оператору уведомление посредством электронной почты на электронный адрес Оператора <a href="mailto:info@zaptar.ru">info@zaptar.ru</a>. с пометкой «Отзыв согласия на обработку персональных данных».</p>
+
+            <p>Я подтверждаю, что действую по своей воли и в своём интересе. Данное Согласие является конкретным, информированным и сознательным.</p>
+
+            <p>Приложение № 2 к Политике обработки персональных данных</p>
+
+            <p>СОГЛАСИЕ НА РАССЫЛКУ ЭЛЕКТРОННЫХ СООБЩЕНИЙ </p>
+
+            <p>I. ТЕРМИНЫ И ОПРЕДЕЛЕНИЯ</p>
+
+            <p>Согласие на рассылку электронных сообщений – документ, являющийся основанием для рассылки материалов рекламного и (или) информационного характера посредством SMS-сервисов и (или) с электронной почты Индивидуального предпринимателя Буртолик Андрей Викторович ИНН 325001420520 ОГРНИП 325320000020536 <a href="mailto:info@zaptar.ru">info@zaptar.ru</a>.</p>
+
+            <p>Исполнитель – Буртолик Андрей Викторович ИНН 325001420520 ОГРНИП 325320000020536 <a href="mailto:info@zaptar.ru">info@zaptar.ru</a>.</p>
+
+            <p>Информация об оказываемых Исполнителем услугах размещена в информационной-телекоммуникационной сети Интернет в свободном доступе на Сайте <a href="http://zaptar.ru/">http://zaptar.ru/</a></p>
+
+            <p>Пользователь– лицо, зарегистрированное в личном кабинете на сайте <a href="http://zaptar.ru/">http://zaptar.ru/</a></p>
+
+            <p>Политика обработки персональных данных – документ, на основании которого пользователь дает свое согласие на рассылку электронных сообщений.</p>
+
+            <p>II. ОБЩИЕ ПОЛОЖЕНИЯ</p>
+
+            <p>2.1. Настоящее Согласие на рассылку электронных сообщений (далее – «Согласие») является основанием для направления Заказчику информационных и(или) рекламных сообщений по электронной почте <a href="mailto:info@zaptar.ru">info@zaptar.ru</a>.</p>
+
+            <p>2.2. Пользователь дает Согласие на получение рассылки электронных сообщений, которое действует со дня совершения акцепта Оферты на оказание услуг.</p>
+
+            <p>2.3. Пользователь подтверждает, что действует по своей воли и в своём интересе.</p>
+
+            <p>2.4. Настоящее Согласие является конкретным, информированным и сознательным.</p>
+
+            <p>III. АКТУАЛИЗАЦИЯ И ОТЗЫВ СОГЛАСИЯ НА РАССЫЛКУ ЭЛЕКТРОННЫХ СООБЩЕНИЙ</p>
+
+            <p>3.1. Пользователь ознакомлен с информацией о том, что в любой момент в течение всего срока действия настоящего Согласия, вправе отозвать согласие <em>на получение рассылки электронных сообщений</em> путём направления запроса на электронную почту Оператора: <a href="mailto:info@zaptar.ru">info@zaptar.ru</a>.</p>
+
+            <p>3.2. Пользователь дает Согласие на получение рассылки электронных сообщений, которое действует со дня совершения акцепта Оферты на оказание услуг и до получения отзыва указанного согласия, Индивидуальному предпринимателю Буртолик Андрей Викторович <a href="mailto:info@zaptar.ru">info@zaptar.ru</a>.</p>
+        </div>
+        <a href="/" class="btn btn--outlined btn--theme-secondary btn--size-m">На главную</a>
+    </section>
+</main>
+
+<footer
+        
+        
+            class="footer"
+        
+>
+    <div class="footer__top">
+        <div class="footer__top-container container">
+            <div class="footer__company footer-company">
+                <a class="logo" href="#">
+                    <img class="logo__img"
+                        
+                        
+                            src="static/img/logo/logo.svg"
+                        
+                        width="198" height="32" alt="zaptar"
+                    >
+                </a>
+
+                <ul class="footer-company__list">
+                    <li class="footer-company__item">
+                        <b>ИП:</b> <span>Долгошеев Евгений Максимович</span>
+                    </li>
+                    <li class="footer-company__item">
+                        <b>ИНН:</b> <span>643919885364</span>
+                    </li>
+                    <li class="footer-company__item">
+                        <b>ОГРНИП:</b> <span>322325600041305</span>
+                    </li>
+                    <li class="footer-company__item">
+                        <b>Юридический адрес:</b> <span>г. Дятьково, ул. Зои Космодемьянской, д. 36</span>
+                    </li>
+                    <li class="footer-company__item">
+                        <b>Фактический адрес:</b> <span>г. Брянск ул. Карачижская д. 104 к. 1</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer__category footer-info">
+                <h3 class="title-4 title-4--mb footer-info__title">Категории</h3>
+
+                <ul class="footer-info__list">
+                    <li>
+                        <a
+                           
+                           
+                                class="link link--light"
+                           
+                           href="#">Каталог автозапчастей</a>
+                    </li>
+                    <li>
+                        <a
+                            
+                            
+                                class="link link--light"
+                            
+                            href="#">Каталог ТО</a>
+                    </li>
+                    <li>
+                        <a
+                           
+                           
+                                class="link link--light"
+                           
+                           href="#">Автомобильные масла</a>
+                    </li>
+                    <li>
+                        <a
+                           
+                           
+                                class="link link--light"
+                           
+                           href="#">Аккамуляторы</a>
+                    </li>
+                    <li>
+                        <a
+                           
+                           
+                                class="link link--light"
+                           
+                           href="#">Автомобильные лампы</a>
+                    </li>
+                    <li>
+                        <a
+                           
+                           
+                                class="link link--light"
+                           
+                           href="#">Аксессуары</a>
+                    </li>
+                    <li>
+                        <a
+                           
+                           
+                                class="link link--light"
+                           
+                           href="#">Диски</a>
+                    </li>
+                    <li>
+                        <a
+                           
+                           
+                                class="link link--light"
+                           
+                           href="#">Колпаки</a>
+                    </li>
+                    <li>
+                        <a
+                           
+                           
+                                class="link link--light"
+                           
+                           href="#">Болты и Гайки</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer__contacts footer-info">
+                <h3 class="title-4 title-4--mb footer-info__title">Контакты</h3>
+
+                <p class="footer-info__subtitle">Клиентский отдел</p>
+                <ul class="footer-info__list">
+                    <li>
+                        <a
+                           
+                           
+                                class="link link--light"
+                           
+                           href="#">8 (930) 825 53-35</a>
+                    </li>
+                    <li>
+                        <a
+                           
+                           
+                                class="link link--light"
+                           
+                           href="#">8 (920) 605 53-35</a>
+                    </li>
+                </ul>
+
+                <p class="footer-info__subtitle">Клиентский отдел</p>
+                <ul class="footer-info__list">
+                    <li>
+                        <a
+                           
+                           
+                                class="link link--light"
+                           
+                           href="#">8 (930) 825 53-35</a>
+                    </li>
+                </ul>
+
+                <p class="footer-info__subtitle">E-mail</p>
+                <ul class="footer-info__list">
+                    <li>
+                        <a
+                           
+                           
+                                class="link link--light"
+                           
+                           href="#">info@zaptar.ru</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer__schedule footer-info">
+                <h3 class="title-4 title-4--mb footer-info__title">График работы</h3>
+
+                <p class="footer-info__subtitle">Будние дни</p>
+                <ul class="footer-info__list">
+                    <li>
+                        c 10:00 до 19:00
+                    </li>
+                </ul>
+
+                <p class="footer-info__subtitle">Суббота</p>
+                <ul class="footer-info__list">
+                    <li>
+                        c 10:00 до 16:00
+                    </li>
+                </ul>
+
+                <p class="footer-info__subtitle">Воскресение</p>
+                <ul class="footer-info__list">
+                    <li class="footer-info__list">
+                        Выходной
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer__bottom">
+        <div class="footer__bottom-container container">
+            <p class="footer__copyright">
+                <span>&copy; Интернет-магазин автозапчастей и комплектующих.</span> <span>Все права защищены - 2025</span>
+            </p>
+            <a
+               
+               
+                    class="link link--light"
+               
+               href="#">Политика конфиденциальности</a>
+            <a
+               
+               
+                    class="link link--light"
+               
+               href="#">Договор оферты</a>
+            <a
+               
+               
+                    class="link link--light"
+               
+               href="#">Способы оплаты</a>
+        </div>
+    </div>
+</footer>
+<div id="modal-auth" class="modal">
+    <div class="modal__inner modal__inner--open-top">
+        <div class="modal__content modal__content--radius">
+            <button type="button" class="modal__close modal__close--right" aria-label="Закрыть" data-btn="close">
+                <svg aria-hidden="true">
+                    <use xlink:href="static/img/symbol/sprite.svg#close"></use>
+                </svg>
+            </button>
+            <div class="modal__header">
+                <h3 class="title-4 title-4--mb">Авторизация</h3>
+            </div>
+            <div class="modal__wrapper">
+                <div class="alert alert--info">
+    <svg class="alert__ico">
+        <use xlink:href="static/img/symbol/sprite.svg#info-circle-fill"></use>
+    </svg>
+
+    <span class="alert__text">Чтобы просмотреть содержимое страницы, войдите в личный кабинет или зарегистрируйтесь</span>
+</div>
+
+
+                <form action="" class="modal__form form">
+                    <div class="modal__wrapper-input-login">
+                        <input type="text" class="form-input modal__input" id="login-auth" placeholder="Введите логин" required>
+                    </div>
+                    <div class="modal__wrapper-input-password">
+                        <input type="password" class="form-input" id="password-auth" placeholder="Введите пароль" required data-input-password>
+                        <button type="button" class="modal__input-password btn-lite btn-lite--compact btn-lite--theme-default" aria-label="Закрыть">
+                            <svg aria-hidden="true" class="btn-lite__ico">
+                                <use xlink:href="static/img/symbol/sprite.svg#eye-invisible"></use>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="modal__fields-row">
+                        <div class="checkbox checkbox--has-text">
+    <input id="checkbox-auth" type="checkbox" class="checkbox__input" checked required>
+    <label for="checkbox-auth" class="checkbox__label"></label>
+    <p class="checkbox__text">Запомнить данные</p>
+</div>
+
+                        <a href="#" class="modal__fields-item">Забыли пароль?</a>
+                    </div>
+
+
+                    <div class="modal__footer">
+                        <button type="submit" class="form__btn btn btn--filled btn--theme-primary btn--size-m">
+                            Войти
+                        </button>
+                        <a href="/registration.html" class="modal__link">
+                            Зарегистрироваться
+                        </a>
+                    </div>
+
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div id="modal-add-comment" class="modal">
+    <div class="modal__inner modal__inner--open-top">
+        <div class="modal__content modal__content--radius">
+            <button type="button" class="modal__close modal__close--right" data-btn="close">
+                <svg aria-hidden="true">
+                    <use xlink:href="static/img/symbol/sprite.svg#close"></use>
+                </svg>
+            </button>
+            <div class="modal__header">
+                <h3 class="title-4 title-4--mb">Добавление комментария</h3>
+            </div>
+            <div class="modal__wrapper">
+                <form action="" class="modal__form form">
+                    <textarea class="form-textarea" id="add-comment" placeholder="Введите текст"></textarea>
+
+                    <div class="modal__footer modal__footer--row">
+                        <button type="reset" class="btn btn--outlined btn--theme-secondary btn--size-m">
+                            Отменить
+                        </button>
+                        <button type="submit" class="btn btn--filled btn--theme-primary btn--size-m" data-btn="close" data-notification="notification-add-comment">
+                            Сохранить
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="modal-change-address" class="modal modal--wide">
+    <div class="modal__inner modal__inner--open-top">
+        <div class="modal__content modal__content--radius">
+            <button type="button" class="modal__close modal__close--right" data-btn="close">
+                <svg>
+                    <use xlink:href="static/img/symbol/sprite.svg#close"></use>
+                </svg>
+            </button>
+            <div class="modal__header">
+                <h3 class="title-4 title-4--mb">Изменить пункт самовывоза</h3>
+            </div>
+            <div class="modal__wrapper">
+                <form action="" class="modal__form form">
+                    <div class="form__radio-actions">
+                        <div class="form-radio">
+                            <input type="radio" id="change-address-1" name="option-address" value="first-address" checked>
+                            <label for="change-address-1">ул. Луначарского, д.202, строение 1, корпус 4, офис 1005</label>
+                        </div>
+                        <div class="form-radio">
+                            <input type="radio" id="change-address-2" name="option-address" value="second-address">
+                            <label for="change-address-2">ул. Встроченко, д. 1 (офис 405)</label>
+                        </div>
+                        <div class="form-radio">
+                            <input type="radio" id="change-address-3" name="option-address" value="third-address">
+                            <label for="change-address-3">ул. Клары-Цеткин, д. 25 (офис 1004)</label>
+                        </div>
+                    </div>
+                    <div class="modal__footer modal__footer--row">
+                        <button type="reset" class="btn btn--outlined btn--theme-secondary btn--size-m">
+                            Отменить
+                        </button>
+                        <button type="submit" class="btn btn--filled btn--theme-primary btn--size-m" data-btn="close" data-notification="notification-change-address">
+                            Изменить
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="modal-add-cart" class="modal">
+    <div class="modal__inner modal__inner--open-top">
+        <div class="modal__content modal__content--radius">
+            <button type="button" class="modal__close modal__close--right" data-btn="close">
+                <svg aria-hidden="true">
+                    <use xlink:href="static/img/symbol/sprite.svg#close"></use>
+                </svg>
+            </button>
+            <div class="modal__header">
+                <h3 class="title-4">Добавление в корзину</h3>
+                <div class="tag-bar">
+                    <div class="tag tag--theme-accent">
+                        <span class="tag__label">Philips 85 126</span>
+                    </div>
+                </div>
+            </div>
+            <div class="modal__wrapper">
+                <form action="" class="modal__form form">
+                    <div class="drawer__wrapper-input">
+                        <label for="product-add-cart">Привязка к автомобилю</label>
+                        <div class="select @@class" data-select data-select-id=product-add-cart @@data data-selected-value-first>
+    <div class="form-input select__search d-none" data-select-search>
+        <input type="text" name="select-category" data-select-input id="product-add-cart" class="select__input" value="@@value">
+        <span class="select__ico">
+            <svg aria-hidden="true">
+                <use xlink:href="static/img/symbol/sprite.svg#search"></use>
+            </svg>
+        </span>
+    </div>
+    <button type="button" class="form-input select__btn" data-select-btn>
+        <span data-select-text="Без привязки" class="select__text">Без привязки</span>
+        <span class="select__ico select__ico--rotate" data-select-ico>
+          <svg>
+            <use xlink:href="static/img/symbol/sprite.svg#chevron-down"></use>
+          </svg>
+        </span>
+    </button>
+    <div class="select__list" data-select-list>
+        <button type="button" class="select__item select__item--active select__item--selected"
+                data-select-value="value-1" @@dataItem1>Без привязки</button>
+        <button type="button" class="select__item"
+                data-select-value="value-2" @@dataItem2>Acura MDX I 3.5 4WD MDX I 3.5 л.с Q1231313</button>
+        <button type="button" class="select__item"
+                data-select-value="value-3" @@dataItem3>Привязать к авто 2</button>
+    </div>
+</div>
+
+                    </div>
+
+                    <div class="drawer__wrapper-input">
+                        <label for="add-comment">Комментарий</label>
+                        <textarea class="form-textarea" id="add-comment" placeholder="Введите текст"></textarea>
+                    </div>
+
+                    <div class="modal__footer modal__footer--row">
+                        <button type="reset" class="btn btn--outlined btn--theme-secondary btn--size-m" data-reset-select="product-add-cart">
+                            Отменить
+                        </button>
+                        <button type="submit" class="btn btn--filled btn--theme-primary btn--size-m" data-btn="close" data-notification="notification-add-comment">
+                            Добавить
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="modal-order-details" class="modal-order-details modal">
+    <div class="modal__inner modal__inner--open-top">
+        <div class="modal__content modal__content--radius">
+            <button type="button" class="modal__close modal__close--right" data-btn="close">
+                <svg aria-hidden="true">
+                    <use xlink:href="static/img/symbol/sprite.svg#close"></use>
+                </svg>
+            </button>
+            <div class="modal__header">
+                <h3 class="title-4">Информация по заказу</h3>
+                <div class="tag-bar">
+                    <div class="tag tag--theme-default">
+                        <span class="tag__desc">Бренд:</span>
+                        <span class="tag__label">Philips</span>
+                    </div>
+                    <div class="tag tag--theme-default">
+                        <span class="tag__desc">Артикул:</span>
+                        <span class="tag__label">215478</span>
+                    </div>
+                    <div class="tag tag--theme-default">
+                        <span class="tag__desc">Наименование:</span>
+                        <span class="tag__label">Лампа ксенон d2r 5000к</span>
+                    </div>
+                    <div class="tag tag--theme-accent">
+                        <span class="tag__desc">Сумма:</span>
+                        <span class="tag__label">1 427,00 руб</span>
+                    </div>
+                    <div class="tag tag--theme-accent">
+                        <span class="tag__desc">Поставщик:</span>
+                        <span class="tag__label">PRST</span>
+                    </div>
+                </div>
+            </div>
+            <div class="modal__wrapper">
+                <div class="modal-order-details__scrollbar scrollbar scrollbar--vertical">
+                    <ul class="stepper">
+                        <li class="stepper__item">
+                            <div class="stepper__wrap-ico">
+                                <svg class="stepper__ico" aria-hidden="true">
+                                    <use xlink:href="static/img/symbol/sprite.svg#check"></use>
+                                </svg>
+                            </div>
+                            <div class="stepper__title">Заказ</div>
+                            <div class="stepper__date">
+                                <span class="nowrap">04.11.2024</span>
+                                <span class="nowrap">16:45:32</span>
+                            </div>
+                            <div class="stepper__status">Получен</div>
+                        </li>
+                        <li class="stepper__item">
+                            <div class="stepper__wrap-ico">
+                                <svg class="stepper__ico" aria-hidden="true">
+                                    <use xlink:href="static/img/symbol/sprite.svg#check"></use>
+                                </svg>
+                            </div>
+                            <div class="stepper__title">Заказано</div>
+                            <div class="stepper__date">
+                                <span class="nowrap">04.11.2024</span>
+                                <span class="nowrap">16:47:22</span>
+                            </div>
+                            <div class="stepper__status">Идет работа поставщика</div>
+                        </li>
+                        <li class="stepper__item">
+                            <div class="stepper__wrap-ico">
+                                <svg class="stepper__ico" aria-hidden="true">
+                                    <use xlink:href="static/img/symbol/sprite.svg#check"></use>
+                                </svg>
+                            </div>
+                            <div class="stepper__title">Склад МСК</div>
+                            <div class="stepper__date">
+                                <span class="nowrap">04.11.2024 </span>
+                                <span class="nowrap">17:02:13</span>
+                            </div>
+                            <div class="stepper__status">Готов к отправке в филиал</div>
+                        </li>
+                        <li class="stepper__item">
+                            <div class="stepper__wrap-ico">
+                                <svg class="stepper__ico" aria-hidden="true">
+                                    <use xlink:href="static/img/symbol/sprite.svg#check"></use>
+                                </svg>
+                            </div>
+                            <div class="stepper__title">В доставке</div>
+                            <div class="stepper__date">
+                                <span class="nowrap">04.11.2024</span>
+                                <span class="nowrap">17:02:13</span>
+                                <span class="nowrap">с 10:00 до 18:00</span>
+                            </div>
+                            <div class="stepper__status">Отправлено в филиал, ожидайте доставку </div>
+                        </li>
+                        <li class="stepper__item stepper__item--reject">
+                            <div class="stepper__wrap-ico">
+                                <svg class="stepper__ico" aria-hidden="true">
+                                    <use xlink:href="static/img/symbol/sprite.svg#close"></use>
+                                </svg>
+                            </div>
+                            <div class="stepper__title">Отказ</div>
+                            <div class="stepper__date">
+                                <span class="nowrap">07.11.2024</span>
+                                <span class="nowrap">15:36:10</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div id="drawer-profile" class="drawer modal">
+    <div class="modal__inner modal__inner--open-right">
+        <div class="modal__content drawer__content">
+            <button type="button" class="modal__close modal__close--left" aria-label="Закрыть" data-btn="close">
+                <svg aria-hidden="true">
+                    <use xlink:href="static/img/symbol/sprite.svg#close"></use>
+                </svg>
+            </button>
+            <div class="drawer__header">
+                <h3 class="title-4">Профиль</h3>
+            </div>
+            <div class="drawer__info">
+                <div class="drawer__info-blocks">
+                    <div class="drawer__info-block">
+                        <span class="drawer__info-text drawer__info-text--light">ФИО</span>
+                        <span class="drawer__info-text">Иванов Иван Иванович</span>
+                    </div>
+                    <div class="drawer__info-block">
+                        <span class="drawer__info-text drawer__info-text--light">Номер в системе</span>
+                        <span class="drawer__info-text">11215478</span>
+                    </div>
+                    <div class="drawer__info-block">
+                        <span class="drawer__info-text drawer__info-text--light">Телефон</span>
+                        <span class="drawer__info-text">+7 (918) 500-00-00</span>
+                    </div>
+                    <div class="drawer__info-block">
+                        <span class="drawer__info-text drawer__info-text--light">E-mail</span>
+                        <span class="drawer__info-text">test@mail.ru</span>
+                    </div>
+                    <div class="drawer__info-block">
+                        <span class="drawer__info-text drawer__info-text--light">Город</span>
+                        <span class="drawer__info-text">Брянск</span>
+                    </div>
+                </div>
+                <button type="button" class="drawer__btn btn btn--outlined btn--theme-secondary btn--size-m" data-modal="drawer-profile-edit">
+                    Редактировать профиль
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="drawer-profile-edit" class="drawer modal">
+    <div class="modal__inner modal__inner--open-right">
+        <div class="modal__content drawer__content">
+            <button type="button" class="modal__close modal__close--left" aria-label="Закрыть" data-btn="close">
+                <svg aria-hidden="true">
+                    <use xlink:href="static/img/symbol/sprite.svg#close"></use>
+                </svg>
+            </button>
+            <div class="drawer__header">
+                <h3 class="title-4">Редактирование профиля</h3>
+            </div>
+            <div class="drawer__info">
+                <form action="" class="drawer__form form">
+                    <div class="drawer__wrapper-input">
+                        <label for="name-profile" class="form__label">
+                            ФИО
+                        </label>
+                        <input type="text" class="form-input" id="name-profile" placeholder="Введите ФИО" required>
+                    </div>
+                    <div class="drawer__wrapper-input">
+                        <label for="phone-profile" class="form__label">
+                            Телефон
+                        </label>
+                        <input type="tel" class="form-input" id="phone-profile" placeholder="+7 (000) 000-00-00" required>
+                    </div>
+                    <div class="drawer__wrapper-input">
+                        <label for="email-profile" class="form__label">
+                            E-mail
+                        </label>
+                        <input type="email" class="form-input" id="email-profile"  placeholder="Введите e-mail" required>
+                    </div>
+                    <div class="drawer__wrapper-input">
+                        <label for="password-profile" class="form__label">
+                            Пароль
+                        </label>
+                        <input type="password" class="form-input" id="password-profile" placeholder="Введите пароль" required>
+                    </div>
+                    <div class="drawer__wrapper-input">
+                        <label for="city-profile" class="form__label">
+                            Город
+                        </label>
+                        <input type="text" class="form-input" id="city-profile" placeholder="Введите город" required>
+                    </div>
+                </form>
+                <div class="drawer__footer">
+                    <button type="button" class="btn btn--outlined btn--theme-secondary btn--size-m" data-modal="drawer-profile">
+                        Назад
+                    </button>
+                    <button type="submit" class="btn btn--filled btn--theme-primary btn--size-m" data-btn="close">
+                        Сохранить
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="drawer-add-theme" class="drawer modal">
+    <div class="modal__inner modal__inner--open-right">
+        <div class="modal__content drawer__content">
+            <button type="button" class="modal__close modal__close--left" aria-label="Закрыть" data-btn="close">
+                <svg aria-hidden="true">
+                    <use xlink:href="static/img/symbol/sprite.svg#close"></use>
+                </svg>
+            </button>
+            <div class="drawer__header">
+                <h3 class="title-4">Добавление темы</h3>
+            </div>
+            <div class="drawer__info">
+                <form action="" class="drawer__form form">
+                    <div class="drawer__wrapper-input">
+                        <label for="theme-add" class="form__label">
+                        Тема
+                        </label>
+                        <input type="text" class="form-input" id="theme-add" placeholder="Введите тему сообщения">
+                    </div>
+                    <div class="drawer__wrapper-input">
+                        <div class="form-input form-file form-file--bg" tabindex="0" role="button" aria-label="Загрузить файл. Нажмите или перетащите файл сюда" data-dropzone >
+                            <input id="file-input" class="form-file__input" type="file" multiple data-input="file" />
+                            <label for="file-input"
+                            class="form-file__content"
+                            data-input="label"
+                            data-input-error="Один из файлов не является изображением. Доступные типы: jpg, png, bmp"
+                            data-input-placeholder="Нажмите в эту область, чтобы загрузить">
+                            Нажмите или перетащите файл в эту область, чтобы загрузить
+                            </label>
+                        </div>
+                    </div>
+                    <div class="drawer__wrapper-input">
+                        <textarea class="form-textarea" id="theme-text"  placeholder="Сообщение"></textarea>
+                    </div>
+                </form>
+                <div class="drawer__footer">
+                    <button type="reset" class="btn btn--outlined btn--theme-secondary btn--size-m">
+                        Отменить
+                    </button>
+                    <button type="submit" class="btn btn--filled btn--theme-primary btn--size-m" data-btn="close" data-notification="notification">
+                        Сохранить
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="drawer-filter-messages" class="drawer modal">
+    <div class="modal__inner modal__inner--open-right">
+        <div class="modal__content drawer__content">
+            <button type="button" class="modal__close modal__close--left" aria-label="Закрыть" data-btn="close">
+                <svg aria-hidden="true">
+                    <use xlink:href="static/img/symbol/sprite.svg#close"></use>
+                </svg>
+            </button>
+            <div class="drawer__header">
+                <h3 class="title-4">Фильтр</h3>
+            </div>
+            <div class="drawer__info">
+                <form action="" class="drawer__form form">
+                    <div class="drawer__radio-actions form__radio-actions">
+                        <div class="form-radio">
+                            <input type="radio" id="all" name="options-1" value="all" checked>
+                            <label for="all">Все</label>
+                        </div>
+                        <div class="form-radio">
+                            <input type="radio" id="read" name="options-1" value="read">
+                            <label for="read">Прочитанные</label>
+                        </div>
+                        <div class="form-radio">
+                            <input type="radio" id="unread" name="options-1" value="unread">
+                            <label for="unread">Непрочитанные</label>
+                        </div>
+                    </div>
+
+                    <div class="drawer__radio-actions form__radio-actions">
+                        <div class="form-radio">
+                            <input type="radio" class="form__radio" id="all-2" name="options-2" value="all-2" checked>
+                            <label for="all-2">Все</label>
+                        </div>
+                        <div class="form-radio">
+                            <input type="radio" class="form__radio" id="work" name="options-2" value="work">
+                            <label for="work">В работе</label>
+                        </div>
+                        <div class="form-radio">
+                            <input type="radio" class="form__radio" id="closed" name="options-2" value="closed">
+                            <label for="closed">Закрытые</label>
+                        </div>
+                    </div>
+
+                    <div class="drawer__wrapper-input">
+                        <label for="filter-messages">Тип сообщения</label>
+                        <div class="select @@class" data-select data-select-id=filter-messages @@data @@dataSelectItem>
+    <div class="form-input select__search d-none" data-select-search>
+        <input type="text" name="select-category" data-select-input id="filter-messages" class="select__input" value="@@value">
+        <span class="select__ico">
+            <svg aria-hidden="true">
+                <use xlink:href="static/img/symbol/sprite.svg#search"></use>
+            </svg>
+        </span>
+    </div>
+    <button type="button" class="form-input select__btn" data-select-btn>
+        <span data-select-text="Все сообщения" class="select__text">Все сообщения</span>
+        <span class="select__ico select__ico--rotate" data-select-ico>
+          <svg>
+            <use xlink:href="static/img/symbol/sprite.svg#chevron-down"></use>
+          </svg>
+        </span>
+    </button>
+    <div class="select__list" data-select-list>
+        <button type="button" class="select__item select__item--active @@classItem"
+                data-select-value="message-1" @@dataItem1>Сообщение 1</button>
+        <button type="button" class="select__item"
+                data-select-value="message-2" @@dataItem2>Сообщение 2</button>
+        <button type="button" class="select__item"
+                data-select-value="message-3" @@dataItem3>Сообщение 3</button>
+    </div>
+</div>
+
+                    </div>
+                    <div class="drawer__wrapper-input">
+                        <label for="reason">Причина возврата</label>
+                        <div class="select select--multiple" data-select data-select-id=reason data-select-multiple data-select-multipleSelectItem>
+    <div class="form-input select__search d-none" data-select-search>
+        <input type="text" name="select-category" data-select-input id="reason" class="select__input" value="@@value">
+        <span class="select__ico">
+            <svg aria-hidden="true">
+                <use xlink:href="static/img/symbol/sprite.svg#search"></use>
+            </svg>
+        </span>
+    </div>
+    <button type="button" class="form-input select__btn" data-select-btn>
+        <span data-select-text="Все причины возврата" class="select__text">Все причины возврата</span>
+        <span class="select__ico select__ico--rotate" data-select-ico>
+          <svg>
+            <use xlink:href="static/img/symbol/sprite.svg#chevron-down"></use>
+          </svg>
+        </span>
+    </button>
+    <div class="select__list" data-select-list>
+        <button type="button" class="select__item select__item--active select--multipleItem"
+                data-select-value="defective-1" data-select-multipleItem1>Брак 1</button>
+        <button type="button" class="select__item"
+                data-select-value="defective-2" data-select-multipleItem2>Брак 2</button>
+        <button type="button" class="select__item"
+                data-select-value="defective-3" data-select-multipleItem3>Брак 3</button>
+    </div>
+</div>
+
+                    </div>
+                </form>
+                <div class="drawer__footer">
+                    <button type="reset" class="btn btn--outlined btn--theme-secondary btn--size-m" data-reset-select="reason, filter-messages">
+                        Сбросить
+                    </button>
+                    <button type="submit" class="btn btn--filled btn--theme-primary btn--size-m" data-btn="close" data-notification="notification">
+                        Применить
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="drawer-filter-search" class="drawer modal">
+    <div class="modal__inner modal__inner--open-right">
+        <div class="modal__content drawer__content">
+            <button type="button" class="modal__close modal__close--left" data-btn="close">
+                <svg>
+                    <use xlink:href="static/img/symbol/sprite.svg#close"></use>
+                </svg>
+            </button>
+            <div class="drawer__header">
+                <h3 class="title-4">Фильтр</h3>
+            </div>
+            <div class="drawer__info">
+                <form action="" class="drawer__form form search-filter">
+                    <h2 class="title-4">Бренд</h2>
+
+                    <ul class="search-filter__list">
+                        <li class="search-filter__item">
+                            <div class="search-filter__checkbox checkbox checkbox--has-text">
+                                <input id="search-filter-checkbox" type="checkbox" class="checkbox__input">
+                                <label for="search-filter-checkbox" class="checkbox__label"></label>
+                                <p class="checkbox__text">OSMAR</p>
+                            </div>
+                            <div class="search-filter__price">
+                                от 66 руб
+                            </div>
+                        </li>
+                        <li class="search-filter__item">
+                            <div class="search-filter__checkbox checkbox checkbox--has-text">
+                                <input id="search-filter-checkbox-2" type="checkbox" class="checkbox__input">
+                                <label for="search-filter-checkbox-2" class="checkbox__label"></label>
+                                <p class="checkbox__text">OSMAR</p>
+                            </div>
+                            <div class="search-filter__price">
+                                от 66 руб
+                            </div>
+                        </li>
+                    </ul>
+                </form>
+
+                <div class="drawer__footer">
+                    <button type="submit" class="btn btn--filled btn--theme-primary btn--size-m" data-btn="close">
+                        Показать аналоги
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="drawer-user" class="drawer modal">
+    <div class="modal__inner modal__inner--open-right">
+        <div class="modal__content drawer__content">
+            <button type="button" class="modal__close modal__close--left" aria-label="Закрыть" data-btn="close">
+                <svg>
+                    <use xlink:href="static/img/symbol/sprite.svg#close"></use>
+                </svg>
+            </button>
+            <div class="drawer__header">
+                <h3 class="title-4">Меню профиля</h3>
+            </div>
+            <nav class="drawer-dropdown__menu">
+                <a class="dropdown-menu__link" data-modal="drawer-profile" href="#">
+                    <svg aria-hidden="true" class="dropdown-menu__ico">
+                        <use xlink:href="static/img/symbol/sprite.svg#user"></use>
+                    </svg>
+                    Профиль
+                </a>
+                <a class="dropdown-menu__link" href="#">
+                    <svg aria-hidden="true" class="dropdown-menu__ico">
+                        <use xlink:href="static/img/symbol/sprite.svg#dollar"></use>
+                    </svg>
+                    Мои финансы
+                </a>
+                <a class="dropdown-menu__link" href="#">
+                    <svg aria-hidden="true" class="dropdown-menu__ico">
+                        <use xlink:href="static/img/symbol/sprite.svg#line-chart"></use>
+                    </svg>
+                    Ценообразование
+                </a>
+                <a class="dropdown-menu__link" href="#">
+                    <svg aria-hidden="true" class="dropdown-menu__ico">
+                        <use xlink:href="static/img/symbol/sprite.svg#credit-card"></use>
+                    </svg>
+                    Пополнить баланс
+                </a>
+            </nav>
+
+            <div class="drawer__contacts">
+                <div class="drawer__contacts-title">Контакты</div>
+
+                <a class="contact-link" href="tel:89308255335">
+                    <svg class="contact-link__ico" aria-hidden="true">
+                        <use xlink:href="static/img/symbol/sprite.svg#phone"></use>
+                    </svg>
+
+                    <span class="contact-link__label">8 (930) 825 53-35</span>
+                </a>
+
+                <a class="contact-link" href="tel:89206055335">
+                    <svg class="contact-link__ico" aria-hidden="true">
+                        <use xlink:href="static/img/symbol/sprite.svg#phone"></use>
+                    </svg>
+
+                    <span class="contact-link__label">8 (920) 605 53-35</span>
+                </a>
+
+                <a class="contact-link" href="mailto:info@zaptar.ru">
+                    <svg class="contact-link__ico" aria-hidden="true">
+                        <use xlink:href="static/img/symbol/sprite.svg#mail"></use>
+                    </svg>
+
+                    <span class="contact-link__label">info@zaptar.ru</span>
+                </a>
+            </div>
+
+            <a class="dropdown-menu__link dropdown-menu__link--logout" href="#">
+                <svg aria-hidden="true" class="dropdown-menu__ico">
+                    <use xlink:href="static/img/symbol/sprite.svg#logout"></use>
+                </svg>
+                Выйти
+            </a>
+        </div>
+    </div>
+</div>
+
+<div id="drawer-catalog" class="drawer modal">
+    <div class="modal__inner modal__inner--open-left">
+        <div class="modal__content drawer__content">
+            <button type="button" class="modal__close modal__close--left" aria-label="Закрыть" data-btn="close">
+                <svg aria-hidden="true">
+                    <use xlink:href="static/img/symbol/sprite.svg#close"></use>
+                </svg>
+            </button>
+            <div class="drawer__header">
+                <h3 class="title-4">Меню каталога</h3>
+            </div>
+            <nav class="drawer-dropdown__menu">
+                <a class="dropdown-menu__link" href="catalog.html">
+                    Каталог запчастей
+                </a>
+                <a class="dropdown-menu__link" href="#">
+                    Каталог ТО
+                </a>
+                <a class="dropdown-menu__link" href="#">
+                    Масла
+                </a>
+                <a class="dropdown-menu__link" href="#">
+                    Аккумуляторы
+                </a>
+                <a class="dropdown-menu__link" href="#">
+                    Автолампы
+                </a>
+                <a class="dropdown-menu__link" href="#">
+                    Шины
+                </a>
+                <a class="dropdown-menu__link" href="#">
+                    Диски
+                </a>
+                <a class="dropdown-menu__link" href="#">
+                    Колпаки
+                </a>
+                <a class="dropdown-menu__link" href="#">
+                    Болты, Гайки
+                </a>
+            </nav>
+        </div>
+    </div>
+</div>
+
+<div id="drawer-add-car" class="drawer modal">
+    <div class="modal__inner modal__inner--open-right">
+        <div class="modal__content drawer__content">
+            <button type="button" aria-label="Закрыть" class="modal__close modal__close--left" data-btn="close">
+                <svg aria-hidden="true">
+                    <use xlink:href="static/img/symbol/sprite.svg#close"></use>
+                </svg>
+            </button>
+            <div class="drawer__header">
+                <h3 class="title-4">Добавление автомобиля</h3>
+            </div>
+            <div class="drawer__info">
+                <form action="" class="drawer__form form">
+                    <div class="drawer__wrapper-input">
+                        <label for="car-add" class="form__label">
+                            Название
+                        </label>
+                        <input type="text" class="form-input" id="car-add" placeholder="Введите название" >
+                    </div>
+                    <div class="drawer__wrapper-input">
+                        <label for="car-add-name" class="form__label">
+                            ФИО
+                        </label>
+                        <input type="text" class="form-input" id="car-add-name" placeholder="Введите ФИО" >
+                    </div>
+                    <div class="drawer__wrapper-input">
+                        <label for="car-add-phone" class="form__label">
+                            Телефон
+                        </label>
+                        <input type="tel" class="form-input" id="car-add-phone" placeholder="+7 (000) 000-00-00" >
+                    </div>
+                    <div class="drawer__form-container">
+                        <div class="drawer__radio-actions form__radio-actions">
+                            <div class="form-radio">
+                                <input type="radio" id="car-add-vin-radio" name="options-car" value="vin" checked>
+                                <label for="car-add-vin-radio">VIN номер</label>
+                            </div>
+                            <div class="form-radio">
+                                <input type="radio" id="car-add-number-radio" name="options-car" value="read">
+                                <label for="car-add-number-radio">Номер кузова (FRAME)</label>
+                            </div>
+                        </div>
+                        <div class="drawer__form-content">
+                            <input type="text" class="form-input" id="car-add-vin" placeholder="Введите VIN" >
+                            <div class="select @@class" data-select data-select-id=car-add-brand data-select-sort data-select-sortSelectItem>
+    <div class="form-input select__search d-none" data-select-search>
+        <input type="text" name="select-category" data-select-input id="car-add-brand" class="select__input" value="@@value">
+        <span class="select__ico">
+            <svg aria-hidden="true">
+                <use xlink:href="static/img/symbol/sprite.svg#search"></use>
+            </svg>
+        </span>
+    </div>
+    <button type="button" class="form-input select__btn" data-select-btn>
+        <span data-select-text="Выберите марку автомобиля" class="select__text">Выберите марку автомобиля</span>
+        <span class="select__ico select__ico--rotate" data-select-ico>
+          <svg>
+            <use xlink:href="static/img/symbol/sprite.svg#chevron-down"></use>
+          </svg>
+        </span>
+    </button>
+    <div class="select__list" data-select-list>
+        <button type="button" class="select__item select__item--active @@classItem"
+                data-select-value="alfa-romeo" data-select-sortItem1>Alfa Romeo</button>
+        <button type="button" class="select__item"
+                data-select-value="lexus" data-select-sortItem2>Lexus</button>
+        <button type="button" class="select__item"
+                data-select-value="mercedes" data-select-sortItem3>Mercedes</button>
+    </div>
+</div>
+
+                            <div class="select @@class" data-select data-select-id=car-add-model data-select-sort data-select-sortSelectItem>
+    <div class="form-input select__search d-none" data-select-search>
+        <input type="text" name="select-category" data-select-input id="car-add-model" class="select__input" value="@@value">
+        <span class="select__ico">
+            <svg aria-hidden="true">
+                <use xlink:href="static/img/symbol/sprite.svg#search"></use>
+            </svg>
+        </span>
+    </div>
+    <button type="button" class="form-input select__btn" data-select-btn>
+        <span data-select-text="Выберите модель автомобиля" class="select__text">Выберите модель автомобиля</span>
+        <span class="select__ico select__ico--rotate" data-select-ico>
+          <svg>
+            <use xlink:href="static/img/symbol/sprite.svg#chevron-down"></use>
+          </svg>
+        </span>
+    </button>
+    <div class="select__list" data-select-list>
+        <button type="button" class="select__item select__item--active @@classItem"
+                data-select-value="model-1" data-select-sortItem1>Model 1</button>
+        <button type="button" class="select__item"
+                data-select-value="model-2" data-select-sortItem2>Model 2</button>
+        <button type="button" class="select__item"
+                data-select-value="model-3" data-select-sortItem3>Model 3</button>
+    </div>
+</div>
+
+                            <div class="select @@class" data-select data-select-id=car-add-power data-select-sort data-select-sortSelectItem>
+    <div class="form-input select__search d-none" data-select-search>
+        <input type="text" name="select-category" data-select-input id="car-add-power" class="select__input" value="@@value">
+        <span class="select__ico">
+            <svg aria-hidden="true">
+                <use xlink:href="static/img/symbol/sprite.svg#search"></use>
+            </svg>
+        </span>
+    </div>
+    <button type="button" class="form-input select__btn" data-select-btn>
+        <span data-select-text="Выберите объем двигателя и мощность" class="select__text">Выберите объем двигателя и мощность</span>
+        <span class="select__ico select__ico--rotate" data-select-ico>
+          <svg>
+            <use xlink:href="static/img/symbol/sprite.svg#chevron-down"></use>
+          </svg>
+        </span>
+    </button>
+    <div class="select__list" data-select-list>
+        <button type="button" class="select__item select__item--active @@classItem"
+                data-select-value="power-1" data-select-sortItem1>Power 1</button>
+        <button type="button" class="select__item"
+                data-select-value="power-2" data-select-sortItem2>power 2</button>
+        <button type="button" class="select__item"
+                data-select-value="power-3" data-select-sortItem3>power 3</button>
+    </div>
+</div>
+
+                            <input type="text" class="form-input" id="car-add-license" placeholder="Введите госномер" >
+                            <input type="text" class="form-input" id="car-add-mileage" placeholder="Введите пробег" >
+                            <div class="select @@class" data-select data-select-id=car-add-year data-select-sort data-select-sortSelectItem>
+    <div class="form-input select__search d-none" data-select-search>
+        <input type="text" name="select-category" data-select-input id="car-add-year" class="select__input" value="@@value">
+        <span class="select__ico">
+            <svg aria-hidden="true">
+                <use xlink:href="static/img/symbol/sprite.svg#search"></use>
+            </svg>
+        </span>
+    </div>
+    <button type="button" class="form-input select__btn" data-select-btn>
+        <span data-select-text="Выберите год выпуска автомобиля" class="select__text">Выберите год выпуска автомобиля</span>
+        <span class="select__ico select__ico--rotate" data-select-ico>
+          <svg>
+            <use xlink:href="static/img/symbol/sprite.svg#chevron-down"></use>
+          </svg>
+        </span>
+    </button>
+    <div class="select__list" data-select-list>
+        <button type="button" class="select__item select__item--active @@classItem"
+                data-select-value="2021" data-select-sortItem1>2021</button>
+        <button type="button" class="select__item"
+                data-select-value="2022" data-select-sortItem2>2022</button>
+        <button type="button" class="select__item"
+                data-select-value="2023" data-select-sortItem3>2023</button>
+    </div>
+</div>
+
+                            <textarea class="form-textarea" id="car-add-text" placeholder="Комментарий к автомобилю"></textarea>
+                            <div class="form-input form-file-2" tabindex="0" role="button" aria-label="Загрузить фото автомобиля" data-dropzone data-input="file-download-wrapper">
+                                <input id="fileInput-2" class="form-file-2__input" type="file" data-input="file-download" />
+                                <label for="fileInput-2"
+                                       class="form-file-2__content"
+                                       data-input="file-download-label"
+                                       data-input-error="Один из файлов не является изображением. Доступные типы: jpg, png, bmp"
+                                       data-input-placeholder="Загрузить фото автомобиля"
+                                >
+                                    <span class="form-file-2__action">Загрузить фото автомобиля</span>
+                                </label>
+                            </div>
+                            <div class="form-input form-file-2__info d-none" data-input="file-download-block">
+                                <img src="" alt="" data-input="file-download-img" class="form-file-2__img">
+                                <span class="form-file-2__text" data-input="file-download-text"></span>
+                                <button type="button" aria-label="Удалить" class="form-file-2__delete btn-lite btn-lite--compact btn-lite--theme-default" data-input="file-download-delete">
+                                    <svg class="btn-lite__ico btn-lite__ico--size-l" aria-hidden="true">
+                                        <use xlink:href="static/img/symbol/sprite.svg#delete"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <div class="drawer__footer">
+                    <button type="reset" class="btn btn--outlined btn--theme-secondary btn--size-m" data-reset-select="car-add-power, car-add-year, car-add-model, car-add-brand">
+                        Отменить
+                    </button>
+                    <button type="submit" class="btn btn--filled btn--theme-primary btn--size-m" data-btn="close" data-notification="notification">
+                        Сохранить
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="drawer-edit-car" class="drawer modal">
+    <div class="modal__inner modal__inner--open-right">
+        <div class="modal__content drawer__content">
+            <button type="button" class="modal__close modal__close--left" aria-label="Закрыть" data-btn="close">
+                <svg aria-hidden="true">
+                    <use xlink:href="static/img/symbol/sprite.svg#close"></use>
+                </svg>
+            </button>
+            <div class="drawer__header">
+                <h3 class="title-4">Редактировать информацию</h3>
+            </div>
+            <div class="drawer__info">
+                <form action="" class="drawer__form form">
+                    <div class="drawer__wrapper-input">
+                        <label for="car-edit" class="form__label">
+                            Название
+                        </label>
+                        <input type="text" class="form-input" id="car-edit" value="Мой авто" placeholder="Введите название" >
+                    </div>
+                    <div class="drawer__wrapper-input">
+                        <label for="car-edit-name" class="form__label">
+                            ФИО
+                        </label>
+                        <input type="text" class="form-input" id="car-edit-name" value="Иванов Иван Иванович" placeholder="Введите ФИО" >
+                    </div>
+                    <div class="drawer__wrapper-input">
+                        <label for="car-edit-phone" class="form__label">
+                            Телефон
+                        </label>
+                        <input type="tel" class="form-input" id="car-edit-phone" value="+7 (985) 111-00-00" placeholder="+7 (000) 000-00-00" >
+                    </div>
+                    <div class="drawer__form-container">
+                        <div class="drawer__radio-actions form__radio-actions">
+                            <div class="form-radio">
+                                <input type="radio" id="card-edit-vin-radio" name="options-car" value="vin" checked>
+                                <label for="card-edit-vin-radio">VIN номер</label>
+                            </div>
+                            <div class="form-radio">
+                                <input type="radio" id="card-edit-number-radio" name="options-car" value="read">
+                                <label for="card-edit-number-radio">Номер кузова (FRAME)</label>
+                            </div>
+                        </div>
+                        <div class="drawer__form-content">
+                            <input type="text" class="form-input" id="car-edit-vin" value="Q1231313" placeholder="Введите VIN" >
+                            <input type="text" class="form-input" id="car-edit-license" value="T374OB" placeholder="Введите госномер" >
+                            <input type="text" class="form-input" id="car-edit-mileage" value="120 000" placeholder="Введите пробег" >
+                            <div class="select @@class" data-select data-select-id=car-edit-year data-select-sort data-selected-value-first>
+    <div class="form-input select__search d-none" data-select-search>
+        <input type="text" name="select-category" data-select-input id="car-edit-year" class="select__input" value="2023">
+        <span class="select__ico">
+            <svg aria-hidden="true">
+                <use xlink:href="static/img/symbol/sprite.svg#search"></use>
+            </svg>
+        </span>
+    </div>
+    <button type="button" class="form-input select__btn" data-select-btn>
+        <span data-select-text="Выберите год выпуска автомобиля" class="select__text">Выберите год выпуска автомобиля</span>
+        <span class="select__ico select__ico--rotate" data-select-ico>
+          <svg>
+            <use xlink:href="static/img/symbol/sprite.svg#chevron-down"></use>
+          </svg>
+        </span>
+    </button>
+    <div class="select__list" data-select-list>
+        <button type="button" class="select__item select__item--active select__item--selected"
+                data-select-value="2021" data-select-sortItem1>2021</button>
+        <button type="button" class="select__item"
+                data-select-value="2022" data-select-sortItem2>2022</button>
+        <button type="button" class="select__item"
+                data-select-value="2023" data-select-sortItem3>2023</button>
+    </div>
+</div>
+
+                            <textarea class="form-textarea" id="car-edit-text" placeholder="Комментарий к автомобилю"></textarea>
+                            <div class="form-input form-file-2 d-none" tabindex="0" role="button" aria-label="Загрузить фото автомобиля" data-dropzone data-input="file-download-wrapper">
+                                <input id="fileInput-3" class="form-file-2__input" type="file" data-input="file-download" />
+                                <label for="fileInput-3"
+                                       class="form-file-2__content"
+                                       data-input="file-download-label"
+                                       data-input-error="Один из файлов не является изображением. Доступные типы: jpg, png, bmp"
+                                       data-input-placeholder="Загрузить фото автомобиля"
+                                >
+                                    <span class="form-file-2__action">Загрузить фото автомобиля</span>
+                                </label>
+                            </div>
+                            <div class="form-input form-file-2__info" data-input="file-download-block">
+                                <img src="static/img/background/product-car.jpg" alt="Автомобиль" data-input="file-download-img" class="form-file-2__img">
+                                <span class="form-file-2__text" data-input="file-download-text">product-car.jpg</span>
+                                <button type="button" class="form-file-2__delete btn-lite btn-lite--compact btn-lite--theme-default" aria-label="Удалить" data-input="file-download-delete">
+                                    <svg class="btn-lite__ico btn-lite__ico--size-l" aria-hidden="true">
+                                        <use xlink:href="static/img/symbol/sprite.svg#delete"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <div class="drawer__footer">
+                    <button type="reset" class="btn btn--outlined btn--theme-secondary btn--size-m" data-reset-select="car-edit-year" data-btn="close">
+                        Отменить
+                    </button>
+                    <button type="submit" class="btn btn--filled btn--theme-primary btn--size-m" data-btn="close" data-notification="notification">
+                        Сохранить
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="drawer-recharge" class="drawer modal">
+    <div class="modal__inner modal__inner--open-right">
+        <div class="modal__content drawer__content">
+            <button type="button" class="modal__close modal__close--left" aria-label="Закрыть" data-btn="close">
+                <svg aria-hidden="true">
+                    <use xlink:href="static/img/symbol/sprite.svg#close"></use>
+                </svg>
+            </button>
+            <div class="drawer__header">
+                <h3 class="title-4">Пополнение баланса</h3>
+            </div>
+            <div class="drawer__info" data-recharge>
+                <form action="" class="drawer__form form">
+                    <div class="drawer__wrapper-input">
+                        <label for="recharge-method" class="form__label">Способ оплаты</label>
+                        <div class="select @@class" data-select data-select-id=recharge-method @@data @@dataSelectItem>
+    <div class="form-input select__search d-none" data-select-search>
+        <input type="text" name="select-category" data-select-input id="recharge-method" class="select__input" value="@@value">
+        <span class="select__ico">
+            <svg aria-hidden="true">
+                <use xlink:href="static/img/symbol/sprite.svg#search"></use>
+            </svg>
+        </span>
+    </div>
+    <button type="button" class="form-input select__btn" data-select-btn>
+        <span data-select-text="Выберите способ оплаты" class="select__text">Выберите способ оплаты</span>
+        <span class="select__ico select__ico--rotate" data-select-ico>
+          <svg>
+            <use xlink:href="static/img/symbol/sprite.svg#chevron-down"></use>
+          </svg>
+        </span>
+    </button>
+    <div class="select__list" data-select-list>
+        <button type="button" class="select__item select__item--active @@classItem"
+                data-select-value="payment-1" @@dataItem1>Система быстрых платежей QR-код</button>
+        <button type="button" class="select__item"
+                data-select-value="payment-2" @@dataItem2>Система быстрых платежей</button>
+        <button type="button" class="select__item"
+                data-select-value="payment-3" @@dataItem3>Система быстрых платежей</button>
+    </div>
+</div>
+
+                    </div>
+                    <div class="drawer__wrapper-input">
+                        <label for="recharge-total" class="form__label">
+                            Сумма
+                        </label>
+                        <div class="form-input-tail form-input-tail--disabled" tabindex="0" data-input-tail>
+                            <input type="text" class="form-input-tail__input" id="recharge-total" placeholder="Введите сумму">
+                            <span class="form-input-tail__label">руб</span>
+                        </div>
+                    </div>
+                </form>
+                <div class="drawer__footer">
+                    <button type="reset" class="btn btn--outlined btn--theme-secondary btn--size-m" data-recharge-reset>
+                        Сбросить
+                    </button>
+                    <a href="#" class="btn btn--filled btn--theme-primary btn--size-m" data-recharge-submit>
+                        Применить
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="drawer-deduce" class="drawer modal">
+    <div class="modal__inner modal__inner--open-right">
+        <div class="modal__content drawer__content">
+            <button type="button" class="modal__close modal__close--left" aria-label="Закрыть" data-btn="close">
+                <svg aria-hidden="true">
+                    <use xlink:href="static/img/symbol/sprite.svg#close"></use>
+                </svg>
+            </button>
+            <div class="drawer__header">
+                <h3 class="title-4">Запрос на вывод средств</h3>
+            </div>
+            <div class="drawer__info" data-deduce>
+                <form action="" class="drawer__form form">
+                    <div class="drawer__wrapper-input">
+                        <label for="deduce-total" class="form__label">
+                            Сумма
+                        </label>
+                        <div class="form-input-tail" tabindex="0" data-input-tail>
+                            <input type="text" class="form-input-tail__input" id="deduce-total" placeholder="Введите сумму" data-deduce-input>
+                            <span class="form-input-tail__label">руб</span>
+                        </div>
+                    </div>
+                </form>
+                <div class="drawer__footer">
+                    <button type="reset" class="btn btn--outlined btn--theme-secondary btn--size-m" data-deduce-reset>
+                        Сбросить
+                    </button>
+                    <button type="submit" class="btn btn--filled btn--theme-primary btn--size-m" data-deduce-submit data-notification="notification-deduce">
+                        Применить
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="drawer-filter-orders" class="drawer modal">
+    <div class="modal__inner modal__inner--open-right">
+        <div class="modal__content drawer__content">
+            <button type="button" class="modal__close modal__close--left" data-btn="close">
+                <svg aria-hidden="true">
+                    <use xlink:href="static/img/symbol/sprite.svg#close"></use>
+                </svg>
+            </button>
+            <div class="drawer__header">
+                <h3 class="title-4">Фильтр</h3>
+            </div>
+            <div class="drawer__info">
+                <form action="" class="drawer__form form">
+                    <div class="drawer__wrapper-input">
+                        <label for="order-issue-date">Дата оформления</label>
+                        <div class="select @@class" data-select data-select-id=order-issue-date @@data data-selected-value-first>
+    <div class="form-input select__search d-none" data-select-search>
+        <input type="text" name="select-category" data-select-input id="order-issue-date" class="select__input" value="@@value">
+        <span class="select__ico">
+            <svg aria-hidden="true">
+                <use xlink:href="static/img/symbol/sprite.svg#search"></use>
+            </svg>
+        </span>
+    </div>
+    <button type="button" class="form-input select__btn" data-select-btn>
+        <span data-select-text="Сегодня" class="select__text">Сегодня</span>
+        <span class="select__ico select__ico--rotate" data-select-ico>
+          <svg>
+            <use xlink:href="static/img/symbol/sprite.svg#chevron-down"></use>
+          </svg>
+        </span>
+    </button>
+    <div class="select__list" data-select-list>
+        <button type="button" class="select__item select__item--active select__item--selected"
+                data-select-value="today" @@dataItem1>Сегодня</button>
+        <button type="button" class="select__item"
+                data-select-value="7-days" @@dataItem2>За последние 7 дней</button>
+        <button type="button" class="select__item"
+                data-select-value="choose-days" data-specific-option>Выбрать дни</button>
+    </div>
+</div>
+
+                    </div>
+
+                    <div class="drawer__wrapper-input d-none" data-specific-field="choose-days">
+                        <span class="form__label">Диапазон дней</span>
+                        <div class="form-date-range">
+                            <input class="form-input flatpickr flatpickr-input" type="text" id="order-date" placeholder="Выберите диапазон дней"/>
+                        </div>
+                    </div>
+                    <div class="drawer__wrapper-input">
+                        <label for="order-article" class="form__label">
+                            Артикул
+                        </label>
+                        <input type="text" class="form-input" id="order-article" placeholder="Введите номер" >
+                    </div>
+                    <div class="drawer__wrapper-input">
+                        <label for="order-brand" class="form__label">
+                            Бренд
+                        </label>
+                        <input type="text" class="form-input" id="order-brand" placeholder="Введите наименование" >
+                    </div>
+                    <div class="drawer__wrapper-input">
+                        <label for="order-number" class="form__label">
+                            Номер заказа
+                        </label>
+                        <input type="text" class="form-input" id="order-number" placeholder="Введите номер" >
+                    </div>
+                    <div class="drawer__wrapper-input">
+                        <label for="order-pick-up">Пункт самовывоза</label>
+                        <div class="select @@class" data-select data-select-id=order-pick-up @@data data-selected-value-first>
+    <div class="form-input select__search d-none" data-select-search>
+        <input type="text" name="select-category" data-select-input id="order-pick-up" class="select__input" value="@@value">
+        <span class="select__ico">
+            <svg aria-hidden="true">
+                <use xlink:href="static/img/symbol/sprite.svg#search"></use>
+            </svg>
+        </span>
+    </div>
+    <button type="button" class="form-input select__btn" data-select-btn>
+        <span data-select-text="ул. Луначарского, д.202, строение 1, корпус 4, офис 1005" class="select__text">ул. Луначарского, д.202, строение 1, корпус 4, офис 1005</span>
+        <span class="select__ico select__ico--rotate" data-select-ico>
+          <svg>
+            <use xlink:href="static/img/symbol/sprite.svg#chevron-down"></use>
+          </svg>
+        </span>
+    </button>
+    <div class="select__list" data-select-list>
+        <button type="button" class="select__item select__item--active select__item--selected"
+                data-select-value="first-address" @@dataItem1> ул. Луначарского, д.202, строение 1, корпус 4, офис 1005</button>
+        <button type="button" class="select__item"
+                data-select-value="second-address" @@dataItem2>ул. Встроченко, д. 1 (офис 405)</button>
+        <button type="button" class="select__item"
+                data-select-value="third-address" @@dataItem3>ул. Клары-Цеткин, д. 25 (офис 1004)</button>
+    </div>
+</div>
+
+                    </div>
+                </form>
+                <div class="drawer__footer">
+                    <button type="reset" class="btn btn--outlined btn--theme-secondary btn--size-m" data-reset-select="order-issue-date, order-pick-up">
+                        Сбросить
+                    </button>
+                    <button type="submit" class="btn btn--filled btn--theme-primary btn--size-m" data-btn="close">
+                        Применить
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="drawer-create-discussion" class="drawer modal">
+    <div class="modal__inner modal__inner--open-right">
+        <div class="modal__content drawer__content">
+            <button type="button" class="modal__close modal__close--left" data-btn="close">
+                <svg aria-hidden="true">
+                    <use xlink:href="static/img/symbol/sprite.svg#close"></use>
+                </svg>
+            </button>
+            <div class="drawer__header">
+                <h3 class="title-4">Создание обсуждения</h3>
+            </div>
+            <div class="drawer__info" data-deduce>
+                <form action="" class="drawer__form form">
+                    <div class="drawer__wrapper-input">
+                        <label for="discussion-theme">Тема</label>
+                        <div class="select @@class" data-select data-select-id=discussion-theme @@data data-selected-value-first>
+    <div class="form-input select__search d-none" data-select-search>
+        <input type="text" name="select-category" data-select-input id="discussion-theme" class="select__input" value="@@value">
+        <span class="select__ico">
+            <svg aria-hidden="true">
+                <use xlink:href="static/img/symbol/sprite.svg#search"></use>
+            </svg>
+        </span>
+    </div>
+    <button type="button" class="form-input select__btn" data-select-btn>
+        <span data-select-text="Недостача" class="select__text">Недостача</span>
+        <span class="select__ico select__ico--rotate" data-select-ico>
+          <svg>
+            <use xlink:href="static/img/symbol/sprite.svg#chevron-down"></use>
+          </svg>
+        </span>
+    </button>
+    <div class="select__list" data-select-list>
+        <button type="button" class="select__item select__item--active select__item--selected"
+                data-select-value="deficit" data-specific-option>Недостача</button>
+        <button type="button" class="select__item"
+                data-select-value="when-come" @@dataItem2>Когда придет?</button>
+        <button type="button" class="select__item"
+                data-select-value="free-question" @@dataItem3>Произвольный вопрос</button>
+    </div>
+</div>
+
+                    </div>
+                    <div class="drawer__wrapper-input" data-specific-field="deficit">
+                        <label for="discussion-count" class="form__label">
+                            Количество к возврату<span>*</span>
+                        </label>
+                        <div class="form-input-tail" tabindex="0" data-input-tail>
+                            <input type="text" class="form-input-tail__input" id="discussion-count" placeholder="Укажите количество" data-deduce-input>
+                            <span class="form-input-tail__label">шт</span>
+                        </div>
+                    </div>
+                    <div class="drawer__wrapper-input">
+                        <div class="form-input form-file form-file--bg" tabindex="0" role="button" aria-label="Загрузить файл. Нажмите или перетащите файл сюда" data-dropzone >
+                            <input id="discussion-file" class="form-file__input" type="file" multiple data-input="file" />
+                            <label for="discussion-file"
+                                   class="form-file__content"
+                                   data-input="label"
+                                   data-input-error="Один из файлов не является изображением. Доступные типы: jpg, png, bmp"
+                                   data-input-placeholder="Нажмите в эту область, чтобы загрузить">
+                                Нажмите или перетащите файл в эту область, чтобы загрузить
+                            </label>
+                        </div>
+                    </div>
+                    <div class="drawer__wrapper-input">
+                        <textarea class="form-textarea" id="discussion-text"  placeholder="Сообщение"></textarea>
+                    </div>
+                </form>
+                <div class="drawer__footer">
+                    <button type="reset" class="btn btn--outlined btn--theme-secondary btn--size-m" data-reset-select="discussion-theme">
+                        Отменить
+                    </button>
+                    <button type="submit" class="btn btn--filled btn--theme-primary btn--size-m" data-notification="notification-add-discussion">
+                        Сохранить
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="drawer-sort" class="drawer modal">
+    <div class="modal__inner modal__inner--open-right">
+        <div class="modal__content drawer__content">
+            <button type="button" class="modal__close modal__close--left" aria-label="Закрыть" data-btn="close">
+                <svg aria-hidden="true">
+                    <use xlink:href="static/img/symbol/sprite.svg#close"></use>
+                </svg>
+            </button>
+            <div class="drawer__header">
+                <h3 class="title-4">Сортировка</h3>
+            </div>
+            <div class="drawer__info">
+                <form action="" class="drawer__form form">
+                    <div class="drawer__wrapper-input">
+                        <label for="sort-product-status">Выберите статус</label>
+                        <div class="select @@class" data-select data-select-id=sort-product-status @@data @@dataSelectItem>
+    <div class="form-input select__search d-none" data-select-search>
+        <input type="text" name="select-category" data-select-input id="sort-product-status" class="select__input" value="@@value">
+        <span class="select__ico">
+            <svg aria-hidden="true">
+                <use xlink:href="static/img/symbol/sprite.svg#search"></use>
+            </svg>
+        </span>
+    </div>
+    <button type="button" class="form-input select__btn" data-select-btn>
+        <span data-select-text="Выберите статус" class="select__text">Выберите статус</span>
+        <span class="select__ico select__ico--rotate" data-select-ico>
+          <svg>
+            <use xlink:href="static/img/symbol/sprite.svg#chevron-down"></use>
+          </svg>
+        </span>
+    </button>
+    <div class="select__list" data-select-list>
+        <button type="button" class="select__item select__item--active @@classItem"
+                data-select-value="value-1" @@dataItem1>В обработке</button>
+        <button type="button" class="select__item"
+                data-select-value="value-2" @@dataItem2>Возврат проведен</button>
+        <button type="button" class="select__item"
+                data-select-value="value-3" @@dataItem3>В разборе</button>
+    </div>
+</div>
+
+                    </div>
+                    <div class="drawer__wrapper-input">
+                        <label for="sort-product-price">Выберите цену</label>
+                        <div class="select @@class" data-select data-select-id=sort-product-price @@data @@dataSelectItem>
+    <div class="form-input select__search d-none" data-select-search>
+        <input type="text" name="select-category" data-select-input id="sort-product-price" class="select__input" value="@@value">
+        <span class="select__ico">
+            <svg aria-hidden="true">
+                <use xlink:href="static/img/symbol/sprite.svg#search"></use>
+            </svg>
+        </span>
+    </div>
+    <button type="button" class="form-input select__btn" data-select-btn>
+        <span data-select-text="Выберите цену" class="select__text">Выберите цену</span>
+        <span class="select__ico select__ico--rotate" data-select-ico>
+          <svg>
+            <use xlink:href="static/img/symbol/sprite.svg#chevron-down"></use>
+          </svg>
+        </span>
+    </button>
+    <div class="select__list" data-select-list>
+        <button type="button" class="select__item select__item--active @@classItem"
+                data-select-value="value-1" @@dataItem1>Наценка (10,00)</button>
+        <button type="button" class="select__item"
+                data-select-value="value-2" @@dataItem2>Наценка (20,00)</button>
+        <button type="button" class="select__item"
+                data-select-value="value-3" @@dataItem3>Без наценки</button>
+    </div>
+</div>
+
+                    </div>
+                </form>
+                <div class="drawer__footer">
+                    <button type="reset" class="btn btn--outlined btn--theme-secondary btn--size-m" data-reset-select="sort-product-status, sort-product-price">
+                        Сбросить
+                    </button>
+                    <button type="submit" class="btn btn--filled btn--theme-primary btn--size-m" data-btn="close" data-notification="notification">
+                        Применить
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="notification" id="notification">
+    <svg class="notification__ico" aria-hidden="true">
+        <use xlink:href="static/img/symbol/sprite.svg#check-circle"></use>
+    </svg>
+    <span class="notification__text">Сообщение успешно создано</span>
+    <button type="button" class="notification__close" aria-label="Закрыть" data-btn="close">
+        <svg aria-hidden="true">
+            <use xlink:href="static/img/symbol/sprite.svg#close"></use>
+        </svg>
+    </button>
+</div>
+
+<div class="notification" id="notification-deduce">
+    <svg class="notification__ico" aria-hidden="true">
+        <use xlink:href="static/img/symbol/sprite.svg#check-circle"></use>
+    </svg>
+    <span class="notification__text">Запрос на вывод средств успешно отправлен</span>
+    <button type="button" class="notification__close" aria-label="Закрыть" data-btn="close">
+        <svg aria-hidden="true">
+            <use xlink:href="static/img/symbol/sprite.svg#close"></use>
+        </svg>
+    </button>
+</div>
+
+<div class="notification" id="notification-add-comment">
+    <svg class="notification__ico" aria-hidden="true">
+        <use xlink:href="static/img/symbol/sprite.svg#check-circle"></use>
+    </svg>
+    <span class="notification__text">Комментарий успешно добавлен</span>
+    <button type="button" class="notification__close" data-btn="close">
+        <svg aria-hidden="true">
+            <use xlink:href="static/img/symbol/sprite.svg#close"></use>
+        </svg>
+    </button>
+</div>
+
+<div class="notification" id="notification-delete-product">
+    <svg class="notification__ico" aria-hidden="true">
+        <use xlink:href="static/img/symbol/sprite.svg#check-circle"></use>
+    </svg>
+    <span class="notification__text">Товар успешно удален</span>
+    <button type="button" class="notification__close" aria-label="Закрыть" data-btn="close">
+        <svg aria-hidden="true">
+            <use xlink:href="static/img/symbol/sprite.svg#close"></use>
+        </svg>
+    </button>
+</div>
+
+<div class="notification" id="notification-change-address">
+    <svg class="notification__ico">
+        <use xlink:href="static/img/symbol/sprite.svg#check-circle"></use>
+    </svg>
+    <span class="notification__text">Пункт самовывоза успешно изменен</span>
+    <button type="button" class="notification__close" data-btn="close">
+        <svg aria-hidden="true">
+            <use xlink:href="static/img/symbol/sprite.svg#close"></use>
+        </svg>
+    </button>
+</div>
+
+<div class="notification" id="notification-add-discussion">
+    <svg class="notification__ico">
+        <use xlink:href="static/img/symbol/sprite.svg#check-circle"></use>
+    </svg>
+    <span class="notification__text">Обсуждение успешно создано</span>
+    <button type="button" class="notification__close" data-btn="close">
+        <svg aria-hidden="true">
+            <use xlink:href="static/img/symbol/sprite.svg#close"></use>
+        </svg>
+    </button>
+</div>
+
+
+
+  <script src="./static/js/libs.min.js"></script>
+  <script src="./static/js/main.min.js"></script>
+</body>
+</html>

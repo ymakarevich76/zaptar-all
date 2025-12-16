@@ -15,7 +15,7 @@
 
 <header class="header" data-header>
     <div class="header__top container">
-        <a class="logo" href="/zaptar-all/dist">
+        <a class="logo" href="/zaptar-all/v2/dist/index.html">
             <img class="logo__img" src="static/img/logo/logo-2.svg" width="198" height="32" alt="zaptar">
         </a>
 
@@ -219,31 +219,76 @@
 </header>
 
 
-<main class="main">
-    <div class="container">
-        <section class="intro">
-            <h1 class="intro__title">
-                Интернет магазин <br> автозапчастей <br> для иномарок
-            </h1>
+<main class="main main--mt">
+    <section class="intro container intro--has-pd-top">
+        <h1 class="intro__title">
+            Интернет магазин <br> автозапчастей <br> <span>для иномарок</span>
+        </h1>
 
-            <div class="intro__search">
-                <div class="intro__search-wrapper">
-                    <form action="/search.html" method="GET">
-                        <input type="search" name="query" class="intro__search-input" placeholder="Поиск по VIN или FRAME">
-                        <button type="submit" class="intro__search-btn btn btn--filled btn--theme-primary btn--size-m btn--compact" data-label="Поиск по VIN или FRAME">
-                            <svg aria-hidden="true" class="btn__ico">
-                                <use xlink:href="static/img/symbol/sprite.svg#search"></use>
-                            </svg>
-                            <span class="btn__label d-md-none">Найти</span>
-                        </button>
-                    </form>
-                </div>
-                <div class="intro__search-content">
-                    Пример: <button class="intro__search-link">WAUBH54B11N111054</button> или <button class="intro__search-link">FNN15-502358</button>
-                </div>
+        <ul class="intro__list">
+            <li class="intro__item">Ассортимент <span>более 100 млн.</span> предложений</li>
+            <li class="intro__item">Самые <span>низкие цены</span> на запчасти по городу</li>
+            <li class="intro__item"><span>Быстрая</span> доставка</li>
+        </ul>
+
+        <div class="intro__search intro-search">
+            <div class="intro-search__dropdown intro-search-dropdown">
+                <button class="intro-search-dropdown__toggle d-md-none">
+                    <svg class="intro-search-dropdown__ico" aria-hidden="true">
+                        <use xlink:href="static/img/symbol/sprite.svg#menu"></use>
+                    </svg>
+                    <span class="intro-search-dropdown__label">Каталог</span>
+                </button>
+                <button class="intro-search-dropdown__toggle d-none d-md-flex" aria-label="Меню" data-modal="drawer-catalog">
+                    <svg class="intro-search-dropdown__ico" aria-hidden="true">
+                        <use xlink:href="static/img/symbol/sprite.svg#menu"></use>
+                    </svg>
+                </button>
+
+                <nav class="intro-search-dropdown__menu dropdown-menu">
+                    <a class="dropdown-menu__link" href="catalog.html">
+                        Каталог запчастей
+                    </a>
+                    <a class="dropdown-menu__link" href="#">
+                        Каталог ТО
+                    </a>
+                    <a class="dropdown-menu__link" href="#">
+                        Масла
+                    </a>
+                    <a class="dropdown-menu__link" href="#">
+                        Аккумуляторы
+                    </a>
+                    <a class="dropdown-menu__link" href="#">
+                        Автолампы
+                    </a>
+                    <a class="dropdown-menu__link" href="#">
+                        Шины
+                    </a>
+                    <a class="dropdown-menu__link" href="#">
+                        Диски
+                    </a>
+                    <a class="dropdown-menu__link" href="#">
+                        Колпаки
+                    </a>
+                    <a class="dropdown-menu__link" href="#">
+                        Болты, Гайки
+                    </a>
+                </nav>
             </div>
-        </section>
-    </div>
+            <form class="intro-search__form" action="/search.html" method="GET">
+                <input type="search" name="query" class="intro-search__input" placeholder="Поиск по VIN или FRAME">
+                <button type="submit" class="intro-search__btn btn btn--filled btn--theme-primary btn--size-m btn--compact" data-label="Поиск по VIN или FRAME">
+                    <svg aria-hidden="true" class="btn__ico intro-search__ico">
+                        <use xlink:href="static/img/symbol/sprite.svg#search"></use>
+                    </svg>
+                    <span class="btn__label d-md-none">Найти запчасть</span>
+                </button>
+                <div class="intro-search__content">
+                    Пример: <button class="intro-search__link">WAUBH54B11N111054</button> или <button class="intro__search-link">FNN15-502358</button>
+                </div>
+            </form>
+        </div>
+    </section>
 
     <section class="brands container">
         <h2 class="title title--mb">Поиск по марке автомобиля</h2>

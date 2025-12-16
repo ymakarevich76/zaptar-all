@@ -11,12 +11,12 @@
     <link rel="stylesheet" href="./static/css/libs.min.css">
     <link rel="stylesheet" href="./static/css/main.min.css">
 </head>
-<body class="body @@class">
+<body class="body body--has-bg">
 
 <header class="header" data-header>
     <div class="header__top container">
         <div class="header__logo">
-            <a class="logo" href="/zaptar-all/dist">
+            <a class="logo" href="/zaptar-all/v3/dist/index.html">
                 <img class="logo__img" src="static/img/logo/logo-2.svg" width="198" height="32" alt="zaptar">
             </a>
             <span class="logo__text d-md-none">Интернет магазин <br> автозапчастей для иномарок</span>
@@ -223,299 +223,355 @@
 </header>
 
 
-<main class="main">
-    <div class="container">
-        <section class="intro">
-            <h1 class="intro__title">
-                Интернет магазин <br> автозапчастей <br> для иномарок
-            </h1>
+<main class="main main--mt">
+    <section class="intro container intro--has-pd-top intro--has-pd-bottom intro--has-bg">
+    <h1 class="visually-hidden">Интернет магазин автозапчастей для иномарок</h1>
 
-            <div class="intro__search">
-                <div class="intro__search-wrapper">
-                    <form action="/search.html" method="GET">
-                        <input type="search" name="query" class="intro__search-input" placeholder="Поиск по VIN или FRAME">
-                        <button type="submit" class="intro__search-btn btn btn--filled btn--theme-primary btn--size-m btn--compact" data-label="Поиск по VIN или FRAME">
-                            <svg aria-hidden="true" class="btn__ico">
-                                <use xlink:href="static/img/symbol/sprite.svg#search"></use>
-                            </svg>
-                            <span class="btn__label d-md-none">Найти</span>
-                        </button>
-                    </form>
-                </div>
-                <div class="intro__search-content">
-                    Пример: <button class="intro__search-link">WAUBH54B11N111054</button> или <button class="intro__search-link">FNN15-502358</button>
-                </div>
-            </div>
-        </section>
+    <div class="intro__search intro-search">
+        <div class="intro-search__dropdown intro-search-dropdown">
+            <button class="intro-search-dropdown__toggle d-md-none">
+                <svg class="intro-search-dropdown__ico" aria-hidden="true">
+                    <use xlink:href="static/img/symbol/sprite.svg#menu"></use>
+                </svg>
+                <span class="intro-search-dropdown__label">Каталог</span>
+            </button>
+            <button class="intro-search-dropdown__toggle d-none d-md-flex" aria-label="Меню" data-modal="drawer-catalog">
+                <svg class="intro-search-dropdown__ico" aria-hidden="true">
+                    <use xlink:href="static/img/symbol/sprite.svg#menu"></use>
+                </svg>
+            </button>
+
+            <nav class="intro-search-dropdown__menu dropdown-menu">
+                <a class="dropdown-menu__link" href="catalog.html">
+                    Каталог запчастей
+                </a>
+                <a class="dropdown-menu__link" href="#">
+                    Каталог ТО
+                </a>
+                <a class="dropdown-menu__link" href="#">
+                    Масла
+                </a>
+                <a class="dropdown-menu__link" href="#">
+                    Аккумуляторы
+                </a>
+                <a class="dropdown-menu__link" href="#">
+                    Автолампы
+                </a>
+                <a class="dropdown-menu__link" href="#">
+                    Шины
+                </a>
+                <a class="dropdown-menu__link" href="#">
+                    Диски
+                </a>
+                <a class="dropdown-menu__link" href="#">
+                    Колпаки
+                </a>
+                <a class="dropdown-menu__link" href="#">
+                    Болты, Гайки
+                </a>
+            </nav>
+        </div>
+        <form class="intro-search__form" action="/search.html" method="GET">
+            <input type="search" name="query" class="intro-search__input" placeholder="Поиск по VIN или FRAME">
+            <button type="submit" class="intro-search__btn btn btn--filled btn--theme-primary btn--size-m btn--compact" data-label="Поиск по VIN или FRAME">
+                <svg aria-hidden="true" class="btn__ico intro-search__ico">
+                    <use xlink:href="static/img/symbol/sprite.svg#search"></use>
+                </svg>
+                <span class="btn__label d-md-none">Найти запчасть</span>
+            </button>
+        </form>
+    </div>
+</section>
+
+
+    <div class="container">
+        <div class="categories-brands-wrap">
+            <section class="categories ">
+                <h2 class="visually-hidden">Подбор по категориям</h2>
+                <ul class="categories__list">
+                    <li class="categories__item">
+                        <a href="#" class="categories__link">
+                            <span class="categories__text">Каталог автозапчастей</span>
+                            <img class="categories__img" src="static/img/categories/1.png" alt="Автозапчасти">
+                        </a>
+                    </li>
+                    <li class="categories__item">
+                        <a href="#" class="categories__link">
+                            <span class="categories__text">Запчасти для ТО</span>
+                            <img class="categories__img" src="static/img/categories/2.png" alt="Запчасти для ТО">
+                        </a>
+                    </li>
+                    <li class="categories__item">
+                        <a href="#" class="categories__link">
+                            <span class="categories__text">Моторные масла</span>
+                            <img class="categories__img" src="static/img/categories/3.png" alt="Моторные масла">
+                        </a>
+                    </li>
+                    <li class="categories__item">
+                        <a href="#" class="categories__link">
+                            <span class="categories__text">Аккумуляторы</span>
+                            <img class="categories__img" src="static/img/categories/4.png" alt="Аккумуляторы">
+                        </a>
+                    </li>
+                    <li class="categories__item">
+                        <a href="#" class="categories__link">
+                            <span class="categories__text">Автомобильные лампы</span>
+                            <img class="categories__img" src="static/img/categories/5.png" alt="Автомобильные лампы">
+                        </a>
+                    </li>
+                    <li class="categories__item">
+                        <a href="#" class="categories__link">
+                            <span class="categories__text">Диски колесные</span>
+                            <img class="categories__img" src="static/img/categories/6.png" alt="Диски колесные">
+                        </a>
+                    </li>
+                    <li class="categories__item">
+                        <a href="#" class="categories__link">
+                            <span class="categories__text">Автомобильные колпаки</span>
+                            <img class="categories__img" src="static/img/categories/7.png" alt="Автомобильные колпаки">
+                        </a>
+                    </li>
+                    <li class="categories__item">
+                        <a href="#" class="categories__link">
+                            <span class="categories__text">Автомобильные болты и гайки</span>
+                            <img class="categories__img" src="static/img/categories/8.png" alt="Автомобильные болты и гайки">
+                        </a>
+                    </li>
+                    <li class="categories__item">
+                        <a href="#" class="categories__link">
+                            <span class="categories__text">Автомобильные аксессуары</span>
+                            <img class="categories__img" src="static/img/categories/9.png" alt="Автомобильные аксессуары">
+                        </a>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="brands">
+                <h2 class="brands__title">Поиск по марке автомобиля</h2>
+                <ul class="brands__list">
+                    <li class="brands__item">
+                        <div class="brands__letter">A</div>
+                        <a href="#" class="link link--bright">Abarth</a>
+                    </li>
+                    <li class="brands__item">
+                        <a href="#" class="link link--bright">Alfa Romeo</a>
+                    </li>
+                    <li class="brands__item">
+                        <a href="#" class="link link--bright">Audi</a>
+                    </li>
+                    <li class="brands__item">
+                        <div class="brands__letter">B</div>
+                        <a href="#" class="link link--bright">BMW</a>
+                    </li>
+                    <li class="brands__item">
+                        <a href="#" class="link link--bright">BMW Motorrad</a>
+                    </li>
+                    <li class="brands__item">
+                        <a href="#" class="link link--bright">Buick</a>
+                    </li>
+                    <li class="brands__item">
+                        <div class="brands__letter">C</div>
+                        <a href="#" class="link link--bright">Cadillac</a>
+                    </li>
+                    <li class="brands__item">
+                        <a href="#" class="link link--bright">Chevrolet</a>
+                    </li>
+                    <li class="brands__item">
+                        <a href="#" class="link link--bright">Chrysler</a>
+                    </li>
+                    <li class="brands__item">
+                        <a href="#" class="link link--bright">Citroen</a>
+                    </li>
+                    <li class="brands__item">
+                        <div class="brands__letter">D</div>
+                        <a href="#" class="link link--bright">Dacia</a>
+                    </li>
+                    <li class="brands__item">
+                        <a href="#" class="link link--bright">Daewoo</a>
+                    </li>
+                    <li class="brands__item">
+                        <a href="#" class="link link--bright">Dodge</a>
+                    </li>
+                    <li class="brands__item">
+                        <div class="brands__letter">F</div>
+                        <a href="#" class="link link--bright">Fiat</a>
+                    </li>
+                    <li class="brands__item">
+                        <a href="#" class="link link--bright">Fiat Professional</a>
+                    </li>
+                    <li class="brands__item">
+                        <a href="#" class="link link--bright">Ford</a>
+                    </li>
+                    <li class="brands__item">
+                        <div class="brands__letter">G</div>
+                        <a href="#" class="link link--bright">GMC</a>
+                    </li>
+                    <li class="brands__item">
+                        <div class="brands__letter">H</div>
+                        <a href="#" class="link link--bright">Honda</a>
+                    </li>
+                    <li class="brands__item">
+                        <a href="#" class="link link--bright">Holden</a>
+                    </li>
+                    <li class="brands__item">
+                        <a href="#" class="link link--bright">Hummer</a>
+                    </li>
+                    <li class="brands__item">
+                        <a href="#" class="link link--bright">Hyundai</a>
+                    </li>
+                    <li class="brands__item">
+                        <div class="brands__letter">I</div>
+                        <a href="#" class="link link--bright">Infinity</a>
+                    </li>
+                    <li class="brands__item">
+                        <a href="#" class="link link--bright">Isuzu</a>
+                    </li>
+                    <li class="brands__item">
+                        <div class="brands__letter">J</div>
+                        <a href="#" class="link link--bright">Jaguar</a>
+                    </li>
+                    <li class="brands__item">
+                        <a href="#" class="link link--bright">Jeep</a>
+                    </li>
+                    <li class="brands__item">
+                        <div class="brands__letter">K</div>
+                        <a href="#" class="link link--bright">Kia</a>
+                    </li>
+                    <li class="brands__item">
+                        <div class="brands__letter">L</div>
+                        <a href="#" class="link link--bright">Lanccia</a>
+                    </li>
+                    <li class="brands__item">
+                        <a href="#" class="link link--bright">Land Rover</a>
+                    </li>
+                    <li class="brands__item">
+                        <a href="#" class="link link--bright">Lexus</a>
+                    </li>
+                    <li class="brands__item">
+                        <div class="brands__letter">M</div>
+                        <a href="#" class="link link--bright">Mazda</a>
+                    </li>
+                    <li class="brands__item">
+                        <a href="#" class="link link--bright">Mersedes-Benz</a>
+                    </li>
+                    <li class="brands__item">
+                        <a href="#" class="link link--bright">Mini</a>
+                    </li>
+                    <li class="brands__item">
+                        <a href="#" class="link link--bright">Mitsubishu</a>
+                    </li>
+                    <li class="brands__item">
+                        <div class="brands__letter">N</div>
+                        <a href="#" class="link link--bright">Nissan</a>
+                    </li>
+                    <li class="brands__item">
+                        <div class="brands__letter">O</div>
+                        <a href="#" class="link link--bright">Opel</a>
+                    </li>
+                    <li class="brands__item">
+                        <a href="#" class="link link--bright">Oldsmobile</a>
+                    </li>
+                    <li class="brands__item">
+                        <div class="brands__letter">P</div>
+                        <a href="#" class="link link--bright">Peugeot</a>
+                    </li>
+                    <li class="brands__item">
+                        <a href="#" class="link link--bright">Pontiac</a>
+                    </li>
+                    <li class="brands__item">
+                        <a href="#" class="link link--bright">Porsche</a>
+                    </li>
+                    <li class="brands__item">
+                        <div class="brands__letter">R</div>
+                        <a href="#" class="link link--bright">Renault</a>
+                    </li>
+                    <li class="brands__item">
+                        <a href="#" class="link link--bright">Ram</a>
+                    </li>
+                    <li class="brands__item">
+                        <a href="#" class="link link--bright">Ravon</a>
+                    </li>
+                    <li class="brands__item">
+                        <a href="#" class="link link--bright">Rolls-Roys</a>
+                    </li>
+                    <li class="brands__item">
+                        <a href="#" class="link link--bright">Rover</a>
+                    </li>
+                    <li class="brands__item">
+                        <div class="brands__letter">S</div>
+                        <a href="#" class="link link--bright">Saab</a>
+                    </li>
+                    <li class="brands__item">
+                        <a href="#" class="link link--bright">Saturn</a>
+                    </li>
+                    <li class="brands__item">
+                        <a href="#" class="link link--bright">Seat</a>
+                    </li>
+                    <li class="brands__item">
+                        <a href="#" class="link link--bright">Skoda</a>
+                    </li>
+                    <li class="brands__item">
+                        <a href="#" class="link link--bright">Smart</a>
+                    </li>
+                    <li class="brands__item">
+                        <a href="#" class="link link--bright">Ssangyong</a>
+                    </li>
+                    <li class="brands__item">
+                        <a href="#" class="link link--bright">Subaru</a>
+                    </li>
+                    <li class="brands__item">
+                        <a href="#" class="link link--bright">Suzuki</a>
+                    </li>
+                    <li class="brands__item">
+                        <div class="brands__letter">T</div>
+                        <a href="#" class="link link--bright">Toyota</a>
+                    </li>
+                    <li class="brands__item">
+                        <div class="brands__letter">V</div>
+                        <a href="#" class="link link--bright">Vokswagen</a>
+                    </li>
+                    <li class="brands__item">
+                        <a href="#" class="link link--bright">Volvo</a>
+                    </li>
+                    <li class="brands__item">
+                        <a href="#" class="link link--bright">Vauxhall</a>
+                    </li>
+                    <li class="brands__item">
+                        <div class="brands__letter">Z</div>
+                        <a href="#" class="link link--bright">Zaz</a>
+                    </li>
+                </ul>
+            </section>
+        </div>
     </div>
 
-    <section class="brands container">
-        <h2 class="title title--mb">Поиск по марке автомобиля</h2>
-        <ul class="brands__list">
-            <li class="brands__item">
-                <div class="brands__letter">A</div>
-                <a href="#" class="link">Abarth</a>
-            </li>
-            <li class="brands__item">
-                <a href="#" class="link">Alfa Romeo</a>
-            </li>
-            <li class="brands__item">
-                <a href="#" class="link">Audi</a>
-            </li>
-            <li class="brands__item">
-                <div class="brands__letter">B</div>
-                <a href="#" class="link">BMW</a>
-            </li>
-            <li class="brands__item">
-                <a href="#" class="link">BMW Motorrad</a>
-            </li>
-            <li class="brands__item">
-                <a href="#" class="link">Buick</a>
-            </li>
-            <li class="brands__item">
-                <div class="brands__letter">C</div>
-                <a href="#" class="link">Cadillac</a>
-            </li>
-            <li class="brands__item">
-                <a href="#" class="link">Chevrolet</a>
-            </li>
-            <li class="brands__item">
-                <a href="#" class="link">Chrysler</a>
-            </li>
-            <li class="brands__item">
-                <a href="#" class="link">Citroen</a>
-            </li>
-            <li class="brands__item">
-                <div class="brands__letter">D</div>
-                <a href="#" class="link">Dacia</a>
-            </li>
-            <li class="brands__item">
-                <a href="#" class="link">Daewoo</a>
-            </li>
-            <li class="brands__item">
-                <a href="#" class="link">Dodge</a>
-            </li>
-            <li class="brands__item">
-                <div class="brands__letter">F</div>
-                <a href="#" class="link">Fiat</a>
-            </li>
-            <li class="brands__item">
-                <a href="#" class="link">Fiat Professional</a>
-            </li>
-            <li class="brands__item">
-                <a href="#" class="link">Ford</a>
-            </li>
-            <li class="brands__item">
-                <div class="brands__letter">G</div>
-                <a href="#" class="link">GMC</a>
-            </li>
-            <li class="brands__item">
-                <div class="brands__letter">H</div>
-                <a href="#" class="link">Honda</a>
-            </li>
-            <li class="brands__item">
-                <a href="#" class="link">Holden</a>
-            </li>
-            <li class="brands__item">
-                <a href="#" class="link">Hummer</a>
-            </li>
-            <li class="brands__item">
-                <a href="#" class="link">Hyundai</a>
-            </li>
-            <li class="brands__item">
-                <div class="brands__letter">I</div>
-                <a href="#" class="link">Infinity</a>
-            </li>
-            <li class="brands__item">
-                <a href="#" class="link">Isuzu</a>
-            </li>
-            <li class="brands__item">
-                <div class="brands__letter">J</div>
-                <a href="#" class="link">Jaguar</a>
-            </li>
-            <li class="brands__item">
-                <a href="#" class="link">Jeep</a>
-            </li>
-            <li class="brands__item">
-                <div class="brands__letter">K</div>
-                <a href="#" class="link">Kia</a>
-            </li>
-            <li class="brands__item">
-                <div class="brands__letter">L</div>
-                <a href="#" class="link">Lanccia</a>
-            </li>
-            <li class="brands__item">
-                <a href="#" class="link">Land Rover</a>
-            </li>
-            <li class="brands__item">
-                <a href="#" class="link">Lexus</a>
-            </li>
-            <li class="brands__item">
-                <div class="brands__letter">M</div>
-                <a href="#" class="link">Mazda</a>
-            </li>
-            <li class="brands__item">
-                <a href="#" class="link">Mersedes-Benz</a>
-            </li>
-            <li class="brands__item">
-                <a href="#" class="link">Mini</a>
-            </li>
-            <li class="brands__item">
-                <a href="#" class="link">Mitsubishu</a>
-            </li>
-            <li class="brands__item">
-                <div class="brands__letter">N</div>
-                <a href="#" class="link">Nissan</a>
-            </li>
-            <li class="brands__item">
-                <div class="brands__letter">O</div>
-                <a href="#" class="link">Opel</a>
-            </li>
-            <li class="brands__item">
-                <a href="#" class="link">Oldsmobile</a>
-            </li>
-            <li class="brands__item">
-                <div class="brands__letter">P</div>
-                <a href="#" class="link">Peugeot</a>
-            </li>
-            <li class="brands__item">
-                <a href="#" class="link">Pontiac</a>
-            </li>
-            <li class="brands__item">
-                <a href="#" class="link">Porsche</a>
-            </li>
-            <li class="brands__item">
-                <div class="brands__letter">R</div>
-                <a href="#" class="link">Renault</a>
-            </li>
-            <li class="brands__item">
-                <a href="#" class="link">Ram</a>
-            </li>
-            <li class="brands__item">
-                <a href="#" class="link">Ravon</a>
-            </li>
-            <li class="brands__item">
-                <a href="#" class="link">Rolls-Roys</a>
-            </li>
-            <li class="brands__item">
-                <a href="#" class="link">Rover</a>
-            </li>
-            <li class="brands__item">
-                <div class="brands__letter">S</div>
-                <a href="#" class="link">Saab</a>
-            </li>
-            <li class="brands__item">
-                <a href="#" class="link">Saturn</a>
-            </li>
-            <li class="brands__item">
-                <a href="#" class="link">Seat</a>
-            </li>
-            <li class="brands__item">
-                <a href="#" class="link">Skoda</a>
-            </li>
-            <li class="brands__item">
-                <a href="#" class="link">Smart</a>
-            </li>
-            <li class="brands__item">
-                <a href="#" class="link">Ssangyong</a>
-            </li>
-            <li class="brands__item">
-                <a href="#" class="link">Subaru</a>
-            </li>
-            <li class="brands__item">
-                <a href="#" class="link">Suzuki</a>
-            </li>
-            <li class="brands__item">
-                <div class="brands__letter">T</div>
-                <a href="#" class="link">Toyota</a>
-            </li>
-            <li class="brands__item">
-                <div class="brands__letter">V</div>
-                <a href="#" class="link">Vokswagen</a>
-            </li>
-            <li class="brands__item">
-                <a href="#" class="link">Volvo</a>
-            </li>
-            <li class="brands__item">
-                <a href="#" class="link">Vauxhall</a>
-            </li>
-            <li class="brands__item">
-                <div class="brands__letter">Z</div>
-                <a href="#" class="link">Zaz</a>
-            </li>
-        </ul>
-    </section>
+    <section class="stats container">
+        <div class="stats-card stats-card--products">
+            <p class="stats-card__label">Товаров в каталоге</p>
+            <p class="stats-card__value">&gt;100&nbsp;МЛН</p>
+        </div>
 
-    <section class="categories container">
-        <h2 class="title title--mb">Подбор по категориям</h2>
-        <ul class="categories__list">
-            <li class="categories__item">
-                <a href="#" class="categories__link">
-                    <span class="categories__text">Каталог автозапчастей</span>
-                    <img class="categories__img" src="static/img/categories/1.png" alt="Автозапчасти">
-                </a>
-            </li>
-            <li class="categories__item">
-                <a href="#" class="categories__link">
-                    <span class="categories__text">Запчасти для ТО</span>
-                    <img class="categories__img" src="static/img/categories/2.png" alt="Запчасти для ТО">
-                </a>
-            </li>
-            <li class="categories__item">
-                <a href="#" class="categories__link">
-                    <span class="categories__text">Моторные масла</span>
-                    <img class="categories__img" src="static/img/categories/3.png" alt="Моторные масла">
-                </a>
-            </li>
-            <li class="categories__item">
-                <a href="#" class="categories__link">
-                    <span class="categories__text">Аккумуляторы</span>
-                    <img class="categories__img" src="static/img/categories/4.png" alt="Аккумуляторы">
-                </a>
-            </li>
-            <li class="categories__item">
-                <a href="#" class="categories__link">
-                    <span class="categories__text">Автомобильные лампы</span>
-                    <img class="categories__img" src="static/img/categories/5.png" alt="Автомобильные лампы">
-                </a>
-            </li>
-            <li class="categories__item">
-                <a href="#" class="categories__link">
-                    <span class="categories__text">Диски колесные</span>
-                    <img class="categories__img" src="static/img/categories/6.png" alt="Диски колесные">
-                </a>
-            </li>
-            <li class="categories__item">
-                <a href="#" class="categories__link">
-                    <span class="categories__text">Автомобильные колпаки</span>
-                    <img class="categories__img" src="static/img/categories/7.png" alt="Автомобильные колпаки">
-                </a>
-            </li>
-            <li class="categories__item">
-                <a href="#" class="categories__link">
-                    <span class="categories__text">Автомобильные болты и гайки</span>
-                    <img class="categories__img" src="static/img/categories/8.png" alt="Автомобильные болты и гайки">
-                </a>
-            </li>
-            <li class="categories__item">
-                <a href="#" class="categories__link">
-                    <span class="categories__text">Автомобильные аксессуары</span>
-                    <img class="categories__img" src="static/img/categories/9.png" alt="Автомобильные аксессуары">
-                </a>
-            </li>
-        </ul>
+        <div class="stats-card stats-card--users">
+            <p class="stats-card__label">Покупателей</p>
+            <p class="stats-card__value">&gt;5&nbsp;M</p>
+        </div>
+
+        <div class="stats-card stats-card--tools">
+            <p class="stats-card__label">Цены на запчасти</p>
+            <p class="stats-card__value">Самые низкие</p>
+        </div>
     </section>
 
     <section class="map container" id="map">
-        <h2 class="title title--mb">Адрес магазина</h2>
+        <h2 class="visually-hidden">Адрес магазина</h2>
         <iframe class="map__iframe" title="Карта" src="https://yandex.com/map-widget/v1/?from=mapframe&ll=34.332223%2C53.262637&mode=search&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D107666098429&sll=34.332223%2C53.262637&source=mapframe&text=%D0%91%D1%80%D1%8F%D0%BD%D1%81%D0%BA%20zaptar&utm_source=mapframe&z=13" frameborder="1" allowfullscreen="true" loading="lazy"></iframe>
     </section>
 </main>
 
 <footer
         
+            class="footer footer--dark"
         
-            class="footer"
         
 >
     <div class="footer__top">
@@ -524,8 +580,8 @@
                 <a class="logo" href="#">
                     <img class="logo__img"
                         
+                            src="static/img/logo/logo-2.svg"
                         
-                            src="static/img/logo/logo.svg"
                         
                         width="198" height="32" alt="zaptar"
                     >
@@ -557,72 +613,72 @@
                     <li>
                         <a
                            
+                                class="link link--bright"
                            
-                                class="link link--light"
                            
                            href="#">Каталог автозапчастей</a>
                     </li>
                     <li>
                         <a
                             
+                                class="link link--bright"
                             
-                                class="link link--light"
                             
                             href="#">Каталог ТО</a>
                     </li>
                     <li>
                         <a
                            
+                                class="link link--bright"
                            
-                                class="link link--light"
                            
                            href="#">Автомобильные масла</a>
                     </li>
                     <li>
                         <a
                            
+                                class="link link--bright"
                            
-                                class="link link--light"
                            
                            href="#">Аккамуляторы</a>
                     </li>
                     <li>
                         <a
                            
+                                class="link link--bright"
                            
-                                class="link link--light"
                            
                            href="#">Автомобильные лампы</a>
                     </li>
                     <li>
                         <a
                            
+                                class="link link--bright"
                            
-                                class="link link--light"
                            
                            href="#">Аксессуары</a>
                     </li>
                     <li>
                         <a
                            
+                                class="link link--bright"
                            
-                                class="link link--light"
                            
                            href="#">Диски</a>
                     </li>
                     <li>
                         <a
                            
+                                class="link link--bright"
                            
-                                class="link link--light"
                            
                            href="#">Колпаки</a>
                     </li>
                     <li>
                         <a
                            
+                                class="link link--bright"
                            
-                                class="link link--light"
                            
                            href="#">Болты и Гайки</a>
                     </li>
@@ -637,16 +693,16 @@
                     <li>
                         <a
                            
+                                class="link link--bright"
                            
-                                class="link link--light"
                            
                            href="#">8 (930) 825 53-35</a>
                     </li>
                     <li>
                         <a
                            
+                                class="link link--bright"
                            
-                                class="link link--light"
                            
                            href="#">8 (920) 605 53-35</a>
                     </li>
@@ -657,8 +713,8 @@
                     <li>
                         <a
                            
+                                class="link link--bright"
                            
-                                class="link link--light"
                            
                            href="#">8 (930) 825 53-35</a>
                     </li>
@@ -669,8 +725,8 @@
                     <li>
                         <a
                            
+                                class="link link--bright"
                            
-                                class="link link--light"
                            
                            href="#">info@zaptar.ru</a>
                     </li>
@@ -711,20 +767,20 @@
             </p>
             <a
                
+                    class="link link--bright"
                
-                    class="link link--light"
                
                href="#">Политика конфиденциальности</a>
             <a
                
+                    class="link link--bright"
                
-                    class="link link--light"
                
                href="#">Договор оферты</a>
             <a
                
+                    class="link link--bright"
                
-                    class="link link--light"
                
                href="#">Способы оплаты</a>
         </div>

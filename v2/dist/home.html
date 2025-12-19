@@ -15,9 +15,30 @@
 
 <header class="header" data-header>
     <div class="header__top container">
-        <a class="logo" href="/zaptar-all/v2/dist/index.html">
-            <img class="logo__img" src="static/img/logo/logo-2.svg" width="198" height="32" alt="zaptar">
+        <!-- десктоп -->
+        <!-- Пользователь авторизован -->
+        <a class="header-address" href="#">
+            <svg class="header-address__ico" aria-hidden="true">
+                <use xlink:href="static/img/symbol/sprite.svg#mark"></use>
+            </svg>
+
+            <span class="header-address__city">Москва</span>
         </a>
+
+        <!-- десктоп -->
+        <!-- Пользователь не авторизован -->
+        <!-- <div class="header__top-logo"> -->
+        <!--     <a class="logo" href="/zaptar-all/v2/dist/index.html"> -->
+        <!--         <img class="logo__img" src="static/img/logo/logo-2.svg" width="198" height="32" alt="zaptar"> -->
+        <!--     </a> -->
+        <!--     <a class="header-address d-xs-none" href="#"> -->
+        <!--         <svg class="header-address__ico" aria-hidden="true"> -->
+        <!--             <use xlink:href="static/img/symbol/sprite.svg#mark"></use> -->
+        <!--         </svg> -->
+
+        <!--         <span class="header-address__city">Москва</span> -->
+        <!--     </a> -->
+        <!-- </div> -->
 
         <!-- десктоп -->
         <!-- Пользователь авторизован -->
@@ -38,55 +59,13 @@
                 <span class="contact-link__label">8 (920) 605 53-35</span>
             </a>
 
-            <a class="contact-link contact-link--has-divider" href="mailto:info@zaptar.ru">
+            <a class="contact-link" href="mailto:info@zaptar.ru">
                 <svg class="contact-link__ico" aria-hidden="true">
                     <use xlink:href="static/img/symbol/sprite.svg#mail"></use>
                 </svg>
 
                 <span class="contact-link__label">info@zaptar.ru</span>
             </a>
-
-            <div class="header-user-dropdown d-md-none">
-                <button type="button" class="header-user-dropdown__toggle btn btn--filled btn--theme-secondary btn--size-m">
-                    Иван
-                    <svg aria-hidden="true" class="btn__ico btn__ico--sm">
-                        <use xlink:href="static/img/symbol/sprite.svg#chevron-down"></use>
-                    </svg>
-                </button>
-
-                <div class="header-user-dropdown__menu dropdown-menu">
-                    <a class="dropdown-menu__link" data-modal="drawer-profile" href="#">
-                        <svg aria-hidden="true" class="dropdown-menu__ico">
-                            <use xlink:href="static/img/symbol/sprite.svg#user"></use>
-                        </svg>
-                        Профиль
-                    </a>
-                    <a class="dropdown-menu__link" href="#">
-                        <svg aria-hidden="true" class="dropdown-menu__ico">
-                            <use xlink:href="static/img/symbol/sprite.svg#dollar"></use>
-                        </svg>
-                        Мои финансы
-                    </a>
-                    <a class="dropdown-menu__link" href="#">
-                        <svg aria-hidden="true" class="dropdown-menu__ico">
-                            <use xlink:href="static/img/symbol/sprite.svg#line-chart"></use>
-                        </svg>
-                        Ценообразование
-                    </a>
-                    <a class="dropdown-menu__link" href="#">
-                        <svg aria-hidden="true" class="dropdown-menu__ico">
-                            <use xlink:href="static/img/symbol/sprite.svg#credit-card"></use>
-                        </svg>
-                        Пополнить баланс
-                    </a>
-                    <a class="dropdown-menu__link dropdown-menu__link--logout" href="#">
-                        <svg aria-hidden="true" class="dropdown-menu__ico">
-                            <use xlink:href="static/img/symbol/sprite.svg#logout"></use>
-                        </svg>
-                        Выйти
-                    </a>
-                </div>
-            </div>
         </div>
 
         <!-- мобайл -->
@@ -168,6 +147,9 @@
     <!--  Десктоп -->
     <!-- Пользователь авторизован -->
     <div class="header__bottom container">
+        <a class="logo" href="/zaptar-all/v2/dist/index.html">
+            <img class="logo__img" src="static/img/logo/logo-2.svg" width="198" height="32" alt="zaptar">
+        </a>
         <nav class="header__bottom-actions header-bottom-actions">
             <a class="btn btn--filled btn--theme-secondary btn--size-m btn--compact d-md-none" href="#">
                 <svg aria-hidden="true" class="btn__ico">
@@ -214,6 +196,48 @@
                     <use xlink:href="static/img/symbol/sprite.svg#user"></use>
                 </svg>
             </button>
+
+            <div class="header-user-dropdown d-md-none">
+                <button type="button" class="header-user-dropdown__toggle btn btn--filled btn--theme-secondary btn--size-m">
+                    Иван
+                    <svg aria-hidden="true" class="btn__ico btn__ico--sm">
+                        <use xlink:href="static/img/symbol/sprite.svg#chevron-down"></use>
+                    </svg>
+                </button>
+
+                <div class="header-user-dropdown__menu dropdown-menu">
+                    <a class="dropdown-menu__link" data-modal="drawer-profile" href="#">
+                        <svg aria-hidden="true" class="dropdown-menu__ico">
+                            <use xlink:href="static/img/symbol/sprite.svg#user"></use>
+                        </svg>
+                        Профиль
+                    </a>
+                    <a class="dropdown-menu__link" href="#">
+                        <svg aria-hidden="true" class="dropdown-menu__ico">
+                            <use xlink:href="static/img/symbol/sprite.svg#dollar"></use>
+                        </svg>
+                        Мои финансы
+                    </a>
+                    <a class="dropdown-menu__link" href="#">
+                        <svg aria-hidden="true" class="dropdown-menu__ico">
+                            <use xlink:href="static/img/symbol/sprite.svg#line-chart"></use>
+                        </svg>
+                        Ценообразование
+                    </a>
+                    <a class="dropdown-menu__link" href="#">
+                        <svg aria-hidden="true" class="dropdown-menu__ico">
+                            <use xlink:href="static/img/symbol/sprite.svg#credit-card"></use>
+                        </svg>
+                        Пополнить баланс
+                    </a>
+                    <a class="dropdown-menu__link dropdown-menu__link--logout" href="#">
+                        <svg aria-hidden="true" class="dropdown-menu__ico">
+                            <use xlink:href="static/img/symbol/sprite.svg#logout"></use>
+                        </svg>
+                        Выйти
+                    </a>
+                </div>
+            </div>
         </nav>
     </div>
 </header>
@@ -554,21 +578,21 @@
 </main>
 
 <footer
-        
-        
-            class="footer"
-        
+
+
+        class="footer"
+
 >
     <div class="footer__top">
         <div class="footer__top-container container">
             <div class="footer__company footer-company">
                 <a class="logo" href="#">
                     <img class="logo__img"
-                        
-                        
-                            src="static/img/logo/logo.svg"
-                        
-                        width="198" height="32" alt="zaptar"
+
+
+                         src="static/img/logo/logo.svg"
+
+                         width="198" height="32" alt="zaptar"
                     >
                 </a>
 
@@ -597,75 +621,75 @@
                 <ul class="footer-info__list">
                     <li>
                         <a
-                           
-                           
+
+
                                 class="link link--light"
-                           
-                           href="#">Каталог автозапчастей</a>
+
+                                href="#">Каталог автозапчастей</a>
                     </li>
                     <li>
                         <a
-                            
-                            
+
+
                                 class="link link--light"
-                            
-                            href="#">Каталог ТО</a>
+
+                                href="#">Каталог ТО</a>
                     </li>
                     <li>
                         <a
-                           
-                           
+
+
                                 class="link link--light"
-                           
-                           href="#">Автомобильные масла</a>
+
+                                href="#">Автомобильные масла</a>
                     </li>
                     <li>
                         <a
-                           
-                           
+
+
                                 class="link link--light"
-                           
-                           href="#">Аккамуляторы</a>
+
+                                href="#">Аккамуляторы</a>
                     </li>
                     <li>
                         <a
-                           
-                           
+
+
                                 class="link link--light"
-                           
-                           href="#">Автомобильные лампы</a>
+
+                                href="#">Автомобильные лампы</a>
                     </li>
                     <li>
                         <a
-                           
-                           
+
+
                                 class="link link--light"
-                           
-                           href="#">Аксессуары</a>
+
+                                href="#">Аксессуары</a>
                     </li>
                     <li>
                         <a
-                           
-                           
+
+
                                 class="link link--light"
-                           
-                           href="#">Диски</a>
+
+                                href="#">Диски</a>
                     </li>
                     <li>
                         <a
-                           
-                           
+
+
                                 class="link link--light"
-                           
-                           href="#">Колпаки</a>
+
+                                href="#">Колпаки</a>
                     </li>
                     <li>
                         <a
-                           
-                           
+
+
                                 class="link link--light"
-                           
-                           href="#">Болты и Гайки</a>
+
+                                href="#">Болты и Гайки</a>
                     </li>
                 </ul>
             </div>
@@ -677,19 +701,19 @@
                 <ul class="footer-info__list">
                     <li>
                         <a
-                           
-                           
+
+
                                 class="link link--light"
-                           
-                           href="#">8 (930) 825 53-35</a>
+
+                                href="#">8 (930) 825 53-35</a>
                     </li>
                     <li>
                         <a
-                           
-                           
+
+
                                 class="link link--light"
-                           
-                           href="#">8 (920) 605 53-35</a>
+
+                                href="#">8 (920) 605 53-35</a>
                     </li>
                 </ul>
 
@@ -697,11 +721,11 @@
                 <ul class="footer-info__list">
                     <li>
                         <a
-                           
-                           
+
+
                                 class="link link--light"
-                           
-                           href="#">8 (930) 825 53-35</a>
+
+                                href="#">8 (930) 825 53-35</a>
                     </li>
                 </ul>
 
@@ -709,11 +733,11 @@
                 <ul class="footer-info__list">
                     <li>
                         <a
-                           
-                           
+
+
                                 class="link link--light"
-                           
-                           href="#">info@zaptar.ru</a>
+
+                                href="#">info@zaptar.ru</a>
                     </li>
                 </ul>
             </div>
@@ -751,23 +775,23 @@
                 <span>&copy; Интернет-магазин автозапчастей и комплектующих.</span> <span>Все права защищены - 2025</span>
             </p>
             <a
-               
-               
+
+
                     class="link link--light"
-               
-               href="#">Политика конфиденциальности</a>
+
+                    href="#">Политика конфиденциальности</a>
             <a
-               
-               
+
+
                     class="link link--light"
-               
-               href="#">Договор оферты</a>
+
+                    href="#">Договор оферты</a>
             <a
-               
-               
+
+
                     class="link link--light"
-               
-               href="#">Способы оплаты</a>
+
+                    href="#">Способы оплаты</a>
         </div>
     </div>
 </footer>
@@ -784,12 +808,12 @@
             </div>
             <div class="modal__wrapper">
                 <div class="alert alert--info">
-    <svg class="alert__ico">
-        <use xlink:href="static/img/symbol/sprite.svg#info-circle-fill"></use>
-    </svg>
+                    <svg class="alert__ico">
+                        <use xlink:href="static/img/symbol/sprite.svg#info-circle-fill"></use>
+                    </svg>
 
-    <span class="alert__text">Чтобы просмотреть содержимое страницы, войдите в личный кабинет или зарегистрируйтесь</span>
-</div>
+                    <span class="alert__text">Чтобы просмотреть содержимое страницы, войдите в личный кабинет или зарегистрируйтесь</span>
+                </div>
 
 
                 <form action="" class="modal__form form">
@@ -807,10 +831,10 @@
 
                     <div class="modal__fields-row">
                         <div class="checkbox checkbox--has-text">
-    <input id="checkbox-auth" type="checkbox" class="checkbox__input" checked required>
-    <label for="checkbox-auth" class="checkbox__label"></label>
-    <p class="checkbox__text">Запомнить данные</p>
-</div>
+                            <input id="checkbox-auth" type="checkbox" class="checkbox__input" checked required>
+                            <label for="checkbox-auth" class="checkbox__label"></label>
+                            <p class="checkbox__text">Запомнить данные</p>
+                        </div>
 
                         <a href="#" class="modal__fields-item">Забыли пароль?</a>
                     </div>
@@ -923,31 +947,31 @@
                     <div class="drawer__wrapper-input">
                         <label for="product-add-cart">Привязка к автомобилю</label>
                         <div class="select @@class" data-select data-select-id=product-add-cart @@data data-selected-value-first>
-    <div class="form-input select__search d-none" data-select-search>
-        <input type="text" name="select-category" data-select-input id="product-add-cart" class="select__input" value="@@value">
-        <span class="select__ico">
+                            <div class="form-input select__search d-none" data-select-search>
+                                <input type="text" name="select-category" data-select-input id="product-add-cart" class="select__input" value="@@value">
+                                <span class="select__ico">
             <svg aria-hidden="true">
                 <use xlink:href="static/img/symbol/sprite.svg#search"></use>
             </svg>
         </span>
-    </div>
-    <button type="button" class="form-input select__btn" data-select-btn>
-        <span data-select-text="Без привязки" class="select__text">Без привязки</span>
-        <span class="select__ico select__ico--rotate" data-select-ico>
+                            </div>
+                            <button type="button" class="form-input select__btn" data-select-btn>
+                                <span data-select-text="Без привязки" class="select__text">Без привязки</span>
+                                <span class="select__ico select__ico--rotate" data-select-ico>
           <svg>
             <use xlink:href="static/img/symbol/sprite.svg#chevron-down"></use>
           </svg>
         </span>
-    </button>
-    <div class="select__list" data-select-list>
-        <button type="button" class="select__item select__item--active select__item--selected"
-                data-select-value="value-1" @@dataItem1>Без привязки</button>
-        <button type="button" class="select__item"
-                data-select-value="value-2" @@dataItem2>Acura MDX I 3.5 4WD MDX I 3.5 л.с Q1231313</button>
-        <button type="button" class="select__item"
-                data-select-value="value-3" @@dataItem3>Привязать к авто 2</button>
-    </div>
-</div>
+                            </button>
+                            <div class="select__list" data-select-list>
+                                <button type="button" class="select__item select__item--active select__item--selected"
+                                        data-select-value="value-1" @@dataItem1>Без привязки</button>
+                                <button type="button" class="select__item"
+                                        data-select-value="value-2" @@dataItem2>Acura MDX I 3.5 4WD MDX I 3.5 л.с Q1231313</button>
+                                <button type="button" class="select__item"
+                                        data-select-value="value-3" @@dataItem3>Привязать к авто 2</button>
+                            </div>
+                        </div>
 
                     </div>
 
@@ -1193,7 +1217,7 @@
                 <form action="" class="drawer__form form">
                     <div class="drawer__wrapper-input">
                         <label for="theme-add" class="form__label">
-                        Тема
+                            Тема
                         </label>
                         <input type="text" class="form-input" id="theme-add" placeholder="Введите тему сообщения">
                     </div>
@@ -1201,11 +1225,11 @@
                         <div class="form-input form-file form-file--bg" tabindex="0" role="button" aria-label="Загрузить файл. Нажмите или перетащите файл сюда" data-dropzone >
                             <input id="file-input" class="form-file__input" type="file" multiple data-input="file" />
                             <label for="file-input"
-                            class="form-file__content"
-                            data-input="label"
-                            data-input-error="Один из файлов не является изображением. Доступные типы: jpg, png, bmp"
-                            data-input-placeholder="Нажмите в эту область, чтобы загрузить">
-                            Нажмите или перетащите файл в эту область, чтобы загрузить
+                                   class="form-file__content"
+                                   data-input="label"
+                                   data-input-error="Один из файлов не является изображением. Доступные типы: jpg, png, bmp"
+                                   data-input-placeholder="Нажмите в эту область, чтобы загрузить">
+                                Нажмите или перетащите файл в эту область, чтобы загрузить
                             </label>
                         </div>
                     </div>
@@ -1272,61 +1296,61 @@
                     <div class="drawer__wrapper-input">
                         <label for="filter-messages">Тип сообщения</label>
                         <div class="select @@class" data-select data-select-id=filter-messages @@data @@dataSelectItem>
-    <div class="form-input select__search d-none" data-select-search>
-        <input type="text" name="select-category" data-select-input id="filter-messages" class="select__input" value="@@value">
-        <span class="select__ico">
+                            <div class="form-input select__search d-none" data-select-search>
+                                <input type="text" name="select-category" data-select-input id="filter-messages" class="select__input" value="@@value">
+                                <span class="select__ico">
             <svg aria-hidden="true">
                 <use xlink:href="static/img/symbol/sprite.svg#search"></use>
             </svg>
         </span>
-    </div>
-    <button type="button" class="form-input select__btn" data-select-btn>
-        <span data-select-text="Все сообщения" class="select__text">Все сообщения</span>
-        <span class="select__ico select__ico--rotate" data-select-ico>
+                            </div>
+                            <button type="button" class="form-input select__btn" data-select-btn>
+                                <span data-select-text="Все сообщения" class="select__text">Все сообщения</span>
+                                <span class="select__ico select__ico--rotate" data-select-ico>
           <svg>
             <use xlink:href="static/img/symbol/sprite.svg#chevron-down"></use>
           </svg>
         </span>
-    </button>
-    <div class="select__list" data-select-list>
-        <button type="button" class="select__item select__item--active @@classItem"
-                data-select-value="message-1" @@dataItem1>Сообщение 1</button>
-        <button type="button" class="select__item"
-                data-select-value="message-2" @@dataItem2>Сообщение 2</button>
-        <button type="button" class="select__item"
-                data-select-value="message-3" @@dataItem3>Сообщение 3</button>
-    </div>
-</div>
+                            </button>
+                            <div class="select__list" data-select-list>
+                                <button type="button" class="select__item select__item--active @@classItem"
+                                        data-select-value="message-1" @@dataItem1>Сообщение 1</button>
+                                <button type="button" class="select__item"
+                                        data-select-value="message-2" @@dataItem2>Сообщение 2</button>
+                                <button type="button" class="select__item"
+                                        data-select-value="message-3" @@dataItem3>Сообщение 3</button>
+                            </div>
+                        </div>
 
                     </div>
                     <div class="drawer__wrapper-input">
                         <label for="reason">Причина возврата</label>
                         <div class="select select--multiple" data-select data-select-id=reason data-select-multiple data-select-multipleSelectItem>
-    <div class="form-input select__search d-none" data-select-search>
-        <input type="text" name="select-category" data-select-input id="reason" class="select__input" value="@@value">
-        <span class="select__ico">
+                            <div class="form-input select__search d-none" data-select-search>
+                                <input type="text" name="select-category" data-select-input id="reason" class="select__input" value="@@value">
+                                <span class="select__ico">
             <svg aria-hidden="true">
                 <use xlink:href="static/img/symbol/sprite.svg#search"></use>
             </svg>
         </span>
-    </div>
-    <button type="button" class="form-input select__btn" data-select-btn>
-        <span data-select-text="Все причины возврата" class="select__text">Все причины возврата</span>
-        <span class="select__ico select__ico--rotate" data-select-ico>
+                            </div>
+                            <button type="button" class="form-input select__btn" data-select-btn>
+                                <span data-select-text="Все причины возврата" class="select__text">Все причины возврата</span>
+                                <span class="select__ico select__ico--rotate" data-select-ico>
           <svg>
             <use xlink:href="static/img/symbol/sprite.svg#chevron-down"></use>
           </svg>
         </span>
-    </button>
-    <div class="select__list" data-select-list>
-        <button type="button" class="select__item select__item--active select--multipleItem"
-                data-select-value="defective-1" data-select-multipleItem1>Брак 1</button>
-        <button type="button" class="select__item"
-                data-select-value="defective-2" data-select-multipleItem2>Брак 2</button>
-        <button type="button" class="select__item"
-                data-select-value="defective-3" data-select-multipleItem3>Брак 3</button>
-    </div>
-</div>
+                            </button>
+                            <div class="select__list" data-select-list>
+                                <button type="button" class="select__item select__item--active select--multipleItem"
+                                        data-select-value="defective-1" data-select-multipleItem1>Брак 1</button>
+                                <button type="button" class="select__item"
+                                        data-select-value="defective-2" data-select-multipleItem2>Брак 2</button>
+                                <button type="button" class="select__item"
+                                        data-select-value="defective-3" data-select-multipleItem3>Брак 3</button>
+                            </div>
+                        </div>
 
                     </div>
                 </form>
@@ -1557,114 +1581,114 @@
                         <div class="drawer__form-content">
                             <input type="text" class="form-input" id="car-add-vin" placeholder="Введите VIN" >
                             <div class="select @@class" data-select data-select-id=car-add-brand data-select-sort data-select-sortSelectItem>
-    <div class="form-input select__search d-none" data-select-search>
-        <input type="text" name="select-category" data-select-input id="car-add-brand" class="select__input" value="@@value">
-        <span class="select__ico">
+                                <div class="form-input select__search d-none" data-select-search>
+                                    <input type="text" name="select-category" data-select-input id="car-add-brand" class="select__input" value="@@value">
+                                    <span class="select__ico">
             <svg aria-hidden="true">
                 <use xlink:href="static/img/symbol/sprite.svg#search"></use>
             </svg>
         </span>
-    </div>
-    <button type="button" class="form-input select__btn" data-select-btn>
-        <span data-select-text="Выберите марку автомобиля" class="select__text">Выберите марку автомобиля</span>
-        <span class="select__ico select__ico--rotate" data-select-ico>
+                                </div>
+                                <button type="button" class="form-input select__btn" data-select-btn>
+                                    <span data-select-text="Выберите марку автомобиля" class="select__text">Выберите марку автомобиля</span>
+                                    <span class="select__ico select__ico--rotate" data-select-ico>
           <svg>
             <use xlink:href="static/img/symbol/sprite.svg#chevron-down"></use>
           </svg>
         </span>
-    </button>
-    <div class="select__list" data-select-list>
-        <button type="button" class="select__item select__item--active @@classItem"
-                data-select-value="alfa-romeo" data-select-sortItem1>Alfa Romeo</button>
-        <button type="button" class="select__item"
-                data-select-value="lexus" data-select-sortItem2>Lexus</button>
-        <button type="button" class="select__item"
-                data-select-value="mercedes" data-select-sortItem3>Mercedes</button>
-    </div>
-</div>
+                                </button>
+                                <div class="select__list" data-select-list>
+                                    <button type="button" class="select__item select__item--active @@classItem"
+                                            data-select-value="alfa-romeo" data-select-sortItem1>Alfa Romeo</button>
+                                    <button type="button" class="select__item"
+                                            data-select-value="lexus" data-select-sortItem2>Lexus</button>
+                                    <button type="button" class="select__item"
+                                            data-select-value="mercedes" data-select-sortItem3>Mercedes</button>
+                                </div>
+                            </div>
 
                             <div class="select @@class" data-select data-select-id=car-add-model data-select-sort data-select-sortSelectItem>
-    <div class="form-input select__search d-none" data-select-search>
-        <input type="text" name="select-category" data-select-input id="car-add-model" class="select__input" value="@@value">
-        <span class="select__ico">
+                                <div class="form-input select__search d-none" data-select-search>
+                                    <input type="text" name="select-category" data-select-input id="car-add-model" class="select__input" value="@@value">
+                                    <span class="select__ico">
             <svg aria-hidden="true">
                 <use xlink:href="static/img/symbol/sprite.svg#search"></use>
             </svg>
         </span>
-    </div>
-    <button type="button" class="form-input select__btn" data-select-btn>
-        <span data-select-text="Выберите модель автомобиля" class="select__text">Выберите модель автомобиля</span>
-        <span class="select__ico select__ico--rotate" data-select-ico>
+                                </div>
+                                <button type="button" class="form-input select__btn" data-select-btn>
+                                    <span data-select-text="Выберите модель автомобиля" class="select__text">Выберите модель автомобиля</span>
+                                    <span class="select__ico select__ico--rotate" data-select-ico>
           <svg>
             <use xlink:href="static/img/symbol/sprite.svg#chevron-down"></use>
           </svg>
         </span>
-    </button>
-    <div class="select__list" data-select-list>
-        <button type="button" class="select__item select__item--active @@classItem"
-                data-select-value="model-1" data-select-sortItem1>Model 1</button>
-        <button type="button" class="select__item"
-                data-select-value="model-2" data-select-sortItem2>Model 2</button>
-        <button type="button" class="select__item"
-                data-select-value="model-3" data-select-sortItem3>Model 3</button>
-    </div>
-</div>
+                                </button>
+                                <div class="select__list" data-select-list>
+                                    <button type="button" class="select__item select__item--active @@classItem"
+                                            data-select-value="model-1" data-select-sortItem1>Model 1</button>
+                                    <button type="button" class="select__item"
+                                            data-select-value="model-2" data-select-sortItem2>Model 2</button>
+                                    <button type="button" class="select__item"
+                                            data-select-value="model-3" data-select-sortItem3>Model 3</button>
+                                </div>
+                            </div>
 
                             <div class="select @@class" data-select data-select-id=car-add-power data-select-sort data-select-sortSelectItem>
-    <div class="form-input select__search d-none" data-select-search>
-        <input type="text" name="select-category" data-select-input id="car-add-power" class="select__input" value="@@value">
-        <span class="select__ico">
+                                <div class="form-input select__search d-none" data-select-search>
+                                    <input type="text" name="select-category" data-select-input id="car-add-power" class="select__input" value="@@value">
+                                    <span class="select__ico">
             <svg aria-hidden="true">
                 <use xlink:href="static/img/symbol/sprite.svg#search"></use>
             </svg>
         </span>
-    </div>
-    <button type="button" class="form-input select__btn" data-select-btn>
-        <span data-select-text="Выберите объем двигателя и мощность" class="select__text">Выберите объем двигателя и мощность</span>
-        <span class="select__ico select__ico--rotate" data-select-ico>
+                                </div>
+                                <button type="button" class="form-input select__btn" data-select-btn>
+                                    <span data-select-text="Выберите объем двигателя и мощность" class="select__text">Выберите объем двигателя и мощность</span>
+                                    <span class="select__ico select__ico--rotate" data-select-ico>
           <svg>
             <use xlink:href="static/img/symbol/sprite.svg#chevron-down"></use>
           </svg>
         </span>
-    </button>
-    <div class="select__list" data-select-list>
-        <button type="button" class="select__item select__item--active @@classItem"
-                data-select-value="power-1" data-select-sortItem1>Power 1</button>
-        <button type="button" class="select__item"
-                data-select-value="power-2" data-select-sortItem2>power 2</button>
-        <button type="button" class="select__item"
-                data-select-value="power-3" data-select-sortItem3>power 3</button>
-    </div>
-</div>
+                                </button>
+                                <div class="select__list" data-select-list>
+                                    <button type="button" class="select__item select__item--active @@classItem"
+                                            data-select-value="power-1" data-select-sortItem1>Power 1</button>
+                                    <button type="button" class="select__item"
+                                            data-select-value="power-2" data-select-sortItem2>power 2</button>
+                                    <button type="button" class="select__item"
+                                            data-select-value="power-3" data-select-sortItem3>power 3</button>
+                                </div>
+                            </div>
 
                             <input type="text" class="form-input" id="car-add-license" placeholder="Введите госномер" >
                             <input type="text" class="form-input" id="car-add-mileage" placeholder="Введите пробег" >
                             <div class="select @@class" data-select data-select-id=car-add-year data-select-sort data-select-sortSelectItem>
-    <div class="form-input select__search d-none" data-select-search>
-        <input type="text" name="select-category" data-select-input id="car-add-year" class="select__input" value="@@value">
-        <span class="select__ico">
+                                <div class="form-input select__search d-none" data-select-search>
+                                    <input type="text" name="select-category" data-select-input id="car-add-year" class="select__input" value="@@value">
+                                    <span class="select__ico">
             <svg aria-hidden="true">
                 <use xlink:href="static/img/symbol/sprite.svg#search"></use>
             </svg>
         </span>
-    </div>
-    <button type="button" class="form-input select__btn" data-select-btn>
-        <span data-select-text="Выберите год выпуска автомобиля" class="select__text">Выберите год выпуска автомобиля</span>
-        <span class="select__ico select__ico--rotate" data-select-ico>
+                                </div>
+                                <button type="button" class="form-input select__btn" data-select-btn>
+                                    <span data-select-text="Выберите год выпуска автомобиля" class="select__text">Выберите год выпуска автомобиля</span>
+                                    <span class="select__ico select__ico--rotate" data-select-ico>
           <svg>
             <use xlink:href="static/img/symbol/sprite.svg#chevron-down"></use>
           </svg>
         </span>
-    </button>
-    <div class="select__list" data-select-list>
-        <button type="button" class="select__item select__item--active @@classItem"
-                data-select-value="2021" data-select-sortItem1>2021</button>
-        <button type="button" class="select__item"
-                data-select-value="2022" data-select-sortItem2>2022</button>
-        <button type="button" class="select__item"
-                data-select-value="2023" data-select-sortItem3>2023</button>
-    </div>
-</div>
+                                </button>
+                                <div class="select__list" data-select-list>
+                                    <button type="button" class="select__item select__item--active @@classItem"
+                                            data-select-value="2021" data-select-sortItem1>2021</button>
+                                    <button type="button" class="select__item"
+                                            data-select-value="2022" data-select-sortItem2>2022</button>
+                                    <button type="button" class="select__item"
+                                            data-select-value="2023" data-select-sortItem3>2023</button>
+                                </div>
+                            </div>
 
                             <textarea class="form-textarea" id="car-add-text" placeholder="Комментарий к автомобилю"></textarea>
                             <div class="form-input form-file-2" tabindex="0" role="button" aria-label="Загрузить фото автомобиля" data-dropzone data-input="file-download-wrapper">
@@ -1750,31 +1774,31 @@
                             <input type="text" class="form-input" id="car-edit-license" value="T374OB" placeholder="Введите госномер" >
                             <input type="text" class="form-input" id="car-edit-mileage" value="120 000" placeholder="Введите пробег" >
                             <div class="select @@class" data-select data-select-id=car-edit-year data-select-sort data-selected-value-first>
-    <div class="form-input select__search d-none" data-select-search>
-        <input type="text" name="select-category" data-select-input id="car-edit-year" class="select__input" value="2023">
-        <span class="select__ico">
+                                <div class="form-input select__search d-none" data-select-search>
+                                    <input type="text" name="select-category" data-select-input id="car-edit-year" class="select__input" value="2023">
+                                    <span class="select__ico">
             <svg aria-hidden="true">
                 <use xlink:href="static/img/symbol/sprite.svg#search"></use>
             </svg>
         </span>
-    </div>
-    <button type="button" class="form-input select__btn" data-select-btn>
-        <span data-select-text="Выберите год выпуска автомобиля" class="select__text">Выберите год выпуска автомобиля</span>
-        <span class="select__ico select__ico--rotate" data-select-ico>
+                                </div>
+                                <button type="button" class="form-input select__btn" data-select-btn>
+                                    <span data-select-text="Выберите год выпуска автомобиля" class="select__text">Выберите год выпуска автомобиля</span>
+                                    <span class="select__ico select__ico--rotate" data-select-ico>
           <svg>
             <use xlink:href="static/img/symbol/sprite.svg#chevron-down"></use>
           </svg>
         </span>
-    </button>
-    <div class="select__list" data-select-list>
-        <button type="button" class="select__item select__item--active select__item--selected"
-                data-select-value="2021" data-select-sortItem1>2021</button>
-        <button type="button" class="select__item"
-                data-select-value="2022" data-select-sortItem2>2022</button>
-        <button type="button" class="select__item"
-                data-select-value="2023" data-select-sortItem3>2023</button>
-    </div>
-</div>
+                                </button>
+                                <div class="select__list" data-select-list>
+                                    <button type="button" class="select__item select__item--active select__item--selected"
+                                            data-select-value="2021" data-select-sortItem1>2021</button>
+                                    <button type="button" class="select__item"
+                                            data-select-value="2022" data-select-sortItem2>2022</button>
+                                    <button type="button" class="select__item"
+                                            data-select-value="2023" data-select-sortItem3>2023</button>
+                                </div>
+                            </div>
 
                             <textarea class="form-textarea" id="car-edit-text" placeholder="Комментарий к автомобилю"></textarea>
                             <div class="form-input form-file-2 d-none" tabindex="0" role="button" aria-label="Загрузить фото автомобиля" data-dropzone data-input="file-download-wrapper">
@@ -1829,31 +1853,31 @@
                     <div class="drawer__wrapper-input">
                         <label for="recharge-method" class="form__label">Способ оплаты</label>
                         <div class="select @@class" data-select data-select-id=recharge-method @@data @@dataSelectItem>
-    <div class="form-input select__search d-none" data-select-search>
-        <input type="text" name="select-category" data-select-input id="recharge-method" class="select__input" value="@@value">
-        <span class="select__ico">
+                            <div class="form-input select__search d-none" data-select-search>
+                                <input type="text" name="select-category" data-select-input id="recharge-method" class="select__input" value="@@value">
+                                <span class="select__ico">
             <svg aria-hidden="true">
                 <use xlink:href="static/img/symbol/sprite.svg#search"></use>
             </svg>
         </span>
-    </div>
-    <button type="button" class="form-input select__btn" data-select-btn>
-        <span data-select-text="Выберите способ оплаты" class="select__text">Выберите способ оплаты</span>
-        <span class="select__ico select__ico--rotate" data-select-ico>
+                            </div>
+                            <button type="button" class="form-input select__btn" data-select-btn>
+                                <span data-select-text="Выберите способ оплаты" class="select__text">Выберите способ оплаты</span>
+                                <span class="select__ico select__ico--rotate" data-select-ico>
           <svg>
             <use xlink:href="static/img/symbol/sprite.svg#chevron-down"></use>
           </svg>
         </span>
-    </button>
-    <div class="select__list" data-select-list>
-        <button type="button" class="select__item select__item--active @@classItem"
-                data-select-value="payment-1" @@dataItem1>Система быстрых платежей QR-код</button>
-        <button type="button" class="select__item"
-                data-select-value="payment-2" @@dataItem2>Система быстрых платежей</button>
-        <button type="button" class="select__item"
-                data-select-value="payment-3" @@dataItem3>Система быстрых платежей</button>
-    </div>
-</div>
+                            </button>
+                            <div class="select__list" data-select-list>
+                                <button type="button" class="select__item select__item--active @@classItem"
+                                        data-select-value="payment-1" @@dataItem1>Система быстрых платежей QR-код</button>
+                                <button type="button" class="select__item"
+                                        data-select-value="payment-2" @@dataItem2>Система быстрых платежей</button>
+                                <button type="button" class="select__item"
+                                        data-select-value="payment-3" @@dataItem3>Система быстрых платежей</button>
+                            </div>
+                        </div>
 
                     </div>
                     <div class="drawer__wrapper-input">
@@ -1931,31 +1955,31 @@
                     <div class="drawer__wrapper-input">
                         <label for="order-issue-date">Дата оформления</label>
                         <div class="select @@class" data-select data-select-id=order-issue-date @@data data-selected-value-first>
-    <div class="form-input select__search d-none" data-select-search>
-        <input type="text" name="select-category" data-select-input id="order-issue-date" class="select__input" value="@@value">
-        <span class="select__ico">
+                            <div class="form-input select__search d-none" data-select-search>
+                                <input type="text" name="select-category" data-select-input id="order-issue-date" class="select__input" value="@@value">
+                                <span class="select__ico">
             <svg aria-hidden="true">
                 <use xlink:href="static/img/symbol/sprite.svg#search"></use>
             </svg>
         </span>
-    </div>
-    <button type="button" class="form-input select__btn" data-select-btn>
-        <span data-select-text="Сегодня" class="select__text">Сегодня</span>
-        <span class="select__ico select__ico--rotate" data-select-ico>
+                            </div>
+                            <button type="button" class="form-input select__btn" data-select-btn>
+                                <span data-select-text="Сегодня" class="select__text">Сегодня</span>
+                                <span class="select__ico select__ico--rotate" data-select-ico>
           <svg>
             <use xlink:href="static/img/symbol/sprite.svg#chevron-down"></use>
           </svg>
         </span>
-    </button>
-    <div class="select__list" data-select-list>
-        <button type="button" class="select__item select__item--active select__item--selected"
-                data-select-value="today" @@dataItem1>Сегодня</button>
-        <button type="button" class="select__item"
-                data-select-value="7-days" @@dataItem2>За последние 7 дней</button>
-        <button type="button" class="select__item"
-                data-select-value="choose-days" data-specific-option>Выбрать дни</button>
-    </div>
-</div>
+                            </button>
+                            <div class="select__list" data-select-list>
+                                <button type="button" class="select__item select__item--active select__item--selected"
+                                        data-select-value="today" @@dataItem1>Сегодня</button>
+                                <button type="button" class="select__item"
+                                        data-select-value="7-days" @@dataItem2>За последние 7 дней</button>
+                                <button type="button" class="select__item"
+                                        data-select-value="choose-days" data-specific-option>Выбрать дни</button>
+                            </div>
+                        </div>
 
                     </div>
 
@@ -1986,31 +2010,31 @@
                     <div class="drawer__wrapper-input">
                         <label for="order-pick-up">Пункт самовывоза</label>
                         <div class="select @@class" data-select data-select-id=order-pick-up @@data data-selected-value-first>
-    <div class="form-input select__search d-none" data-select-search>
-        <input type="text" name="select-category" data-select-input id="order-pick-up" class="select__input" value="@@value">
-        <span class="select__ico">
+                            <div class="form-input select__search d-none" data-select-search>
+                                <input type="text" name="select-category" data-select-input id="order-pick-up" class="select__input" value="@@value">
+                                <span class="select__ico">
             <svg aria-hidden="true">
                 <use xlink:href="static/img/symbol/sprite.svg#search"></use>
             </svg>
         </span>
-    </div>
-    <button type="button" class="form-input select__btn" data-select-btn>
-        <span data-select-text="ул. Луначарского, д.202, строение 1, корпус 4, офис 1005" class="select__text">ул. Луначарского, д.202, строение 1, корпус 4, офис 1005</span>
-        <span class="select__ico select__ico--rotate" data-select-ico>
+                            </div>
+                            <button type="button" class="form-input select__btn" data-select-btn>
+                                <span data-select-text="ул. Луначарского, д.202, строение 1, корпус 4, офис 1005" class="select__text">ул. Луначарского, д.202, строение 1, корпус 4, офис 1005</span>
+                                <span class="select__ico select__ico--rotate" data-select-ico>
           <svg>
             <use xlink:href="static/img/symbol/sprite.svg#chevron-down"></use>
           </svg>
         </span>
-    </button>
-    <div class="select__list" data-select-list>
-        <button type="button" class="select__item select__item--active select__item--selected"
-                data-select-value="first-address" @@dataItem1> ул. Луначарского, д.202, строение 1, корпус 4, офис 1005</button>
-        <button type="button" class="select__item"
-                data-select-value="second-address" @@dataItem2>ул. Встроченко, д. 1 (офис 405)</button>
-        <button type="button" class="select__item"
-                data-select-value="third-address" @@dataItem3>ул. Клары-Цеткин, д. 25 (офис 1004)</button>
-    </div>
-</div>
+                            </button>
+                            <div class="select__list" data-select-list>
+                                <button type="button" class="select__item select__item--active select__item--selected"
+                                        data-select-value="first-address" @@dataItem1> ул. Луначарского, д.202, строение 1, корпус 4, офис 1005</button>
+                                <button type="button" class="select__item"
+                                        data-select-value="second-address" @@dataItem2>ул. Встроченко, д. 1 (офис 405)</button>
+                                <button type="button" class="select__item"
+                                        data-select-value="third-address" @@dataItem3>ул. Клары-Цеткин, д. 25 (офис 1004)</button>
+                            </div>
+                        </div>
 
                     </div>
                 </form>
@@ -2043,31 +2067,31 @@
                     <div class="drawer__wrapper-input">
                         <label for="discussion-theme">Тема</label>
                         <div class="select @@class" data-select data-select-id=discussion-theme @@data data-selected-value-first>
-    <div class="form-input select__search d-none" data-select-search>
-        <input type="text" name="select-category" data-select-input id="discussion-theme" class="select__input" value="@@value">
-        <span class="select__ico">
+                            <div class="form-input select__search d-none" data-select-search>
+                                <input type="text" name="select-category" data-select-input id="discussion-theme" class="select__input" value="@@value">
+                                <span class="select__ico">
             <svg aria-hidden="true">
                 <use xlink:href="static/img/symbol/sprite.svg#search"></use>
             </svg>
         </span>
-    </div>
-    <button type="button" class="form-input select__btn" data-select-btn>
-        <span data-select-text="Недостача" class="select__text">Недостача</span>
-        <span class="select__ico select__ico--rotate" data-select-ico>
+                            </div>
+                            <button type="button" class="form-input select__btn" data-select-btn>
+                                <span data-select-text="Недостача" class="select__text">Недостача</span>
+                                <span class="select__ico select__ico--rotate" data-select-ico>
           <svg>
             <use xlink:href="static/img/symbol/sprite.svg#chevron-down"></use>
           </svg>
         </span>
-    </button>
-    <div class="select__list" data-select-list>
-        <button type="button" class="select__item select__item--active select__item--selected"
-                data-select-value="deficit" data-specific-option>Недостача</button>
-        <button type="button" class="select__item"
-                data-select-value="when-come" @@dataItem2>Когда придет?</button>
-        <button type="button" class="select__item"
-                data-select-value="free-question" @@dataItem3>Произвольный вопрос</button>
-    </div>
-</div>
+                            </button>
+                            <div class="select__list" data-select-list>
+                                <button type="button" class="select__item select__item--active select__item--selected"
+                                        data-select-value="deficit" data-specific-option>Недостача</button>
+                                <button type="button" class="select__item"
+                                        data-select-value="when-come" @@dataItem2>Когда придет?</button>
+                                <button type="button" class="select__item"
+                                        data-select-value="free-question" @@dataItem3>Произвольный вопрос</button>
+                            </div>
+                        </div>
 
                     </div>
                     <div class="drawer__wrapper-input" data-specific-field="deficit">
@@ -2124,61 +2148,61 @@
                     <div class="drawer__wrapper-input">
                         <label for="sort-product-status">Выберите статус</label>
                         <div class="select @@class" data-select data-select-id=sort-product-status @@data @@dataSelectItem>
-    <div class="form-input select__search d-none" data-select-search>
-        <input type="text" name="select-category" data-select-input id="sort-product-status" class="select__input" value="@@value">
-        <span class="select__ico">
+                            <div class="form-input select__search d-none" data-select-search>
+                                <input type="text" name="select-category" data-select-input id="sort-product-status" class="select__input" value="@@value">
+                                <span class="select__ico">
             <svg aria-hidden="true">
                 <use xlink:href="static/img/symbol/sprite.svg#search"></use>
             </svg>
         </span>
-    </div>
-    <button type="button" class="form-input select__btn" data-select-btn>
-        <span data-select-text="Выберите статус" class="select__text">Выберите статус</span>
-        <span class="select__ico select__ico--rotate" data-select-ico>
+                            </div>
+                            <button type="button" class="form-input select__btn" data-select-btn>
+                                <span data-select-text="Выберите статус" class="select__text">Выберите статус</span>
+                                <span class="select__ico select__ico--rotate" data-select-ico>
           <svg>
             <use xlink:href="static/img/symbol/sprite.svg#chevron-down"></use>
           </svg>
         </span>
-    </button>
-    <div class="select__list" data-select-list>
-        <button type="button" class="select__item select__item--active @@classItem"
-                data-select-value="value-1" @@dataItem1>В обработке</button>
-        <button type="button" class="select__item"
-                data-select-value="value-2" @@dataItem2>Возврат проведен</button>
-        <button type="button" class="select__item"
-                data-select-value="value-3" @@dataItem3>В разборе</button>
-    </div>
-</div>
+                            </button>
+                            <div class="select__list" data-select-list>
+                                <button type="button" class="select__item select__item--active @@classItem"
+                                        data-select-value="value-1" @@dataItem1>В обработке</button>
+                                <button type="button" class="select__item"
+                                        data-select-value="value-2" @@dataItem2>Возврат проведен</button>
+                                <button type="button" class="select__item"
+                                        data-select-value="value-3" @@dataItem3>В разборе</button>
+                            </div>
+                        </div>
 
                     </div>
                     <div class="drawer__wrapper-input">
                         <label for="sort-product-price">Выберите цену</label>
                         <div class="select @@class" data-select data-select-id=sort-product-price @@data @@dataSelectItem>
-    <div class="form-input select__search d-none" data-select-search>
-        <input type="text" name="select-category" data-select-input id="sort-product-price" class="select__input" value="@@value">
-        <span class="select__ico">
+                            <div class="form-input select__search d-none" data-select-search>
+                                <input type="text" name="select-category" data-select-input id="sort-product-price" class="select__input" value="@@value">
+                                <span class="select__ico">
             <svg aria-hidden="true">
                 <use xlink:href="static/img/symbol/sprite.svg#search"></use>
             </svg>
         </span>
-    </div>
-    <button type="button" class="form-input select__btn" data-select-btn>
-        <span data-select-text="Выберите цену" class="select__text">Выберите цену</span>
-        <span class="select__ico select__ico--rotate" data-select-ico>
+                            </div>
+                            <button type="button" class="form-input select__btn" data-select-btn>
+                                <span data-select-text="Выберите цену" class="select__text">Выберите цену</span>
+                                <span class="select__ico select__ico--rotate" data-select-ico>
           <svg>
             <use xlink:href="static/img/symbol/sprite.svg#chevron-down"></use>
           </svg>
         </span>
-    </button>
-    <div class="select__list" data-select-list>
-        <button type="button" class="select__item select__item--active @@classItem"
-                data-select-value="value-1" @@dataItem1>Наценка (10,00)</button>
-        <button type="button" class="select__item"
-                data-select-value="value-2" @@dataItem2>Наценка (20,00)</button>
-        <button type="button" class="select__item"
-                data-select-value="value-3" @@dataItem3>Без наценки</button>
-    </div>
-</div>
+                            </button>
+                            <div class="select__list" data-select-list>
+                                <button type="button" class="select__item select__item--active @@classItem"
+                                        data-select-value="value-1" @@dataItem1>Наценка (10,00)</button>
+                                <button type="button" class="select__item"
+                                        data-select-value="value-2" @@dataItem2>Наценка (20,00)</button>
+                                <button type="button" class="select__item"
+                                        data-select-value="value-3" @@dataItem3>Без наценки</button>
+                            </div>
+                        </div>
 
                     </div>
                 </form>
@@ -2270,7 +2294,7 @@
 
 
 
-  <script src="./static/js/libs.min.js"></script>
-  <script src="./static/js/main.min.js"></script>
+<script src="./static/js/libs.min.js"></script>
+<script src="./static/js/main.min.js"></script>
 </body>
 </html>

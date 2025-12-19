@@ -15,12 +15,30 @@
 
 <header class="header" data-header>
     <div class="header__top container">
-        <div class="header__logo">
-            <a class="logo" href="/zaptar-all/v3/dist/index.html">
-                <img class="logo__img" src="static/img/logo/logo-2.svg" width="198" height="32" alt="zaptar">
-            </a>
-            <span class="logo__text d-md-none">Интернет магазин <br> автозапчастей для иномарок</span>
-        </div>
+        <!-- десктоп -->
+        <!-- Пользователь авторизован -->
+        <a class="header-address" href="#">
+            <svg class="header-address__ico" aria-hidden="true">
+                <use xlink:href="static/img/symbol/sprite.svg#mark"></use>
+            </svg>
+
+            <span class="header-address__city">Москва</span>
+        </a>
+
+        <!-- десктоп -->
+        <!-- Пользователь не авторизован -->
+        <!-- <div class="header__top-logo"> -->
+        <!--     <a class="logo" href="/zaptar-all/v2/dist/index.html"> -->
+        <!--         <img class="logo__img" src="static/img/logo/logo-2.svg" width="198" height="32" alt="zaptar"> -->
+        <!--     </a> -->
+        <!--     <a class="header-address d-xs-none" href="#"> -->
+        <!--         <svg class="header-address__ico" aria-hidden="true"> -->
+        <!--             <use xlink:href="static/img/symbol/sprite.svg#mark"></use> -->
+        <!--         </svg> -->
+
+        <!--         <span class="header-address__city">Москва</span> -->
+        <!--     </a> -->
+        <!-- </div> -->
 
         <!-- десктоп -->
         <!-- Пользователь авторизован -->
@@ -129,6 +147,12 @@
     <!--  Десктоп -->
     <!-- Пользователь авторизован -->
     <div class="header__bottom container">
+        <div class="header__logo">
+            <a class="logo" href="/zaptar-all/v3/dist/index.html">
+                <img class="logo__img" src="static/img/logo/logo-2.svg" width="198" height="32" alt="zaptar">
+            </a>
+            <span class="logo__text d-lg-none">Интернет магазин <br> автозапчастей для иномарок</span>
+        </div>
         <nav class="header__bottom-actions header-bottom-actions">
             <a class="btn btn--filled btn--theme-secondary btn--size-m btn--compact d-md-none" href="#">
                 <svg aria-hidden="true" class="btn__ico">
@@ -170,10 +194,9 @@
                 <span class="header-btn-wallet__balance">+999 999 руб</span>
             </a>
 
-            <button type="button" class="header-user-dropdown__toggle btn btn--filled btn--theme-secondary btn--size-m d-none d-md-flex" data-modal="drawer-user">
-                Иван
-                <svg aria-hidden="true" class="btn__ico btn__ico--sm">
-                    <use xlink:href="static/img/symbol/sprite.svg#chevron-down"></use>
+            <button type="button" aria-label="Пользователь" class="header-user-dropdown__toggle btn btn--filled btn--theme-secondary btn--size-m btn--compact d-none d-md-flex" data-modal="drawer-user">
+                <svg aria-hidden="true" class="btn-lite__ico">
+                    <use xlink:href="static/img/symbol/sprite.svg#user"></use>
                 </svg>
             </button>
 

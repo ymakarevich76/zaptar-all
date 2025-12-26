@@ -282,41 +282,18 @@
         <div class="section-header section-header--mb">
             <h1 class="title">Результаты поиска</h1>
 
-            <div class="section-header__group d-none d-xl-grid">
+            <div class="section-header__group">
                 <button class="btn btn--outlined btn--theme-secondary btn--size-m" type="button" data-modal="drawer-filter-search">
+                    <svg class="btn__ico" aria-hidden="true">
+                        <use xlink:href="static/img/symbol/sprite.svg#filter"></use>
+                    </svg>
                     Фильтр
                 </button>
             </div>
         </div>
 
-        <div class="search__template">
-            <div class="search-filter d-xl-none">
-                <div class="search-filter__title">Фильтр</div>
-
-                <div class="search-filter__group">
-                    <h2 class="search-filter__group-title title-4">Бренд</h2>
-
-                    <ul class="search-filter__list">
-                        <li class="search-filter__item">
-                            <div class="search-filter__checkbox checkbox checkbox--has-text">
-                                <input id="search-filter-checkbox" type="checkbox" class="checkbox__input">
-                                <label for="search-filter-checkbox" class="checkbox__label"></label>
-                                <p class="checkbox__text">OSMAR</p>
-                            </div>
-                            <div class="search-filter__price">
-                                от 66 руб
-                            </div>
-                        </li>
-                    </ul>
-
-                    <button type="button" class="search-filter__btn btn btn--size-s">
-                        Показать аналоги
-                    </button>
-                </div>
-            </div>
-
-            <div class="search__content">
-                <div class="alert alert--info search__info">
+        <div class="search__content">
+            <div class="alert alert--info search__info">
     <svg class="alert__ico">
         <use xlink:href="static/img/symbol/sprite.svg#info-circle-fill"></use>
     </svg>
@@ -325,1055 +302,1055 @@
 </div>
 
 
-                <!-- desk -->
-                <div class="search__result d-md-none">
-                    <div class="search__result-title">
-                        <svg aria-hidden="true">
-                            <use xlink:href="static/img/symbol/sprite.svg#filter"></use>
-                        </svg>
-                        Запрошенный артикул
+            <!-- desk -->
+            <div class="search__result d-md-none">
+                <div class="search__result-title">
+                    <svg aria-hidden="true">
+                        <use xlink:href="static/img/symbol/sprite.svg#filter"></use>
+                    </svg>
+                    Запрошенный артикул
+                </div>
+
+                <div class="search__table table" data-table>
+
+                    <div class="table__scrollbar scrollbar scrollbar--horizontal" data-table-scrollbar>
+                        <table class="table__inner" data-table-inner>
+                            <tr>
+                                <th class="nowrap">
+                                    Бренд / Артикул
+                                </th>
+                                <th>
+                                    <!-- Картинка -->
+                                </th>
+                                <th>
+                                    Наименование
+                                </th>
+                                <th>
+                                    Поставщик&nbsp;/
+                                    Склад
+                                </th>
+                                <th class="table__cell-slim table__cell-narrow">
+                                    <!-- Возврат -->
+                                </th>
+                                <th>
+                                    <!-- Дистрибьютер -->
+                                </th>
+                                <th>
+                                    <div class="table-head-info">
+                                        Наличие
+                                        <svg aria-hidden="true" class="table-head-info__ico" data-tippy-with-code-content-light="1">
+                                            <use xlink:href="static/img/symbol/sprite.svg#info-circle"></use>
+                                        </svg>
+                                    </div>
+                                </th>
+                                <th class="table__cell-slim table__cell-narrow">
+                                    <!-- Статус -->
+                                </th>
+                                <th>
+                                    <div class="table-head-info">
+                                        Срок
+                                        <svg aria-hidden="true" class="table-head-info__ico" data-tippy-content="Ожидаемый срок в рабочих днях до склада МСК" data-width-tooltip="182">
+                                            <use xlink:href="static/img/symbol/sprite.svg#info-circle"></use>
+                                        </svg>
+                                    </div>
+                                </th>
+                                <th>
+                                    <div class="table-head-info">
+                                        Ожидаемая
+                                        дата&nbsp;доставки
+                                        <svg aria-hidden="true" class="table-head-info__ico" data-tippy-content="Дата получения деталей клиентом на момент проценки, с учетом выходных дней, рассчитывается динамически при проценке.">
+                                            <use xlink:href="static/img/symbol/sprite.svg#info-circle"></use>
+                                        </svg>
+                                    </div>
+                                </th>
+                                <th>
+                                    <div class="table-dropdown" data-dropdown>
+                                        <div class="table-dropdown__inner">
+                                            Цена
+                                            <button type="button" class="table-dropdown__trigger btn-lite btn-lite--compact btn-lite--theme-default" data-dropdown-btn="1">
+                                                <svg class="btn-lite__ico" aria-hidden="true">
+                                                    <use xlink:href="static/img/symbol/sprite.svg#filter-filled"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </th>
+                                <th>
+                                    Купить
+                                </th>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <!-- Бренд / Артикул -->
+                                    <div class="table-cel-info">
+                                        OSMAR<br> 7506
+                                        <svg aria-hidden="true" class="table-cel-info__ico">
+                                            <use xlink:href="static/img/symbol/sprite.svg#info-circle"></use>
+                                        </svg>
+                                    </div>
+                                </td>
+                                <td>
+                                    <!-- Картинка -->
+                                    <button type="button" class="table-btn">
+                                        <svg aria-hidden="true" class="table-btn__ico">
+                                            <use xlink:href="static/img/symbol/sprite.svg#picture"></use>
+                                        </svg>
+                                    </button>
+                                </td>
+                                <td>
+                                    <!-- Наименование -->
+                                    лампа 12 v 21 w стопсигнал повторитель 1-конт (ba 15) (o ram)
+                                </td>
+                                <td>
+                                    <!-- Поставщик / Склад -->
+                                    TMNR
+                                </td>
+                                <td class="table__cell-slim table__cell-narrow">
+                                    <!-- Возврат -->
+                                    <button type="button" aria-label="информация возврата товаров" class="status-return status-return--standard" data-tippy-with-code-content>
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="static/img/symbol/sprite.svg#sync"></use>
+                                        </svg>
+                                    </button>
+                                </td>
+                                <td>
+                                    <!--  Дистрибьютер -->
+                                    <button type="button" aria-label="дистрибьютер" class="table-btn" data-tippy-content="Дистрибьютер">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="static/img/symbol/sprite.svg#credit-card"></use>
+                                        </svg>
+                                    </button>
+                                </td>
+                                <td>
+                                    <!-- Наличие -->
+                                    >&nbsp;1000
+                                </td>
+                                <td class="table__cell-slim table__cell-narrow">
+                                    <!-- Статус -->
+                                    <div class="status status--alone status--type-left status--rejected" data-tippy-with-code-content-light="2">
+                                    </div>
+                                </td>
+                                <td class="nowrap">
+                                    <!-- Срок -->
+                                    1 день<br>
+                                    (до 13:20)
+                                </td>
+                                <td>
+                                    <!-- Ожидаемая дата доставки -->
+                                    04.07 Чт
+                                </td>
+                                <td class="nowrap">
+                                    <!-- Цена -->
+                                    1 427,00
+                                </td>
+                                <td>
+                                    <!-- Купить -->
+                                    <div class="table__actions">
+                                        <button type="button" aria-label="добавить в избранное" class="btn-lite btn-lite--compact btn-lite--theme-default" data-tippy-content="Удалить из избранного">
+                                            <!-- <svg class="btn-lite__ico" aria-hidden="true"> -->
+                                            <!--     <use xlink:href="static/img/symbol/sprite.svg#heart"></use> -->
+                                            <!-- </svg> -->
+                                            <svg class="btn-lite__ico" aria-hidden="true">
+                                                <use xlink:href="static/img/symbol/sprite.svg#heart-filled"></use>
+                                            </svg>
+                                        </button>
+
+                                        <label class="search__form-number form-number test" data-form-number="1">
+                                            <input class="form-number__input form-input" type="number" value="10" data-tippy-content="На складе: 291 Минимальная партия: 1 шт." data-width-tooltip="175">
+                                            <button type="button" class="form-number__increment" data-increment>
+                                                <svg class="form-number__ico" aria-hidden="true">
+                                                    <use xlink:href="static/img/symbol/sprite.svg#chevron-up"></use>
+                                                </svg>
+                                            </button>
+                                            <button type="button" class="form-number__decrement" data-decrement>
+                                                <svg class="form-number__ico" aria-hidden="true">
+                                                    <use xlink:href="static/img/symbol/sprite.svg#chevron-down"></use>
+                                                </svg>
+                                            </button>
+                                        </label>
+
+                                        <button type="button" aria-label="добавить в корзину" class="btn-lite btn-lite--compact btn-lite--theme-default" data-modal="modal-add-cart">
+                                            <svg class="btn-lite__ico" aria-hidden="true">
+                                                <use xlink:href="static/img/symbol/sprite.svg#cart"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <!-- Бренд / Артикул -->
+                                    <div class="table-cel-info">
+                                        OSMAR<br> 7506
+                                        <svg aria-hidden="true" class="table-cel-info__ico">
+                                            <use xlink:href="static/img/symbol/sprite.svg#info-circle"></use>
+                                        </svg>
+                                    </div>
+                                </td>
+                                <td>
+                                    <!-- Картинка -->
+                                    <button type="button" class="table-btn">
+                                        <svg aria-hidden="true" class="table-btn__ico">
+                                            <use xlink:href="static/img/symbol/sprite.svg#picture"></use>
+                                        </svg>
+                                    </button>
+                                </td>
+                                <td>
+                                    <!-- Наименование -->
+                                    лампа 12 v 21 w стопсигнал повторитель 1-конт (ba 15) (o ram)
+                                </td>
+                                <td>
+                                    <!-- Поставщик / Склад -->
+                                    TMNR
+                                </td>
+                                <td class="table__cell-slim table__cell-narrow">
+                                    <!-- Возврат -->
+                                    <button type="button" aria-label="информация возврата товаров" class="status-return status-return--standard">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="static/img/symbol/sprite.svg#sync"></use>
+                                        </svg>
+                                    </button>
+                                </td>
+                                <td>
+                                    <!--  Дистрибьютер -->
+                                    <button type="button" aria-label="дистрибьютер" class="table-btn">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="static/img/symbol/sprite.svg#credit-card"></use>
+                                        </svg>
+                                    </button>
+                                </td>
+                                <td>
+                                    <!-- Наличие -->
+                                    >&nbsp;1000
+                                </td>
+                                <td class="table__cell-slim table__cell-narrow">
+                                    <!-- Статус -->
+                                    <div class="status status--alone status--type-left status--rejected">
+                                    </div>
+                                </td>
+                                <td class="nowrap">
+                                    <!-- Срок -->
+                                    1 день<br>
+                                    (до 13:20)
+                                </td>
+                                <td>
+                                    <!-- Ожидаемая дата доставки -->
+                                    04.07 Чт
+                                </td>
+                                <td class="nowrap">
+                                    <!-- Цена -->
+                                    1 427,00
+                                </td>
+                                <td>
+                                    <!-- Купить -->
+                                    <div class="table__actions">
+                                        <button type="button" aria-label="добавить в избранное" class="btn-lite btn-lite--compact btn-lite--theme-default" data-tippy-content="Добавить в избранное">
+                                            <svg class="btn-lite__ico" aria-hidden="true">
+                                                <use xlink:href="static/img/symbol/sprite.svg#heart"></use>
+                                            </svg>
+                                        </button>
+
+                                        <label class="search__form-number form-number" data-form-number="2">
+                                            <input class="form-number__input form-input" type="number" value="1">
+                                            <button type="button" class="form-number__increment" data-increment>
+                                                <svg class="form-number__ico" aria-hidden="true">
+                                                    <use xlink:href="static/img/symbol/sprite.svg#chevron-up"></use>
+                                                </svg>
+                                            </button>
+                                            <button type="button" class="form-number__decrement" data-decrement>
+                                                <svg class="form-number__ico" aria-hidden="true">
+                                                    <use xlink:href="static/img/symbol/sprite.svg#chevron-down"></use>
+                                                </svg>
+                                            </button>
+                                        </label>
+
+                                        <button type="button" aria-label="добавить в корзину" class="btn-lite btn-lite--compact btn-lite--theme-default">
+                                            <svg class="btn-lite__ico" aria-hidden="true">
+                                                <use xlink:href="static/img/symbol/sprite.svg#cart"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
                     </div>
+                </div>
+            </div>
 
-                    <div class="search__table table" data-table>
+            <div class="search__result d-md-none">
+                <div class="search__result-title">
+                    <svg aria-hidden="true">
+                        <use xlink:href="static/img/symbol/sprite.svg#filter"></use>
+                    </svg>
+                    Запрошенный артикул
+                </div>
 
-                        <div class="table__scrollbar scrollbar scrollbar--horizontal" data-table-scrollbar>
-                            <table class="table__inner" data-table-inner>
-                                <tr>
-                                    <th class="nowrap">
-                                        Бренд / Артикул
-                                    </th>
-                                    <th>
-                                        <!-- Картинка -->
-                                    </th>
-                                    <th>
-                                        Наименование
-                                    </th>
-                                    <th>
-                                        Поставщик&nbsp;/
-                                        Склад
-                                    </th>
-                                    <th class="table__cell-slim table__cell-narrow">
-                                        <!-- Возврат -->
-                                    </th>
-                                    <th>
-                                        <!-- Дистрибьютер -->
-                                    </th>
-                                    <th>
-                                        <div class="table-head-info">
-                                            Наличие
-                                            <svg aria-hidden="true" class="table-head-info__ico" data-tippy-with-code-content-light="1">
-                                                <use xlink:href="static/img/symbol/sprite.svg#info-circle"></use>
-                                            </svg>
-                                        </div>
-                                    </th>
-                                    <th class="table__cell-slim table__cell-narrow">
-                                        <!-- Статус -->
-                                    </th>
-                                    <th>
-                                        <div class="table-head-info">
-                                            Срок
-                                            <svg aria-hidden="true" class="table-head-info__ico" data-tippy-content="Ожидаемый срок в рабочих днях до склада МСК" data-width-tooltip="182">
-                                                <use xlink:href="static/img/symbol/sprite.svg#info-circle"></use>
-                                            </svg>
-                                        </div>
-                                    </th>
-                                    <th>
-                                        <div class="table-head-info">
-                                            Ожидаемая
-                                            дата&nbsp;доставки
-                                            <svg aria-hidden="true" class="table-head-info__ico" data-tippy-content="Дата получения деталей клиентом на момент проценки, с учетом выходных дней, рассчитывается динамически при проценке.">
-                                                <use xlink:href="static/img/symbol/sprite.svg#info-circle"></use>
-                                            </svg>
-                                        </div>
-                                    </th>
-                                    <th>
-                                        <div class="table-dropdown" data-dropdown>
-                                            <div class="table-dropdown__inner">
-                                                Цена
-                                                <button type="button" class="table-dropdown__trigger btn-lite btn-lite--compact btn-lite--theme-default" data-dropdown-btn="1">
-                                                    <svg class="btn-lite__ico" aria-hidden="true">
-                                                        <use xlink:href="static/img/symbol/sprite.svg#filter-filled"></use>
-                                                    </svg>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </th>
-                                    <th>
-                                        Купить
-                                    </th>
-                                </tr>
+                <div class="search__table table" data-table>
 
-                                <tr>
-                                    <td>
-                                        <!-- Бренд / Артикул -->
-                                        <div class="table-cel-info">
-                                            OSMAR<br> 7506
-                                            <svg aria-hidden="true" class="table-cel-info__ico">
-                                                <use xlink:href="static/img/symbol/sprite.svg#info-circle"></use>
-                                            </svg>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <!-- Картинка -->
-                                        <button type="button" class="table-btn">
-                                            <svg aria-hidden="true" class="table-btn__ico">
-                                                <use xlink:href="static/img/symbol/sprite.svg#picture"></use>
-                                            </svg>
-                                        </button>
-                                    </td>
-                                    <td>
-                                        <!-- Наименование -->
-                                        лампа 12 v 21 w стопсигнал повторитель 1-конт (ba 15) (o ram)
-                                    </td>
-                                    <td>
-                                        <!-- Поставщик / Склад -->
-                                        TMNR
-                                    </td>
-                                    <td class="table__cell-slim table__cell-narrow">
-                                        <!-- Возврат -->
-                                        <button type="button" aria-label="информация возврата товаров" class="status-return status-return--standard" data-tippy-with-code-content>
-                                            <svg aria-hidden="true">
-                                                <use xlink:href="static/img/symbol/sprite.svg#sync"></use>
-                                            </svg>
-                                        </button>
-                                    </td>
-                                    <td>
-                                        <!--  Дистрибьютер -->
-                                        <button type="button" aria-label="дистрибьютер" class="table-btn" data-tippy-content="Дистрибьютер">
-                                            <svg aria-hidden="true">
-                                                <use xlink:href="static/img/symbol/sprite.svg#credit-card"></use>
-                                            </svg>
-                                        </button>
-                                    </td>
-                                    <td>
-                                        <!-- Наличие -->
-                                        >&nbsp;1000
-                                    </td>
-                                    <td class="table__cell-slim table__cell-narrow">
-                                        <!-- Статус -->
-                                        <div class="status status--alone status--type-left status--rejected" data-tippy-with-code-content-light="2">
-                                        </div>
-                                    </td>
-                                    <td class="nowrap">
-                                        <!-- Срок -->
-                                        1 день<br>
-                                        (до 13:20)
-                                    </td>
-                                    <td>
-                                        <!-- Ожидаемая дата доставки -->
-                                        04.07 Чт
-                                    </td>
-                                    <td class="nowrap">
-                                        <!-- Цена -->
-                                        1 427,00
-                                    </td>
-                                    <td>
-                                        <!-- Купить -->
-                                        <div class="table__actions">
-                                            <button type="button" aria-label="добавить в избранное" class="btn-lite btn-lite--compact btn-lite--theme-default" data-tippy-content="Удалить из избранного">
-                                                <!-- <svg class="btn-lite__ico" aria-hidden="true"> -->
-                                                <!--     <use xlink:href="static/img/symbol/sprite.svg#heart"></use> -->
-                                                <!-- </svg> -->
+                    <div class="table__scrollbar scrollbar scrollbar--horizontal" data-table-scrollbar>
+                        <table class="table__inner" data-table-inner>
+                            <tr>
+                                <th class="nowrap">
+                                    Бренд / Артикул
+                                </th>
+                                <th>
+                                    <!-- Картинка -->
+                                </th>
+                                <th>
+                                    Наименование
+                                </th>
+                                <th>
+                                    Поставщик&nbsp;/
+                                    Склад
+                                </th>
+                                <th class="table__cell-slim table__cell-narrow">
+                                    <!-- Возврат -->
+                                </th>
+                                <th>
+                                    <!-- Дистрибьютер -->
+                                </th>
+                                <th>
+                                    <div class="table-head-info">
+                                        Наличие
+                                        <svg aria-hidden="true" class="table-head-info__ico">
+                                            <use xlink:href="static/img/symbol/sprite.svg#info-circle"></use>
+                                        </svg>
+                                    </div>
+                                </th>
+                                <th class="table__cell-slim table__cell-narrow">
+                                    <!-- Статус -->
+                                </th>
+                                <th>
+                                    <div class="table-head-info">
+                                        Срок
+                                        <svg aria-hidden="true" class="table-head-info__ico">
+                                            <use xlink:href="static/img/symbol/sprite.svg#info-circle"></use>
+                                        </svg>
+                                    </div>
+                                </th>
+                                <th>
+                                    <div class="table-head-info">
+                                        Ожидаемая
+                                        дата&nbsp;доставки
+                                        <svg aria-hidden="true" class="table-head-info__ico">
+                                            <use xlink:href="static/img/symbol/sprite.svg#info-circle"></use>
+                                        </svg>
+                                    </div>
+                                </th>
+                                <th>
+                                    <div class="table-dropdown">
+                                        <div class="table-dropdown__inner">
+                                            Цена
+                                            <button type="button" class="table-dropdown__trigger btn-lite btn-lite--compact btn-lite--theme-default" data-dropdown-btn="2">
                                                 <svg class="btn-lite__ico" aria-hidden="true">
-                                                    <use xlink:href="static/img/symbol/sprite.svg#heart-filled"></use>
-                                                </svg>
-                                            </button>
-
-                                            <label class="search__form-number form-number test" data-form-number="1">
-                                                <input class="form-number__input form-input" type="number" value="10" data-tippy-content="На складе: 291 Минимальная партия: 1 шт." data-width-tooltip="175">
-                                                <button type="button" class="form-number__increment" data-increment>
-                                                    <svg class="form-number__ico" aria-hidden="true">
-                                                        <use xlink:href="static/img/symbol/sprite.svg#chevron-up"></use>
-                                                    </svg>
-                                                </button>
-                                                <button type="button" class="form-number__decrement" data-decrement>
-                                                    <svg class="form-number__ico" aria-hidden="true">
-                                                        <use xlink:href="static/img/symbol/sprite.svg#chevron-down"></use>
-                                                    </svg>
-                                                </button>
-                                            </label>
-
-                                            <button type="button" aria-label="добавить в корзину" class="btn-lite btn-lite--compact btn-lite--theme-default" data-modal="modal-add-cart">
-                                                <svg class="btn-lite__ico" aria-hidden="true">
-                                                    <use xlink:href="static/img/symbol/sprite.svg#cart"></use>
+                                                    <use xlink:href="static/img/symbol/sprite.svg#filter-filled"></use>
                                                 </svg>
                                             </button>
                                         </div>
-                                    </td>
-                                </tr>
+                                    </div>
+                                </th>
+                                <th>
+                                    Купить
+                                </th>
+                            </tr>
 
-                                <tr>
-                                    <td>
-                                        <!-- Бренд / Артикул -->
-                                        <div class="table-cel-info">
-                                            OSMAR<br> 7506
-                                            <svg aria-hidden="true" class="table-cel-info__ico">
-                                                <use xlink:href="static/img/symbol/sprite.svg#info-circle"></use>
-                                            </svg>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <!-- Картинка -->
-                                        <button type="button" class="table-btn">
-                                            <svg aria-hidden="true" class="table-btn__ico">
-                                                <use xlink:href="static/img/symbol/sprite.svg#picture"></use>
+                            <tr>
+                                <td>
+                                    <!-- Бренд / Артикул -->
+                                    <div class="table-cel-info">
+                                        OSMAR<br> 7506
+                                        <svg aria-hidden="true" class="table-cel-info__ico">
+                                            <use xlink:href="static/img/symbol/sprite.svg#info-circle"></use>
+                                        </svg>
+                                    </div>
+                                </td>
+                                <td>
+                                    <!-- Картинка -->
+                                    <button type="button" class="table-btn">
+                                        <svg aria-hidden="true" class="table-btn__ico">
+                                            <use xlink:href="static/img/symbol/sprite.svg#picture"></use>
+                                        </svg>
+                                    </button>
+                                </td>
+                                <td>
+                                    <!-- Наименование -->
+                                    лампа 12 v 21 w стопсигнал повторитель 1-конт (ba 15) (o ram)
+                                </td>
+                                <td>
+                                    <!-- Поставщик / Склад -->
+                                    TMNR
+                                </td>
+                                <td class="table__cell-slim table__cell-narrow">
+                                    <!-- Возврат -->
+                                    <button type="button" aria-label="информация возврата товаров" class="status-return status-return--standard">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="static/img/symbol/sprite.svg#sync"></use>
+                                        </svg>
+                                    </button>
+                                </td>
+                                <td>
+                                    <!--  Дистрибьютер -->
+                                    <button type="button" aria-label="дистрибьютер" class="table-btn">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="static/img/symbol/sprite.svg#credit-card"></use>
+                                        </svg>
+                                    </button>
+                                </td>
+                                <td>
+                                    <!-- Наличие -->
+                                    >&nbsp;1000
+                                </td>
+                                <td class="table__cell-slim table__cell-narrow">
+                                    <!-- Статус -->
+                                    <div class="status status--alone status--type-left status--rejected">
+                                    </div>
+                                </td>
+                                <td class="nowrap">
+                                    <!-- Срок -->
+                                    1 день<br>
+                                    (до 13:20)
+                                </td>
+                                <td>
+                                    <!-- Ожидаемая дата доставки -->
+                                    04.07 Чт
+                                </td>
+                                <td class="nowrap">
+                                    <!-- Цена -->
+                                    1 427,00
+                                </td>
+                                <td>
+                                    <!-- Купить -->
+                                    <div class="table__actions">
+                                        <button type="button" aria-label="добавить в избранное" class="btn-lite btn-lite--compact btn-lite--theme-default">
+                                            <svg class="btn-lite__ico" aria-hidden="true">
+                                                <use xlink:href="static/img/symbol/sprite.svg#heart"></use>
                                             </svg>
                                         </button>
-                                    </td>
-                                    <td>
-                                        <!-- Наименование -->
-                                        лампа 12 v 21 w стопсигнал повторитель 1-конт (ba 15) (o ram)
-                                    </td>
-                                    <td>
-                                        <!-- Поставщик / Склад -->
-                                        TMNR
-                                    </td>
-                                    <td class="table__cell-slim table__cell-narrow">
-                                        <!-- Возврат -->
-                                        <button type="button" aria-label="информация возврата товаров" class="status-return status-return--standard">
-                                            <svg aria-hidden="true">
-                                                <use xlink:href="static/img/symbol/sprite.svg#sync"></use>
-                                            </svg>
-                                        </button>
-                                    </td>
-                                    <td>
-                                        <!--  Дистрибьютер -->
-                                        <button type="button" aria-label="дистрибьютер" class="table-btn">
-                                            <svg aria-hidden="true">
-                                                <use xlink:href="static/img/symbol/sprite.svg#credit-card"></use>
-                                            </svg>
-                                        </button>
-                                    </td>
-                                    <td>
-                                        <!-- Наличие -->
-                                        >&nbsp;1000
-                                    </td>
-                                    <td class="table__cell-slim table__cell-narrow">
-                                        <!-- Статус -->
-                                        <div class="status status--alone status--type-left status--rejected">
-                                        </div>
-                                    </td>
-                                    <td class="nowrap">
-                                        <!-- Срок -->
-                                        1 день<br>
-                                        (до 13:20)
-                                    </td>
-                                    <td>
-                                        <!-- Ожидаемая дата доставки -->
-                                        04.07 Чт
-                                    </td>
-                                    <td class="nowrap">
-                                        <!-- Цена -->
-                                        1 427,00
-                                    </td>
-                                    <td>
-                                        <!-- Купить -->
-                                        <div class="table__actions">
-                                            <button type="button" aria-label="добавить в избранное" class="btn-lite btn-lite--compact btn-lite--theme-default" data-tippy-content="Добавить в избранное">
-                                                <svg class="btn-lite__ico" aria-hidden="true">
-                                                    <use xlink:href="static/img/symbol/sprite.svg#heart"></use>
+
+                                        <label class="search__form-number form-number" data-form-number="3">
+                                            <input class="form-number__input form-input" type="number" value="10">
+                                            <button type="button" class="form-number__increment" data-increment>
+                                                <svg class="form-number__ico" aria-hidden="true">
+                                                    <use xlink:href="static/img/symbol/sprite.svg#chevron-up"></use>
                                                 </svg>
                                             </button>
-
-                                            <label class="search__form-number form-number" data-form-number="2">
-                                                <input class="form-number__input form-input" type="number" value="1">
-                                                <button type="button" class="form-number__increment" data-increment>
-                                                    <svg class="form-number__ico" aria-hidden="true">
-                                                        <use xlink:href="static/img/symbol/sprite.svg#chevron-up"></use>
-                                                    </svg>
-                                                </button>
-                                                <button type="button" class="form-number__decrement" data-decrement>
-                                                    <svg class="form-number__ico" aria-hidden="true">
-                                                        <use xlink:href="static/img/symbol/sprite.svg#chevron-down"></use>
-                                                    </svg>
-                                                </button>
-                                            </label>
-
-                                            <button type="button" aria-label="добавить в корзину" class="btn-lite btn-lite--compact btn-lite--theme-default">
-                                                <svg class="btn-lite__ico" aria-hidden="true">
-                                                    <use xlink:href="static/img/symbol/sprite.svg#cart"></use>
+                                            <button type="button" class="form-number__decrement" data-decrement>
+                                                <svg class="form-number__ico" aria-hidden="true">
+                                                    <use xlink:href="static/img/symbol/sprite.svg#chevron-down"></use>
                                                 </svg>
                                             </button>
-                                        </div>
-                                    </td>
-                                </tr>
-                            </table>
+                                        </label>
+
+                                        <button type="button" aria-label="добавить в корзину" class="btn-lite btn-lite--compact btn-lite--theme-default">
+                                            <svg class="btn-lite__ico" aria-hidden="true">
+                                                <use xlink:href="static/img/symbol/sprite.svg#cart"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <!-- Бренд / Артикул -->
+                                    <div class="table-cel-info">
+                                        OSMAR<br> 7506
+                                        <svg aria-hidden="true" class="table-cel-info__ico">
+                                            <use xlink:href="static/img/symbol/sprite.svg#info-circle"></use>
+                                        </svg>
+                                    </div>
+                                </td>
+                                <td>
+                                    <!-- Картинка -->
+                                    <button type="button" class="table-btn">
+                                        <svg aria-hidden="true" class="table-btn__ico">
+                                            <use xlink:href="static/img/symbol/sprite.svg#picture"></use>
+                                        </svg>
+                                    </button>
+                                </td>
+                                <td>
+                                    <!-- Наименование -->
+                                    лампа 12 v 21 w стопсигнал повторитель 1-конт (ba 15) (o ram)
+                                </td>
+                                <td>
+                                    <!-- Поставщик / Склад -->
+                                    TMNR
+                                </td>
+                                <td class="table__cell-slim table__cell-narrow">
+                                    <!-- Возврат -->
+                                    <button type="button" aria-label="информация возврата товаров" class="status-return status-return--standard">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="static/img/symbol/sprite.svg#sync"></use>
+                                        </svg>
+                                    </button>
+                                </td>
+                                <td>
+                                    <!--  Дистрибьютер -->
+                                    <button type="button" aria-label="дистрибьютер" class="table-btn">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="static/img/symbol/sprite.svg#credit-card"></use>
+                                        </svg>
+                                    </button>
+                                </td>
+                                <td>
+                                    <!-- Наличие -->
+                                    >&nbsp;1000
+                                </td>
+                                <td class="table__cell-slim table__cell-narrow">
+                                    <!-- Статус -->
+                                    <div class="status status--alone status--type-left status--rejected">
+                                    </div>
+                                </td>
+                                <td class="nowrap">
+                                    <!-- Срок -->
+                                    1 день<br>
+                                    (до 13:20)
+                                </td>
+                                <td>
+                                    <!-- Ожидаемая дата доставки -->
+                                    04.07 Чт
+                                </td>
+                                <td class="nowrap">
+                                    <!-- Цена -->
+                                    1 427,00
+                                </td>
+                                <td>
+                                    <!-- Купить -->
+                                    <div class="table__actions">
+                                        <button type="button" aria-label="добавить в избранное" class="btn-lite btn-lite--compact btn-lite--theme-default">
+                                            <svg class="btn-lite__ico" aria-hidden="true">
+                                                <use xlink:href="static/img/symbol/sprite.svg#heart"></use>
+                                            </svg>
+                                        </button>
+
+                                        <label class="search__form-number form-number" data-form-number="4">
+                                            <input class="form-number__input form-input" type="number" value="1">
+                                            <button type="button" class="form-number__increment" data-increment>
+                                                <svg class="form-number__ico" aria-hidden="true">
+                                                    <use xlink:href="static/img/symbol/sprite.svg#chevron-up"></use>
+                                                </svg>
+                                            </button>
+                                            <button type="button" class="form-number__decrement" data-decrement>
+                                                <svg class="form-number__ico" aria-hidden="true">
+                                                    <use xlink:href="static/img/symbol/sprite.svg#chevron-down"></use>
+                                                </svg>
+                                            </button>
+                                        </label>
+
+                                        <button type="button" aria-label="добавить в корзину" class="btn-lite btn-lite--compact btn-lite--theme-default">
+                                            <svg class="btn-lite__ico" aria-hidden="true">
+                                                <use xlink:href="static/img/symbol/sprite.svg#cart"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <!-- Бренд / Артикул -->
+                                    <div class="table-cel-info">
+                                        OSMAR<br> 7506
+                                        <svg aria-hidden="true" class="table-cel-info__ico">
+                                            <use xlink:href="static/img/symbol/sprite.svg#info-circle"></use>
+                                        </svg>
+                                    </div>
+                                </td>
+                                <td>
+                                    <!-- Картинка -->
+                                    <button type="button" class="table-btn">
+                                        <svg aria-hidden="true" class="table-btn__ico">
+                                            <use xlink:href="static/img/symbol/sprite.svg#picture"></use>
+                                        </svg>
+                                    </button>
+                                </td>
+                                <td>
+                                    <!-- Наименование -->
+                                    лампа 12 v 21 w стопсигнал повторитель 1-конт (ba 15) (o ram)
+                                </td>
+                                <td>
+                                    <!-- Поставщик / Склад -->
+                                    TMNR
+                                </td>
+                                <td class="table__cell-slim table__cell-narrow">
+                                    <!-- Возврат -->
+                                    <button type="button" aria-label="информация возврата товаров" class="status-return status-return--standard">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="static/img/symbol/sprite.svg#sync"></use>
+                                        </svg>
+                                    </button>
+                                </td>
+                                <td>
+                                    <!--  Дистрибьютер -->
+                                    <button type="button" aria-label="дистрибьютер" class="table-btn">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="static/img/symbol/sprite.svg#credit-card"></use>
+                                        </svg>
+                                    </button>
+                                </td>
+                                <td>
+                                    <!-- Наличие -->
+                                    >&nbsp;1000
+                                </td>
+                                <td class="table__cell-slim table__cell-narrow">
+                                    <!-- Статус -->
+                                    <div class="status status--alone status--type-left status--rejected">
+                                    </div>
+                                </td>
+                                <td class="nowrap">
+                                    <!-- Срок -->
+                                    1 день<br>
+                                    (до 13:20)
+                                </td>
+                                <td>
+                                    <!-- Ожидаемая дата доставки -->
+                                    04.07 Чт
+                                </td>
+                                <td class="nowrap">
+                                    <!-- Цена -->
+                                    1 427,00
+                                </td>
+                                <td>
+                                    <!-- Купить -->
+                                    <div class="table__actions">
+                                        <button type="button" aria-label="добавить в избранное" class="btn-lite btn-lite--compact btn-lite--theme-default">
+                                            <svg class="btn-lite__ico" aria-hidden="true">
+                                                <use xlink:href="static/img/symbol/sprite.svg#heart"></use>
+                                            </svg>
+                                        </button>
+
+                                        <label class="search__form-number form-number" data-form-number="5">
+                                            <input class="form-number__input form-input" type="number" value="1">
+                                            <button type="button" class="form-number__increment" data-increment>
+                                                <svg class="form-number__ico" aria-hidden="true">
+                                                    <use xlink:href="static/img/symbol/sprite.svg#chevron-up"></use>
+                                                </svg>
+                                            </button>
+                                            <button type="button" class="form-number__decrement" data-decrement>
+                                                <svg class="form-number__ico" aria-hidden="true">
+                                                    <use xlink:href="static/img/symbol/sprite.svg#chevron-down"></use>
+                                                </svg>
+                                            </button>
+                                        </label>
+
+                                        <button type="button" aria-label="добавить в корзину" class="btn-lite btn-lite--compact btn-lite--theme-default">
+                                            <svg class="btn-lite__ico" aria-hidden="true">
+                                                <use xlink:href="static/img/symbol/sprite.svg#cart"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <!-- Бренд / Артикул -->
+                                    <div class="table-cel-info">
+                                        OSMAR<br> 7506
+                                        <svg aria-hidden="true" class="table-cel-info__ico">
+                                            <use xlink:href="static/img/symbol/sprite.svg#info-circle"></use>
+                                        </svg>
+                                    </div>
+                                </td>
+                                <td>
+                                    <!-- Картинка -->
+                                    <button type="button" class="table-btn">
+                                        <svg aria-hidden="true" class="table-btn__ico">
+                                            <use xlink:href="static/img/symbol/sprite.svg#picture"></use>
+                                        </svg>
+                                    </button>
+                                </td>
+                                <td>
+                                    <!-- Наименование -->
+                                    лампа 12 v 21 w стопсигнал повторитель 1-конт (ba 15) (o ram)
+                                </td>
+                                <td>
+                                    <!-- Поставщик / Склад -->
+                                    TMNR
+                                </td>
+                                <td class="table__cell-slim table__cell-narrow">
+                                    <!-- Возврат -->
+                                    <button type="button" aria-label="информация возврата товаров" class="status-return status-return--standard">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="static/img/symbol/sprite.svg#sync"></use>
+                                        </svg>
+                                    </button>
+                                </td>
+                                <td>
+                                    <!--  Дистрибьютер -->
+                                    <button type="button" aria-label="дистрибьютер" class="table-btn">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="static/img/symbol/sprite.svg#credit-card"></use>
+                                        </svg>
+                                    </button>
+                                </td>
+                                <td>
+                                    <!-- Наличие -->
+                                    >&nbsp;1000
+                                </td>
+                                <td class="table__cell-slim table__cell-narrow">
+                                    <!-- Статус -->
+                                    <div class="status status--alone status--type-left status--rejected">
+                                    </div>
+                                </td>
+                                <td class="nowrap">
+                                    <!-- Срок -->
+                                    1 день<br>
+                                    (до 13:20)
+                                </td>
+                                <td>
+                                    <!-- Ожидаемая дата доставки -->
+                                    04.07 Чт
+                                </td>
+                                <td class="nowrap">
+                                    <!-- Цена -->
+                                    1 427,00
+                                </td>
+                                <td>
+                                    <!-- Купить -->
+                                    <div class="table__actions">
+                                        <button type="button" aria-label="добавить в избранное" class="btn-lite btn-lite--compact btn-lite--theme-default">
+                                            <svg class="btn-lite__ico" aria-hidden="true">
+                                                <use xlink:href="static/img/symbol/sprite.svg#heart"></use>
+                                            </svg>
+                                        </button>
+
+                                        <label class="search__form-number form-number" data-form-number="6">
+                                            <input class="form-number__input form-input" type="number" value="1">
+                                            <button type="button" class="form-number__increment" data-increment>
+                                                <svg class="form-number__ico" aria-hidden="true">
+                                                    <use xlink:href="static/img/symbol/sprite.svg#chevron-up"></use>
+                                                </svg>
+                                            </button>
+                                            <button type="button" class="form-number__decrement" data-decrement>
+                                                <svg class="form-number__ico" aria-hidden="true">
+                                                    <use xlink:href="static/img/symbol/sprite.svg#chevron-down"></use>
+                                                </svg>
+                                            </button>
+                                        </label>
+
+                                        <button type="button" aria-label="добавить в корзину" class="btn-lite btn-lite--compact btn-lite--theme-default">
+                                            <svg class="btn-lite__ico" aria-hidden="true">
+                                                <use xlink:href="static/img/symbol/sprite.svg#cart"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- mobile -->
+            <div class="search__result product-cards d-none d-md-grid">
+                <div class="search__result-title">
+                    <svg aria-hidden="true">
+                        <use xlink:href="static/img/symbol/sprite.svg#filter"></use>
+                    </svg>
+                    Запрошенный артикул
+                </div>
+
+                <ul class="product-cards__list">
+                    <li class="product-card">
+                        <div class="product-card__head">
+                            <div class="product-card__status product-card__status--w100 status status--incoming status--type-right">
+                                90% - 100% выданных заказов
+                            </div>
                         </div>
-                    </div>
-                </div>
 
-                <div class="search__result d-md-none">
-                    <div class="search__result-title">
-                        <svg aria-hidden="true">
-                            <use xlink:href="static/img/symbol/sprite.svg#filter"></use>
-                        </svg>
-                        Запрошенный артикул
-                    </div>
+                        <div class="product-card__body">
+                            <div class="product-card__product">
+                                <div class="product-card__product-info">
+                                    <div class="product-card__brand">OSMAR 7506</div>
+                                    <div class="product-card__name">Лампа ксенон d2r 5000k</div>
+                                    <div class="product-card__supplier">TMNR</div>
+                                </div>
 
-                    <div class="search__table table" data-table>
+                                <div class="product-card__product-btns">
+                                    <button type="button" aria-label="дистрибьютер" class="table-btn">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="static/img/symbol/sprite.svg#credit-card"></use>
+                                        </svg>
+                                    </button>
+                                    <button type="button" aria-label="информация возврата товаров" class="status-return status-return--standard">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="static/img/symbol/sprite.svg#sync"></use>
+                                        </svg>
+                                    </button>
+                                    <button type="button" class="table-btn">
+                                        <svg aria-hidden="true" class="table-btn__ico">
+                                            <use xlink:href="static/img/symbol/sprite.svg#picture"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
 
-                        <div class="table__scrollbar scrollbar scrollbar--horizontal" data-table-scrollbar>
-                            <table class="table__inner" data-table-inner>
-                                <tr>
-                                    <th class="nowrap">
-                                        Бренд / Артикул
-                                    </th>
-                                    <th>
-                                        <!-- Картинка -->
-                                    </th>
-                                    <th>
-                                        Наименование
-                                    </th>
-                                    <th>
-                                        Поставщик&nbsp;/
-                                        Склад
-                                    </th>
-                                    <th class="table__cell-slim table__cell-narrow">
-                                        <!-- Возврат -->
-                                    </th>
-                                    <th>
-                                        <!-- Дистрибьютер -->
-                                    </th>
-                                    <th>
-                                        <div class="table-head-info">
-                                            Наличие
-                                            <svg aria-hidden="true" class="table-head-info__ico">
-                                                <use xlink:href="static/img/symbol/sprite.svg#info-circle"></use>
-                                            </svg>
-                                        </div>
-                                    </th>
-                                    <th class="table__cell-slim table__cell-narrow">
-                                        <!-- Статус -->
-                                    </th>
-                                    <th>
-                                        <div class="table-head-info">
-                                            Срок
-                                            <svg aria-hidden="true" class="table-head-info__ico">
-                                                <use xlink:href="static/img/symbol/sprite.svg#info-circle"></use>
-                                            </svg>
-                                        </div>
-                                    </th>
-                                    <th>
-                                        <div class="table-head-info">
-                                            Ожидаемая
-                                            дата&nbsp;доставки
-                                            <svg aria-hidden="true" class="table-head-info__ico">
-                                                <use xlink:href="static/img/symbol/sprite.svg#info-circle"></use>
-                                            </svg>
-                                        </div>
-                                    </th>
-                                    <th>
-                                        <div class="table-dropdown">
-                                            <div class="table-dropdown__inner">
-                                                Цена
-                                                <button type="button" class="table-dropdown__trigger btn-lite btn-lite--compact btn-lite--theme-default" data-dropdown-btn="2">
-                                                    <svg class="btn-lite__ico" aria-hidden="true">
-                                                        <use xlink:href="static/img/symbol/sprite.svg#filter-filled"></use>
-                                                    </svg>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </th>
-                                    <th>
-                                        Купить
-                                    </th>
-                                </tr>
-
-                                <tr>
-                                    <td>
-                                        <!-- Бренд / Артикул -->
-                                        <div class="table-cel-info">
-                                            OSMAR<br> 7506
-                                            <svg aria-hidden="true" class="table-cel-info__ico">
-                                                <use xlink:href="static/img/symbol/sprite.svg#info-circle"></use>
-                                            </svg>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <!-- Картинка -->
-                                        <button type="button" class="table-btn">
-                                            <svg aria-hidden="true" class="table-btn__ico">
-                                                <use xlink:href="static/img/symbol/sprite.svg#picture"></use>
-                                            </svg>
-                                        </button>
-                                    </td>
-                                    <td>
-                                        <!-- Наименование -->
-                                        лампа 12 v 21 w стопсигнал повторитель 1-конт (ba 15) (o ram)
-                                    </td>
-                                    <td>
-                                        <!-- Поставщик / Склад -->
-                                        TMNR
-                                    </td>
-                                    <td class="table__cell-slim table__cell-narrow">
-                                        <!-- Возврат -->
-                                        <button type="button" aria-label="информация возврата товаров" class="status-return status-return--standard">
-                                            <svg aria-hidden="true">
-                                                <use xlink:href="static/img/symbol/sprite.svg#sync"></use>
-                                            </svg>
-                                        </button>
-                                    </td>
-                                    <td>
-                                        <!--  Дистрибьютер -->
-                                        <button type="button" aria-label="дистрибьютер" class="table-btn">
-                                            <svg aria-hidden="true">
-                                                <use xlink:href="static/img/symbol/sprite.svg#credit-card"></use>
-                                            </svg>
-                                        </button>
-                                    </td>
-                                    <td>
-                                        <!-- Наличие -->
-                                        >&nbsp;1000
-                                    </td>
-                                    <td class="table__cell-slim table__cell-narrow">
-                                        <!-- Статус -->
-                                        <div class="status status--alone status--type-left status--rejected">
-                                        </div>
-                                    </td>
-                                    <td class="nowrap">
-                                        <!-- Срок -->
-                                        1 день<br>
-                                        (до 13:20)
-                                    </td>
-                                    <td>
-                                        <!-- Ожидаемая дата доставки -->
-                                        04.07 Чт
-                                    </td>
-                                    <td class="nowrap">
-                                        <!-- Цена -->
-                                        1 427,00
-                                    </td>
-                                    <td>
-                                        <!-- Купить -->
-                                        <div class="table__actions">
-                                            <button type="button" aria-label="добавить в избранное" class="btn-lite btn-lite--compact btn-lite--theme-default">
-                                                <svg class="btn-lite__ico" aria-hidden="true">
-                                                    <use xlink:href="static/img/symbol/sprite.svg#heart"></use>
-                                                </svg>
-                                            </button>
-
-                                            <label class="search__form-number form-number" data-form-number="3">
-                                                <input class="form-number__input form-input" type="number" value="10">
-                                                <button type="button" class="form-number__increment" data-increment>
-                                                    <svg class="form-number__ico" aria-hidden="true">
-                                                        <use xlink:href="static/img/symbol/sprite.svg#chevron-up"></use>
-                                                    </svg>
-                                                </button>
-                                                <button type="button" class="form-number__decrement" data-decrement>
-                                                    <svg class="form-number__ico" aria-hidden="true">
-                                                        <use xlink:href="static/img/symbol/sprite.svg#chevron-down"></use>
-                                                    </svg>
-                                                </button>
-                                            </label>
-
-                                            <button type="button" aria-label="добавить в корзину" class="btn-lite btn-lite--compact btn-lite--theme-default">
-                                                <svg class="btn-lite__ico" aria-hidden="true">
-                                                    <use xlink:href="static/img/symbol/sprite.svg#cart"></use>
-                                                </svg>
-                                            </button>
-                                        </div>
-                                    </td>
-                                </tr>
-
-                                <tr>
-                                    <td>
-                                        <!-- Бренд / Артикул -->
-                                        <div class="table-cel-info">
-                                            OSMAR<br> 7506
-                                            <svg aria-hidden="true" class="table-cel-info__ico">
-                                                <use xlink:href="static/img/symbol/sprite.svg#info-circle"></use>
-                                            </svg>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <!-- Картинка -->
-                                        <button type="button" class="table-btn">
-                                            <svg aria-hidden="true" class="table-btn__ico">
-                                                <use xlink:href="static/img/symbol/sprite.svg#picture"></use>
-                                            </svg>
-                                        </button>
-                                    </td>
-                                    <td>
-                                        <!-- Наименование -->
-                                        лампа 12 v 21 w стопсигнал повторитель 1-конт (ba 15) (o ram)
-                                    </td>
-                                    <td>
-                                        <!-- Поставщик / Склад -->
-                                        TMNR
-                                    </td>
-                                    <td class="table__cell-slim table__cell-narrow">
-                                        <!-- Возврат -->
-                                        <button type="button" aria-label="информация возврата товаров" class="status-return status-return--standard">
-                                            <svg aria-hidden="true">
-                                                <use xlink:href="static/img/symbol/sprite.svg#sync"></use>
-                                            </svg>
-                                        </button>
-                                    </td>
-                                    <td>
-                                        <!--  Дистрибьютер -->
-                                        <button type="button" aria-label="дистрибьютер" class="table-btn">
-                                            <svg aria-hidden="true">
-                                                <use xlink:href="static/img/symbol/sprite.svg#credit-card"></use>
-                                            </svg>
-                                        </button>
-                                    </td>
-                                    <td>
-                                        <!-- Наличие -->
-                                        >&nbsp;1000
-                                    </td>
-                                    <td class="table__cell-slim table__cell-narrow">
-                                        <!-- Статус -->
-                                        <div class="status status--alone status--type-left status--rejected">
-                                        </div>
-                                    </td>
-                                    <td class="nowrap">
-                                        <!-- Срок -->
-                                        1 день<br>
-                                        (до 13:20)
-                                    </td>
-                                    <td>
-                                        <!-- Ожидаемая дата доставки -->
-                                        04.07 Чт
-                                    </td>
-                                    <td class="nowrap">
-                                        <!-- Цена -->
-                                        1 427,00
-                                    </td>
-                                    <td>
-                                        <!-- Купить -->
-                                        <div class="table__actions">
-                                            <button type="button" aria-label="добавить в избранное" class="btn-lite btn-lite--compact btn-lite--theme-default">
-                                                <svg class="btn-lite__ico" aria-hidden="true">
-                                                    <use xlink:href="static/img/symbol/sprite.svg#heart"></use>
-                                                </svg>
-                                            </button>
-
-                                            <label class="search__form-number form-number" data-form-number="4">
-                                                <input class="form-number__input form-input" type="number" value="1">
-                                                <button type="button" class="form-number__increment" data-increment>
-                                                    <svg class="form-number__ico" aria-hidden="true">
-                                                        <use xlink:href="static/img/symbol/sprite.svg#chevron-up"></use>
-                                                    </svg>
-                                                </button>
-                                                <button type="button" class="form-number__decrement" data-decrement>
-                                                    <svg class="form-number__ico" aria-hidden="true">
-                                                        <use xlink:href="static/img/symbol/sprite.svg#chevron-down"></use>
-                                                    </svg>
-                                                </button>
-                                            </label>
-
-                                            <button type="button" aria-label="добавить в корзину" class="btn-lite btn-lite--compact btn-lite--theme-default">
-                                                <svg class="btn-lite__ico" aria-hidden="true">
-                                                    <use xlink:href="static/img/symbol/sprite.svg#cart"></use>
-                                                </svg>
-                                            </button>
-                                        </div>
-                                    </td>
-                                </tr>
-
-                                <tr>
-                                    <td>
-                                        <!-- Бренд / Артикул -->
-                                        <div class="table-cel-info">
-                                            OSMAR<br> 7506
-                                            <svg aria-hidden="true" class="table-cel-info__ico">
-                                                <use xlink:href="static/img/symbol/sprite.svg#info-circle"></use>
-                                            </svg>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <!-- Картинка -->
-                                        <button type="button" class="table-btn">
-                                            <svg aria-hidden="true" class="table-btn__ico">
-                                                <use xlink:href="static/img/symbol/sprite.svg#picture"></use>
-                                            </svg>
-                                        </button>
-                                    </td>
-                                    <td>
-                                        <!-- Наименование -->
-                                        лампа 12 v 21 w стопсигнал повторитель 1-конт (ba 15) (o ram)
-                                    </td>
-                                    <td>
-                                        <!-- Поставщик / Склад -->
-                                        TMNR
-                                    </td>
-                                    <td class="table__cell-slim table__cell-narrow">
-                                        <!-- Возврат -->
-                                        <button type="button" aria-label="информация возврата товаров" class="status-return status-return--standard">
-                                            <svg aria-hidden="true">
-                                                <use xlink:href="static/img/symbol/sprite.svg#sync"></use>
-                                            </svg>
-                                        </button>
-                                    </td>
-                                    <td>
-                                        <!--  Дистрибьютер -->
-                                        <button type="button" aria-label="дистрибьютер" class="table-btn">
-                                            <svg aria-hidden="true">
-                                                <use xlink:href="static/img/symbol/sprite.svg#credit-card"></use>
-                                            </svg>
-                                        </button>
-                                    </td>
-                                    <td>
-                                        <!-- Наличие -->
-                                        >&nbsp;1000
-                                    </td>
-                                    <td class="table__cell-slim table__cell-narrow">
-                                        <!-- Статус -->
-                                        <div class="status status--alone status--type-left status--rejected">
-                                        </div>
-                                    </td>
-                                    <td class="nowrap">
-                                        <!-- Срок -->
-                                        1 день<br>
-                                        (до 13:20)
-                                    </td>
-                                    <td>
-                                        <!-- Ожидаемая дата доставки -->
-                                        04.07 Чт
-                                    </td>
-                                    <td class="nowrap">
-                                        <!-- Цена -->
-                                        1 427,00
-                                    </td>
-                                    <td>
-                                        <!-- Купить -->
-                                        <div class="table__actions">
-                                            <button type="button" aria-label="добавить в избранное" class="btn-lite btn-lite--compact btn-lite--theme-default">
-                                                <svg class="btn-lite__ico" aria-hidden="true">
-                                                    <use xlink:href="static/img/symbol/sprite.svg#heart"></use>
-                                                </svg>
-                                            </button>
-
-                                            <label class="search__form-number form-number" data-form-number="5">
-                                                <input class="form-number__input form-input" type="number" value="1">
-                                                <button type="button" class="form-number__increment" data-increment>
-                                                    <svg class="form-number__ico" aria-hidden="true">
-                                                        <use xlink:href="static/img/symbol/sprite.svg#chevron-up"></use>
-                                                    </svg>
-                                                </button>
-                                                <button type="button" class="form-number__decrement" data-decrement>
-                                                    <svg class="form-number__ico" aria-hidden="true">
-                                                        <use xlink:href="static/img/symbol/sprite.svg#chevron-down"></use>
-                                                    </svg>
-                                                </button>
-                                            </label>
-
-                                            <button type="button" aria-label="добавить в корзину" class="btn-lite btn-lite--compact btn-lite--theme-default">
-                                                <svg class="btn-lite__ico" aria-hidden="true">
-                                                    <use xlink:href="static/img/symbol/sprite.svg#cart"></use>
-                                                </svg>
-                                            </button>
-                                        </div>
-                                    </td>
-                                </tr>
-
-                                <tr>
-                                    <td>
-                                        <!-- Бренд / Артикул -->
-                                        <div class="table-cel-info">
-                                            OSMAR<br> 7506
-                                            <svg aria-hidden="true" class="table-cel-info__ico">
-                                                <use xlink:href="static/img/symbol/sprite.svg#info-circle"></use>
-                                            </svg>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <!-- Картинка -->
-                                        <button type="button" class="table-btn">
-                                            <svg aria-hidden="true" class="table-btn__ico">
-                                                <use xlink:href="static/img/symbol/sprite.svg#picture"></use>
-                                            </svg>
-                                        </button>
-                                    </td>
-                                    <td>
-                                        <!-- Наименование -->
-                                        лампа 12 v 21 w стопсигнал повторитель 1-конт (ba 15) (o ram)
-                                    </td>
-                                    <td>
-                                        <!-- Поставщик / Склад -->
-                                        TMNR
-                                    </td>
-                                    <td class="table__cell-slim table__cell-narrow">
-                                        <!-- Возврат -->
-                                        <button type="button" aria-label="информация возврата товаров" class="status-return status-return--standard">
-                                            <svg aria-hidden="true">
-                                                <use xlink:href="static/img/symbol/sprite.svg#sync"></use>
-                                            </svg>
-                                        </button>
-                                    </td>
-                                    <td>
-                                        <!--  Дистрибьютер -->
-                                        <button type="button" aria-label="дистрибьютер" class="table-btn">
-                                            <svg aria-hidden="true">
-                                                <use xlink:href="static/img/symbol/sprite.svg#credit-card"></use>
-                                            </svg>
-                                        </button>
-                                    </td>
-                                    <td>
-                                        <!-- Наличие -->
-                                        >&nbsp;1000
-                                    </td>
-                                    <td class="table__cell-slim table__cell-narrow">
-                                        <!-- Статус -->
-                                        <div class="status status--alone status--type-left status--rejected">
-                                        </div>
-                                    </td>
-                                    <td class="nowrap">
-                                        <!-- Срок -->
-                                        1 день<br>
-                                        (до 13:20)
-                                    </td>
-                                    <td>
-                                        <!-- Ожидаемая дата доставки -->
-                                        04.07 Чт
-                                    </td>
-                                    <td class="nowrap">
-                                        <!-- Цена -->
-                                        1 427,00
-                                    </td>
-                                    <td>
-                                        <!-- Купить -->
-                                        <div class="table__actions">
-                                            <button type="button" aria-label="добавить в избранное" class="btn-lite btn-lite--compact btn-lite--theme-default">
-                                                <svg class="btn-lite__ico" aria-hidden="true">
-                                                    <use xlink:href="static/img/symbol/sprite.svg#heart"></use>
-                                                </svg>
-                                            </button>
-
-                                            <label class="search__form-number form-number" data-form-number="6">
-                                                <input class="form-number__input form-input" type="number" value="1">
-                                                <button type="button" class="form-number__increment" data-increment>
-                                                    <svg class="form-number__ico" aria-hidden="true">
-                                                        <use xlink:href="static/img/symbol/sprite.svg#chevron-up"></use>
-                                                    </svg>
-                                                </button>
-                                                <button type="button" class="form-number__decrement" data-decrement>
-                                                    <svg class="form-number__ico" aria-hidden="true">
-                                                        <use xlink:href="static/img/symbol/sprite.svg#chevron-down"></use>
-                                                    </svg>
-                                                </button>
-                                            </label>
-
-                                            <button type="button" aria-label="добавить в корзину" class="btn-lite btn-lite--compact btn-lite--theme-default">
-                                                <svg class="btn-lite__ico" aria-hidden="true">
-                                                    <use xlink:href="static/img/symbol/sprite.svg#cart"></use>
-                                                </svg>
-                                            </button>
-                                        </div>
-                                    </td>
-                                </tr>
-                            </table>
+                            <div class="product-card__info">
+                                <div class="product-card__term"><span>Срок</span>: 1 день (до 13.00)</div>
+                                <div class="product-card__sum">1427 ₽</div>
+                            </div>
                         </div>
-                    </div>
+
+                        <div class="product-card__actions product-card__actions--has-input">
+                            <button type="button" aria-label="добавить в избранное" class="btn-lite btn-lite--compact btn-lite--theme-default">
+                                <svg class="btn-lite__ico" aria-hidden="true">
+                                    <use xlink:href="static/img/symbol/sprite.svg#heart"></use>
+                                </svg>
+                            </button>
+
+                            <label class="search__form-number form-number" data-form-number="1">
+                                <input class="form-number__input form-input" type="number" value="10">
+                                <button type="button" class="form-number__increment" data-increment>
+                                    <svg class="form-number__ico" aria-hidden="true">
+                                        <use xlink:href="static/img/symbol/sprite.svg#chevron-up"></use>
+                                    </svg>
+                                </button>
+                                <button type="button" class="form-number__decrement" data-decrement>
+                                    <svg class="form-number__ico" aria-hidden="true">
+                                        <use xlink:href="static/img/symbol/sprite.svg#chevron-down"></use>
+                                    </svg>
+                                </button>
+                            </label>
+
+                            <button type="button" aria-label="добавить в корзину" class="btn-lite btn-lite--compact btn-lite--theme-default">
+                                <svg class="btn-lite__ico" aria-hidden="true">
+                                    <use xlink:href="static/img/symbol/sprite.svg#cart"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </li>
+                    <li class="product-card">
+                        <div class="product-card__head">
+                            <div class="product-card__status product-card__status--w100 status status--rejected status--type-right">
+                                0% - 19% выданных заказов
+                            </div>
+                        </div>
+
+                        <div class="product-card__body">
+                            <div class="product-card__product">
+                                <div class="product-card__product-info">
+                                    <div class="product-card__brand">OSMAR 7506</div>
+                                    <div class="product-card__name">Лампа ксенон d2r 5000k</div>
+                                    <div class="product-card__supplier">TMNR</div>
+                                </div>
+
+                                <div class="product-card__product-btns">
+                                    <button type="button" aria-label="дистрибьютер" class="table-btn">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="static/img/symbol/sprite.svg#credit-card"></use>
+                                        </svg>
+                                    </button>
+                                    <button type="button" aria-label="информация возврата товаров" class="status-return status-return--standard">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="static/img/symbol/sprite.svg#sync"></use>
+                                        </svg>
+                                    </button>
+                                    <button type="button" class="table-btn">
+                                        <svg aria-hidden="true" class="table-btn__ico">
+                                            <use xlink:href="static/img/symbol/sprite.svg#picture"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="product-card__info">
+                                <div class="product-card__term"><span>Срок</span>: 1 день (до 13.00)</div>
+                                <div class="product-card__sum">1427 ₽</div>
+                            </div>
+                        </div>
+
+                        <div class="product-card__actions product-card__actions--has-input">
+                            <button type="button" aria-label="добавить в избранное" class="btn-lite btn-lite--compact btn-lite--theme-default">
+                                <svg class="btn-lite__ico" aria-hidden="true">
+                                    <use xlink:href="static/img/symbol/sprite.svg#heart"></use>
+                                </svg>
+                            </button>
+
+                            <label class="search__form-number form-number" data-form-number="2">
+                                <input class="form-number__input form-input" type="number" value="1">
+                                <button type="button" class="form-number__increment" data-increment>
+                                    <svg class="form-number__ico" aria-hidden="true">
+                                        <use xlink:href="static/img/symbol/sprite.svg#chevron-up"></use>
+                                    </svg>
+                                </button>
+                                <button type="button" class="form-number__decrement" data-decrement>
+                                    <svg class="form-number__ico" aria-hidden="true">
+                                        <use xlink:href="static/img/symbol/sprite.svg#chevron-down"></use>
+                                    </svg>
+                                </button>
+                            </label>
+
+                            <button type="button" aria-label="добавить в корзину" class="btn-lite btn-lite--compact btn-lite--theme-default">
+                                <svg class="btn-lite__ico" aria-hidden="true">
+                                    <use xlink:href="static/img/symbol/sprite.svg#cart"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </li>
+                </ul>
+
+                <button type="button" class="product-cards__show-more btn btn--filled btn--theme-primary btn--size-m">
+                    Показать еще
+                </button>
+            </div>
+
+            <div class="search__result product-cards d-none d-md-grid">
+                <div class="search__result-title">
+                    <svg aria-hidden="true">
+                        <use xlink:href="static/img/symbol/sprite.svg#filter"></use>
+                    </svg>
+                    Запрошенный артикул
                 </div>
 
-
-                <!-- mobile -->
-                <div class="search__result product-cards d-none d-md-grid">
-                    <div class="search__result-title">
-                        <svg aria-hidden="true">
-                            <use xlink:href="static/img/symbol/sprite.svg#filter"></use>
-                        </svg>
-                        Запрошенный артикул
-                    </div>
-
-                    <ul class="product-cards__list">
-                        <li class="product-card">
-                            <div class="product-card__head">
-                                <div class="product-card__status product-card__status--w100 status status--incoming status--type-right">
-                                    90% - 100% выданных заказов
-                                </div>
+                <ul class="product-cards__list">
+                    <li class="product-card">
+                        <div class="product-card__head">
+                            <div class="product-card__status product-card__status--w100 status status--incoming status--type-right">
+                                90% - 100% выданных заказов
                             </div>
+                        </div>
 
-                            <div class="product-card__body">
-                                <div class="product-card__product">
-                                    <div class="product-card__product-info">
-                                        <div class="product-card__brand">OSMAR 7506</div>
-                                        <div class="product-card__name">Лампа ксенон d2r 5000k</div>
-                                        <div class="product-card__supplier">TMNR</div>
-                                    </div>
-
-                                    <div class="product-card__product-btns">
-                                        <button type="button" aria-label="дистрибьютер" class="table-btn">
-                                            <svg aria-hidden="true">
-                                                <use xlink:href="static/img/symbol/sprite.svg#credit-card"></use>
-                                            </svg>
-                                        </button>
-                                        <button type="button" aria-label="информация возврата товаров" class="status-return status-return--standard">
-                                            <svg aria-hidden="true">
-                                                <use xlink:href="static/img/symbol/sprite.svg#sync"></use>
-                                            </svg>
-                                        </button>
-                                        <button type="button" class="table-btn">
-                                            <svg aria-hidden="true" class="table-btn__ico">
-                                                <use xlink:href="static/img/symbol/sprite.svg#picture"></use>
-                                            </svg>
-                                        </button>
-                                    </div>
+                        <div class="product-card__body">
+                            <div class="product-card__product">
+                                <div class="product-card__product-info">
+                                    <div class="product-card__brand">OSMAR 7506</div>
+                                    <div class="product-card__name">Лампа ксенон d2r 5000k</div>
+                                    <div class="product-card__supplier">TMNR</div>
                                 </div>
 
-                                <div class="product-card__info">
-                                    <div class="product-card__term"><span>Срок</span>: 1 день (до 13.00)</div>
-                                    <div class="product-card__sum">1427 ₽</div>
-                                </div>
-                            </div>
-
-                            <div class="product-card__actions product-card__actions--has-input">
-                                <button type="button" aria-label="добавить в избранное" class="btn-lite btn-lite--compact btn-lite--theme-default">
-                                    <svg class="btn-lite__ico" aria-hidden="true">
-                                        <use xlink:href="static/img/symbol/sprite.svg#heart"></use>
-                                    </svg>
-                                </button>
-
-                                <label class="search__form-number form-number" data-form-number="1">
-                                    <input class="form-number__input form-input" type="number" value="10">
-                                    <button type="button" class="form-number__increment" data-increment>
-                                        <svg class="form-number__ico" aria-hidden="true">
-                                            <use xlink:href="static/img/symbol/sprite.svg#chevron-up"></use>
+                                <div class="product-card__product-btns">
+                                    <button type="button" aria-label="дистрибьютер" class="table-btn">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="static/img/symbol/sprite.svg#credit-card"></use>
                                         </svg>
                                     </button>
-                                    <button type="button" class="form-number__decrement" data-decrement>
-                                        <svg class="form-number__ico" aria-hidden="true">
-                                            <use xlink:href="static/img/symbol/sprite.svg#chevron-down"></use>
+                                    <button type="button" aria-label="информация возврата товаров" class="status-return status-return--standard">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="static/img/symbol/sprite.svg#sync"></use>
                                         </svg>
                                     </button>
-                                </label>
-
-                                <button type="button" aria-label="добавить в корзину" class="btn-lite btn-lite--compact btn-lite--theme-default">
-                                    <svg class="btn-lite__ico" aria-hidden="true">
-                                        <use xlink:href="static/img/symbol/sprite.svg#cart"></use>
-                                    </svg>
-                                </button>
-                            </div>
-                        </li>
-                        <li class="product-card">
-                            <div class="product-card__head">
-                                <div class="product-card__status product-card__status--w100 status status--rejected status--type-right">
-                                    0% - 19% выданных заказов
-                                </div>
-                            </div>
-
-                            <div class="product-card__body">
-                                <div class="product-card__product">
-                                    <div class="product-card__product-info">
-                                        <div class="product-card__brand">OSMAR 7506</div>
-                                        <div class="product-card__name">Лампа ксенон d2r 5000k</div>
-                                        <div class="product-card__supplier">TMNR</div>
-                                    </div>
-
-                                    <div class="product-card__product-btns">
-                                        <button type="button" aria-label="дистрибьютер" class="table-btn">
-                                            <svg aria-hidden="true">
-                                                <use xlink:href="static/img/symbol/sprite.svg#credit-card"></use>
-                                            </svg>
-                                        </button>
-                                        <button type="button" aria-label="информация возврата товаров" class="status-return status-return--standard">
-                                            <svg aria-hidden="true">
-                                                <use xlink:href="static/img/symbol/sprite.svg#sync"></use>
-                                            </svg>
-                                        </button>
-                                        <button type="button" class="table-btn">
-                                            <svg aria-hidden="true" class="table-btn__ico">
-                                                <use xlink:href="static/img/symbol/sprite.svg#picture"></use>
-                                            </svg>
-                                        </button>
-                                    </div>
-                                </div>
-
-                                <div class="product-card__info">
-                                    <div class="product-card__term"><span>Срок</span>: 1 день (до 13.00)</div>
-                                    <div class="product-card__sum">1427 ₽</div>
-                                </div>
-                            </div>
-
-                            <div class="product-card__actions product-card__actions--has-input">
-                                <button type="button" aria-label="добавить в избранное" class="btn-lite btn-lite--compact btn-lite--theme-default">
-                                    <svg class="btn-lite__ico" aria-hidden="true">
-                                        <use xlink:href="static/img/symbol/sprite.svg#heart"></use>
-                                    </svg>
-                                </button>
-
-                                <label class="search__form-number form-number" data-form-number="2">
-                                    <input class="form-number__input form-input" type="number" value="1">
-                                    <button type="button" class="form-number__increment" data-increment>
-                                        <svg class="form-number__ico" aria-hidden="true">
-                                            <use xlink:href="static/img/symbol/sprite.svg#chevron-up"></use>
+                                    <button type="button" class="table-btn">
+                                        <svg aria-hidden="true" class="table-btn__ico">
+                                            <use xlink:href="static/img/symbol/sprite.svg#picture"></use>
                                         </svg>
                                     </button>
-                                    <button type="button" class="form-number__decrement" data-decrement>
-                                        <svg class="form-number__ico" aria-hidden="true">
-                                            <use xlink:href="static/img/symbol/sprite.svg#chevron-down"></use>
-                                        </svg>
-                                    </button>
-                                </label>
+                                </div>
+                            </div>
 
-                                <button type="button" aria-label="добавить в корзину" class="btn-lite btn-lite--compact btn-lite--theme-default">
-                                    <svg class="btn-lite__ico" aria-hidden="true">
-                                        <use xlink:href="static/img/symbol/sprite.svg#cart"></use>
+                            <div class="product-card__info">
+                                <div class="product-card__term"><span>Срок</span>: 1 день (до 13.00)</div>
+                                <div class="product-card__sum">1427 ₽</div>
+                            </div>
+                        </div>
+
+                        <div class="product-card__actions product-card__actions--has-input">
+                            <button type="button" aria-label="добавить в избранное" class="btn-lite btn-lite--compact btn-lite--theme-default">
+                                <svg class="btn-lite__ico" aria-hidden="true">
+                                    <use xlink:href="static/img/symbol/sprite.svg#heart"></use>
+                                </svg>
+                            </button>
+
+                            <label class="search__form-number form-number" data-form-number="3">
+                                <input class="form-number__input form-input" type="number" value="10">
+                                <button type="button" class="form-number__increment" data-increment>
+                                    <svg class="form-number__ico" aria-hidden="true">
+                                        <use xlink:href="static/img/symbol/sprite.svg#chevron-up"></use>
                                     </svg>
                                 </button>
-                            </div>
-                        </li>
-                    </ul>
-
-                    <button type="button" class="product-cards__show-more btn btn--filled btn--theme-primary btn--size-m">
-                        Показать еще
-                    </button>
-                </div>
-
-                <div class="search__result product-cards d-none d-md-grid">
-                    <div class="search__result-title">
-                        <svg aria-hidden="true">
-                            <use xlink:href="static/img/symbol/sprite.svg#filter"></use>
-                        </svg>
-                        Запрошенный артикул
-                    </div>
-
-                    <ul class="product-cards__list">
-                        <li class="product-card">
-                            <div class="product-card__head">
-                                <div class="product-card__status product-card__status--w100 status status--incoming status--type-right">
-                                    90% - 100% выданных заказов
-                                </div>
-                            </div>
-
-                            <div class="product-card__body">
-                                <div class="product-card__product">
-                                    <div class="product-card__product-info">
-                                        <div class="product-card__brand">OSMAR 7506</div>
-                                        <div class="product-card__name">Лампа ксенон d2r 5000k</div>
-                                        <div class="product-card__supplier">TMNR</div>
-                                    </div>
-
-                                    <div class="product-card__product-btns">
-                                        <button type="button" aria-label="дистрибьютер" class="table-btn">
-                                            <svg aria-hidden="true">
-                                                <use xlink:href="static/img/symbol/sprite.svg#credit-card"></use>
-                                            </svg>
-                                        </button>
-                                        <button type="button" aria-label="информация возврата товаров" class="status-return status-return--standard">
-                                            <svg aria-hidden="true">
-                                                <use xlink:href="static/img/symbol/sprite.svg#sync"></use>
-                                            </svg>
-                                        </button>
-                                        <button type="button" class="table-btn">
-                                            <svg aria-hidden="true" class="table-btn__ico">
-                                                <use xlink:href="static/img/symbol/sprite.svg#picture"></use>
-                                            </svg>
-                                        </button>
-                                    </div>
-                                </div>
-
-                                <div class="product-card__info">
-                                    <div class="product-card__term"><span>Срок</span>: 1 день (до 13.00)</div>
-                                    <div class="product-card__sum">1427 ₽</div>
-                                </div>
-                            </div>
-
-                            <div class="product-card__actions product-card__actions--has-input">
-                                <button type="button" aria-label="добавить в избранное" class="btn-lite btn-lite--compact btn-lite--theme-default">
-                                    <svg class="btn-lite__ico" aria-hidden="true">
-                                        <use xlink:href="static/img/symbol/sprite.svg#heart"></use>
+                                <button type="button" class="form-number__decrement" data-decrement>
+                                    <svg class="form-number__ico" aria-hidden="true">
+                                        <use xlink:href="static/img/symbol/sprite.svg#chevron-down"></use>
                                     </svg>
                                 </button>
+                            </label>
 
-                                <label class="search__form-number form-number" data-form-number="3">
-                                    <input class="form-number__input form-input" type="number" value="10">
-                                    <button type="button" class="form-number__increment" data-increment>
-                                        <svg class="form-number__ico" aria-hidden="true">
-                                            <use xlink:href="static/img/symbol/sprite.svg#chevron-up"></use>
-                                        </svg>
-                                    </button>
-                                    <button type="button" class="form-number__decrement" data-decrement>
-                                        <svg class="form-number__ico" aria-hidden="true">
-                                            <use xlink:href="static/img/symbol/sprite.svg#chevron-down"></use>
-                                        </svg>
-                                    </button>
-                                </label>
-
-                                <button type="button" aria-label="добавить в корзину" class="btn-lite btn-lite--compact btn-lite--theme-default">
-                                    <svg class="btn-lite__ico" aria-hidden="true">
-                                        <use xlink:href="static/img/symbol/sprite.svg#cart"></use>
-                                    </svg>
-                                </button>
+                            <button type="button" aria-label="добавить в корзину" class="btn-lite btn-lite--compact btn-lite--theme-default">
+                                <svg class="btn-lite__ico" aria-hidden="true">
+                                    <use xlink:href="static/img/symbol/sprite.svg#cart"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </li>
+                    <li class="product-card">
+                        <div class="product-card__head">
+                            <div class="product-card__status product-card__status--w100 status status--incoming status--type-right">
+                                90% - 100% выданных заказов
                             </div>
-                        </li>
-                        <li class="product-card">
-                            <div class="product-card__head">
-                                <div class="product-card__status product-card__status--w100 status status--incoming status--type-right">
-                                    90% - 100% выданных заказов
+                        </div>
+
+                        <div class="product-card__body">
+                            <div class="product-card__product">
+                                <div class="product-card__product-info">
+                                    <div class="product-card__brand">OSMAR 7506</div>
+                                    <div class="product-card__name">Лампа ксенон d2r 5000k</div>
+                                    <div class="product-card__supplier">TMNR</div>
+                                </div>
+
+                                <div class="product-card__product-btns">
+                                    <button type="button" aria-label="дистрибьютер" class="table-btn">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="static/img/symbol/sprite.svg#credit-card"></use>
+                                        </svg>
+                                    </button>
+                                    <button type="button" aria-label="информация возврата товаров" class="status-return status-return--standard">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="static/img/symbol/sprite.svg#sync"></use>
+                                        </svg>
+                                    </button>
+                                    <button type="button" class="table-btn">
+                                        <svg aria-hidden="true" class="table-btn__ico">
+                                            <use xlink:href="static/img/symbol/sprite.svg#picture"></use>
+                                        </svg>
+                                    </button>
                                 </div>
                             </div>
 
-                            <div class="product-card__body">
-                                <div class="product-card__product">
-                                    <div class="product-card__product-info">
-                                        <div class="product-card__brand">OSMAR 7506</div>
-                                        <div class="product-card__name">Лампа ксенон d2r 5000k</div>
-                                        <div class="product-card__supplier">TMNR</div>
-                                    </div>
-
-                                    <div class="product-card__product-btns">
-                                        <button type="button" aria-label="дистрибьютер" class="table-btn">
-                                            <svg aria-hidden="true">
-                                                <use xlink:href="static/img/symbol/sprite.svg#credit-card"></use>
-                                            </svg>
-                                        </button>
-                                        <button type="button" aria-label="информация возврата товаров" class="status-return status-return--standard">
-                                            <svg aria-hidden="true">
-                                                <use xlink:href="static/img/symbol/sprite.svg#sync"></use>
-                                            </svg>
-                                        </button>
-                                        <button type="button" class="table-btn">
-                                            <svg aria-hidden="true" class="table-btn__ico">
-                                                <use xlink:href="static/img/symbol/sprite.svg#picture"></use>
-                                            </svg>
-                                        </button>
-                                    </div>
-                                </div>
-
-                                <div class="product-card__info">
-                                    <div class="product-card__term"><span>Срок</span>: 1 день (до 13.00)</div>
-                                    <div class="product-card__sum">1427 ₽</div>
-                                </div>
+                            <div class="product-card__info">
+                                <div class="product-card__term"><span>Срок</span>: 1 день (до 13.00)</div>
+                                <div class="product-card__sum">1427 ₽</div>
                             </div>
+                        </div>
 
-                            <div class="product-card__actions product-card__actions--has-input">
-                                <button type="button" aria-label="добавить в избранное" class="btn-lite btn-lite--compact btn-lite--theme-default">
-                                    <svg class="btn-lite__ico" aria-hidden="true">
-                                        <use xlink:href="static/img/symbol/sprite.svg#heart"></use>
+                        <div class="product-card__actions product-card__actions--has-input">
+                            <button type="button" aria-label="добавить в избранное" class="btn-lite btn-lite--compact btn-lite--theme-default">
+                                <svg class="btn-lite__ico" aria-hidden="true">
+                                    <use xlink:href="static/img/symbol/sprite.svg#heart"></use>
+                                </svg>
+                            </button>
+
+                            <label class="search__form-number form-number" data-form-number="4">
+                                <input class="form-number__input form-input" type="number" value="1">
+                                <button type="button" class="form-number__increment" data-increment>
+                                    <svg class="form-number__ico" aria-hidden="true">
+                                        <use xlink:href="static/img/symbol/sprite.svg#chevron-up"></use>
                                     </svg>
                                 </button>
-
-                                <label class="search__form-number form-number" data-form-number="4">
-                                    <input class="form-number__input form-input" type="number" value="1">
-                                    <button type="button" class="form-number__increment" data-increment>
-                                        <svg class="form-number__ico" aria-hidden="true">
-                                            <use xlink:href="static/img/symbol/sprite.svg#chevron-up"></use>
-                                        </svg>
-                                    </button>
-                                    <button type="button" class="form-number__decrement" data-decrement>
-                                        <svg class="form-number__ico" aria-hidden="true">
-                                            <use xlink:href="static/img/symbol/sprite.svg#chevron-down"></use>
-                                        </svg>
-                                    </button>
-                                </label>
-
-                                <button type="button" aria-label="добавить в корзину" class="btn-lite btn-lite--compact btn-lite--theme-default">
-                                    <svg class="btn-lite__ico" aria-hidden="true">
-                                        <use xlink:href="static/img/symbol/sprite.svg#cart"></use>
+                                <button type="button" class="form-number__decrement" data-decrement>
+                                    <svg class="form-number__ico" aria-hidden="true">
+                                        <use xlink:href="static/img/symbol/sprite.svg#chevron-down"></use>
                                     </svg>
                                 </button>
-                            </div>
-                        </li>
-                    </ul>
+                            </label>
 
-                    <button type="button" class="product-cards__show-more btn btn--filled btn--theme-primary btn--size-m">
-                        Показать еще
-                    </button>
-                </div>
+                            <button type="button" aria-label="добавить в корзину" class="btn-lite btn-lite--compact btn-lite--theme-default">
+                                <svg class="btn-lite__ico" aria-hidden="true">
+                                    <use xlink:href="static/img/symbol/sprite.svg#cart"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </li>
+                </ul>
 
-                <div class="alert alert--warning search__info">
+                <button type="button" class="product-cards__show-more btn btn--filled btn--theme-primary btn--size-m">
+                    Показать еще
+                </button>
+            </div>
+
+            <div class="alert alert--warning search__info">
     <svg class="alert__ico">
         <use xlink:href="static/img/symbol/sprite.svg#info-circle-fill"></use>
     </svg>
@@ -1381,7 +1358,6 @@
     <span class="alert__text">Информация по подбору аналогов является справочной, требует уточнений и не является безусловной причиной для возврата</span>
 </div>
 
-            </div>
         </div>
     </section>
 </main>
